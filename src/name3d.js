@@ -11,11 +11,21 @@ let torus;
  */
 const onSceneReady = (scene) => {
 
+    // scene.clearColor = new BABYLON.Color4(1,1,1,1);
     scene.clearColor = new BABYLON.Color4(0,0,0,0);
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI / -2, Math.PI / 2, 5.5, BABYLON.Vector3.Zero(), scene);
+    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI / -2, Math.PI / 2, 5000 / window.innerWidth + 2.3, BABYLON.Vector3.Zero(), scene);
+    camera.attachControl(canvas, true);
+    camera.angularSensibilityX = 9000;
+    camera.angularSensibilityY = 9000;
+    camera.upperAlphaLimit = BABYLON.Tools.ToRadians(20) + (Math.PI / -2);
+    camera.upperBetaLimit = BABYLON.Tools.ToRadians(20) + (Math.PI / 2);
+    camera.lowerAlphaLimit = BABYLON.Tools.ToRadians(-20) + (Math.PI / -2);
+    camera.lowerBetaLimit = BABYLON.Tools.ToRadians(-20) + (Math.PI / 2);
+    camera.upperRadiusLimit = 5000 / window.innerWidth + 2.3;
+    camera.lowerRadiusLimit = 5000 / window.innerWidth + 2.3;
     camera.allowUpsideDown = true;
     camera.panningAxis = new BABYLON.Vector3(1,1,0);
     camera.panningInertia = .9;
@@ -26,11 +36,15 @@ const onSceneReady = (scene) => {
     function logKey(e) {
         var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
         var yLoc = (e.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2);
-        var newAlpha = 1 * xLoc * BABYLON.Tools.ToRadians(10) + (Math.PI / -2);
-        var newBeta = 1 * yLoc * BABYLON.Tools.ToRadians(10) + (Math.PI / 2);
+        updateCam(xLoc, yLoc);
+    }
+    function updateCam(xLoc, yLoc){
+        var newAlpha = -1 * xLoc * BABYLON.Tools.ToRadians(10) + (Math.PI / -2);
+        var newBeta = -1 * yLoc * BABYLON.Tools.ToRadians(10) + (Math.PI / 2);
         camera.alpha = newAlpha;
         camera.beta = newBeta;
-    }
+    }   
+
     
     var downLight = new BABYLON.HemisphericLight("downLight", new BABYLON.Vector3(0,1,0), scene);
     downLight.intensity = .2;
@@ -42,8 +56,9 @@ const onSceneReady = (scene) => {
     //BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
 
     var silverMat = new BABYLON.StandardMaterial("silverMat", scene);
-    silverMat.diffuseColor = new BABYLON.Color3(.8,.8,.8);
+    silverMat.diffuseColor = new BABYLON.Color3(.9,.9,.9);
     silverMat.specularColor = new BABYLON.Color3(.8,.8,.8);
+    silverMat.alpha = 1;
 
     BABYLON.SceneLoader.ImportMesh("","", "./models/varun-name.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
@@ -64,7 +79,36 @@ const onSceneReady = (scene) => {
     torus.scaling.z = .5;
     torus.position.z = .18;
     torus.position.x = -.4;
+    torus.position.y = 0;
 
+    var silverMatR = new BABYLON.Animation("silverMatAlpha", "diffuseColor.r", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    var silverMatG = new BABYLON.Animation("silverMatAlpha", "diffuseColor.g", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    var silverMatB = new BABYLON.Animation("silverMatAlpha", "diffuseColor.b", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    var alphaKeys = [];
+    alphaKeys.push({
+        frame: 0,
+        value: 0
+    });
+    alphaKeys.push({
+        frame: 90,
+        value: .9
+    });
+    silverMatR.setKeys(alphaKeys);
+    silverMatG.setKeys(alphaKeys);
+    silverMatB.setKeys(alphaKeys);
+    scene.beginDirectAnimation(silverMat, [silverMatR, silverMatB, silverMatG], 0, 90);
+    BABYLON.Animation.CreateAndStartAnimation("lightFade", light, "intensity", 60, 120, 0, .5, false);
+    BABYLON.Animation.CreateAndStartAnimation("downlightFade", downLight, "intensity", 60, 120, -.1, .2, false);
+
+    const resize = () => {
+        camera.radius = 5000 / window.innerWidth + 2.3;
+    };
+    if (window) {
+        window.addEventListener("resize", resize);
+    }
 };
 
 var frame = 0;
@@ -85,10 +129,10 @@ const onRender = (scene) => {
 };
 
 
-function Name3d(name) {
+function Name3d() {
     return (
         <div>
-            <SceneComponent className='nameBabylon' antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
+            <SceneComponent className='nameBabylon' antialias onSceneReady={onSceneReady} onRender={onRender} id="name-canvas" />
         </div>
     )
 }
