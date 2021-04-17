@@ -6,10 +6,10 @@
 }
 
 .nameBabylon {
-    width: 75%;
-    height: 10%;
+    width: 50%;
+    height: 13%;
     top: 1.7%;
-    left: 0%;
+    left: 5%;
     position: relative;
 }
 
@@ -24,17 +24,6 @@
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-
-.slogan {
-    color: rgba(248, 248, 255, 0.822);
-    position: relative;
-    top: 1.8%;
-    opacity: 0;
-    text-align: center;
-    font-family: Verdana, sans-serif;
-    font-size: 120%;
-}
-
 [data-ca3_icon]::before {
     font-weight: normal;
     content: attr(data-ca3_icon);
@@ -44,7 +33,7 @@
     height: 70px;
     width: 100%;
     position: relative;
-    top: 3.2%;
+    top: 0%;
     left: 0%;
 }
 
@@ -94,7 +83,7 @@
 body {
     background-color:#000; 
     /* overflow-y: scroll; */
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -104,7 +93,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .about-page {
     position: relative;
-    top: 4%;
+    top: 5%;
     height: 30%;
     width: 100%;
     background-color: navy;
