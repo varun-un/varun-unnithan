@@ -12,15 +12,15 @@ let torus;
  */
 const onSceneReady = (scene) => {
 
-    scene.clearColor = new BABYLON.Color4(.5,.5,.5,1);
+    // scene.clearColor = new BABYLON.Color4(.5,.5,.5,1);
     scene.clearColor = new BABYLON.Color4(0,0,0,0);
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
-    var k = 2000;   //k for scale of radius refactor on window resize
-    var resizeOffset = 3.3;     //offset of radius refactor on resize
+    var k = 5500;   //k for scale of radius refactor on window resize
+    var resizeOffset = 1;     //offset of radius refactor on resize
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI / -2, Math.PI / 2, k / window.innerWidth + resizeOffset, BABYLON.Vector3.Zero(), scene);
+    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI * 1.65, Math.PI / 2, k / window.innerWidth + resizeOffset, BABYLON.Vector3.Zero(), scene);
     camera.attachControl(canvas, true);
     camera.angularSensibilityX = 1500;
     camera.angularSensibilityY = 1500;
@@ -32,7 +32,7 @@ const onSceneReady = (scene) => {
     camera.allowUpsideDown = true;
     camera.panningAxis = new BABYLON.Vector3(1,1,0);
     camera.panningInertia = .9;
-    camera.panningSensibility = 850;
+    camera.panningSensibility = 0;
 
     //camera motion
     // document.addEventListener('mousemove', logKey);
@@ -68,29 +68,30 @@ const onSceneReady = (scene) => {
     torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:3.5, thickness: .04, tessellation: 128, updatable: true });
     torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(0, 7, 400));
     torus.rotation.z = BABYLON.Tools.ToRadians(zRotCos(0, 6, 400));
-    torus.position.y = .1;
+    torus.position.y = -.4;
     var torusYAnim = new BABYLON.Animation("torusYAnim", "position.y", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
         BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
     var torusYKeys = [];
     torusYKeys.push({
         frame: 0,
-        value: .1
+        value: -.4
     });
     torusYKeys.push({
-        frame: 600,
-        value: -.1
+        frame: 900,
+        value: .3
     });
     torusYKeys.push({
-        frame: 1200,
-        value: 0.1
+        frame: 1800,
+        value: -.4
     });
     torusYAnim.setKeys(torusYKeys);
-    scene.beginDirectAnimation(torus, [torusYAnim], 0, 1200, true);
+    scene.beginDirectAnimation(torus, [torusYAnim], 0, 1800, true);
 
     var bronzeMat = new BABYLON.StandardMaterial("bronzeMat", scene);
     bronzeMat.diffuseColor = new BABYLON.Color3(1.0, 0.766, 0.336);
     bronzeMat.specularColor = new BABYLON.Color3(1.0, 0.9, 0.6);
     bronzeMat.specularPower = 1;
+    bronzeMat.alpha = 0;
     torus.material = bronzeMat;
 
     //window resize, zoom out

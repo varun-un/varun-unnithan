@@ -18,7 +18,7 @@ function home() {
         <div className="homePage">
             <div className='circleBG'></div>
             <Face3d />
-            <p ref={el => {titleElem = el}} className='titleFirstName'>Varun <br></br>&nbsp;&nbsp;Unnithan</p>
+            <p ref={el => {titleElem = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</p>
             <div className='scrollArrowDiv'>
                 <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
             </div>
