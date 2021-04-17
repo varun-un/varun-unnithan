@@ -11,28 +11,33 @@ let torus;
  */
 const onSceneReady = (scene) => {
 
-    // scene.clearColor = new BABYLON.Color4(1,1,1,1);
-    scene.clearColor = new BABYLON.Color4(0,0,0,0);
+    scene.clearColor = new BABYLON.Color4(.5,.5,.5,1);
+    // scene.clearColor = new BABYLON.Color4(0,0,0,0);
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI / -2, Math.PI / 2, 5000 / window.innerWidth + 2.3, BABYLON.Vector3.Zero(), scene);
+    var k = 5000;   //k for scale of radius refactor on window resize
+
+    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI / -2, Math.PI / 2, k / window.innerWidth + .85, BABYLON.Vector3.Zero(), scene);
     camera.attachControl(canvas, true);
-    camera.angularSensibilityX = 9000;
-    camera.angularSensibilityY = 9000;
-    camera.upperAlphaLimit = BABYLON.Tools.ToRadians(20) + (Math.PI / -2);
-    camera.upperBetaLimit = BABYLON.Tools.ToRadians(20) + (Math.PI / 2);
-    camera.lowerAlphaLimit = BABYLON.Tools.ToRadians(-20) + (Math.PI / -2);
-    camera.lowerBetaLimit = BABYLON.Tools.ToRadians(-20) + (Math.PI / 2);
-    camera.upperRadiusLimit = 5000 / window.innerWidth + 2.3;
-    camera.lowerRadiusLimit = 5000 / window.innerWidth + 2.3;
+    // camera.angularSensibilityX = 9000;
+    // camera.angularSensibilityY = 9000;
+    // camera.upperAlphaLimit = BABYLON.Tools.ToRadians(20) + (Math.PI / -2);
+    // camera.upperBetaLimit = BABYLON.Tools.ToRadians(20) + (Math.PI / 2);
+    // camera.lowerAlphaLimit = BABYLON.Tools.ToRadians(-20) + (Math.PI / -2);
+    // camera.lowerBetaLimit = BABYLON.Tools.ToRadians(-20) + (Math.PI / 2);
+    // console.log(camera.radius)
+    // camera.upperRadiusLimit = k / window.innerWidth + .85;
+    // camera.lowerRadiusLimit = k / window.innerWidth + .85;
+    camera.lowerRadiusLimit = 1;
+    camera.wheelDeltaPercentage = .025;
     camera.allowUpsideDown = true;
     camera.panningAxis = new BABYLON.Vector3(1,1,0);
     camera.panningInertia = .9;
     camera.panningSensibility = 850;
 
     //camera motion
-    document.addEventListener('mousemove', logKey);
+    // document.addEventListener('mousemove', logKey);
     function logKey(e) {
         var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
         var yLoc = (e.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2);
@@ -46,12 +51,12 @@ const onSceneReady = (scene) => {
     }   
 
     
-    var downLight = new BABYLON.HemisphericLight("downLight", new BABYLON.Vector3(0,1,0), scene);
-    downLight.intensity = .2;
-    var light = new BABYLON.PointLight("light", new BABYLON.Vector3(0,0,-10), scene);
+    var hemiLight = new BABYLON.HemisphericLight("downLight", new BABYLON.Vector3(0,1,0), scene);
+    hemiLight.intensity = .5;
+    var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0,0,-1), scene);
     light.parent = camera;
 
-    light.intensity = .5;
+    light.intensity = .7;
 
     //BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
 
@@ -60,51 +65,49 @@ const onSceneReady = (scene) => {
     silverMat.specularColor = new BABYLON.Color3(.8,.8,.8);
     silverMat.alpha = 1;
 
-    BABYLON.SceneLoader.ImportMesh("","", "./models/varun-name.babylon", scene, function(newMeshes){
+    BABYLON.SceneLoader.ImportMesh("","", "./models/face.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
-            mesh.scale = new BABYLON.Vector3(.2,.2,.2);
-            mesh.material = silverMat;
-            mesh.position.x -= .7;
+            hemiLight.includedOnlyMeshes.push(mesh);
         });
     });    
 
-    torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:7, thickness: .04, tessellation: 128, updatable: true });
+    torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:3.5, thickness: .04, tessellation: 128, updatable: true });
+    torus.position.y = 0;
 
     var bronzeMat = new BABYLON.StandardMaterial("bronzeMat", scene);
     bronzeMat.diffuseColor = new BABYLON.Color3(1.0, 0.766, 0.336);
-    bronzeMat.specularColor = BABYLON.Color3.White();
+    bronzeMat.specularColor = new BABYLON.Color3(1.0, 0.9, 0.6);
     bronzeMat.specularPower = 1;
     torus.material = bronzeMat;
 
-    torus.scaling.z = .5;
-    torus.position.z = .18;
-    torus.position.x = -.4;
-    torus.position.y = 0;
+    //start fade in
+    // var silverMatR = new BABYLON.Animation("silverMatAlpha", "diffuseColor.r", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    // var silverMatG = new BABYLON.Animation("silverMatAlpha", "diffuseColor.g", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    // var silverMatB = new BABYLON.Animation("silverMatAlpha", "diffuseColor.b", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    // var alphaKeys = [];
+    // alphaKeys.push({
+    //     frame: 0,
+    //     value: 0
+    // });
+    // alphaKeys.push({
+    //     frame: 90,
+    //     value: .9
+    // });
+    // silverMatR.setKeys(alphaKeys);
+    // silverMatG.setKeys(alphaKeys);
+    // silverMatB.setKeys(alphaKeys);
+    // scene.beginDirectAnimation(silverMat, [silverMatR, silverMatB, silverMatG], 0, 90);
+    // BABYLON.Animation.CreateAndStartAnimation("lightFade", light, "intensity", 60, 120, 0, .5, false);
+    // BABYLON.Animation.CreateAndStartAnimation("downlightFade", downLight, "intensity", 60, 120, -.1, .2, false);
 
-    var silverMatR = new BABYLON.Animation("silverMatAlpha", "diffuseColor.r", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    var silverMatG = new BABYLON.Animation("silverMatAlpha", "diffuseColor.g", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    var silverMatB = new BABYLON.Animation("silverMatAlpha", "diffuseColor.b", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    var alphaKeys = [];
-    alphaKeys.push({
-        frame: 0,
-        value: 0
-    });
-    alphaKeys.push({
-        frame: 90,
-        value: .9
-    });
-    silverMatR.setKeys(alphaKeys);
-    silverMatG.setKeys(alphaKeys);
-    silverMatB.setKeys(alphaKeys);
-    scene.beginDirectAnimation(silverMat, [silverMatR, silverMatB, silverMatG], 0, 90);
-    BABYLON.Animation.CreateAndStartAnimation("lightFade", light, "intensity", 60, 120, 0, .5, false);
-    BABYLON.Animation.CreateAndStartAnimation("downlightFade", downLight, "intensity", 60, 120, -.1, .2, false);
-
+    //window resize, zoom out
     const resize = () => {
-        camera.radius = 5000 / window.innerWidth + 2.3;
+        camera.upperRadiusLimit = k / window.innerWidth + .85;
+        camera.lowerRadiusLimit = k / window.innerWidth + .85;
+        camera.radius = k / window.innerWidth + .85;
     };
     if (window) {
         window.addEventListener("resize", resize);
@@ -131,8 +134,8 @@ const onRender = (scene) => {
 
 function Name3d() {
     return (
-        <div>
-            <SceneComponent className='nameBabylon' antialias onSceneReady={onSceneReady} onRender={onRender} id="name-canvas" />
+        <div className='nameBabylon'>
+            <SceneComponent className='nameBabylonCanvas' antialias onSceneReady={onSceneReady} onRender={onRender} id="name-canvas" />
         </div>
     )
 }

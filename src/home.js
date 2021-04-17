@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
+import { gsap, TweenMax, Power2 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Name3d from "./name3d.js";
 import AboutPage from './about.js';
 import './home.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function home() {
+
     return (
         <div className="homePage">
             <Name3d />
-            <p className="slogan">a high school student looking to the future</p>
-            <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-            <AboutPage className='about-page'/>
+            <div className='scrollArrowDiv'>
+                <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+            </div>
+            <AboutPage />
         </div>
     )
 }
