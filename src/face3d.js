@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef, useEffect, useState} from 'react';
+import { gsap, TweenMax, Power2 } from "gsap";
 import * as BABYLON from '@babylonjs/core';
 import SceneComponent from "./SceneComponent";
 import './home.css';
@@ -23,7 +24,7 @@ const onSceneReady = (scene) => {
     camera.attachControl(canvas, true);
     camera.angularSensibilityX = 1500;
     camera.angularSensibilityY = 1500;
-    camera.lowerBetaLimit = (0);
+    camera.lowerBetaLimit = (0);        //around x axis and alpha is y
     camera.upperBetaLimit = (2 * Math.PI / 3);
     camera.upperRadiusLimit = k / window.innerWidth + resizeOffset;
     camera.lowerRadiusLimit = k / window.innerWidth + resizeOffset;
@@ -55,23 +56,19 @@ const onSceneReady = (scene) => {
 
     light.intensity = .7;
 
-    //BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
-
-    var silverMat = new BABYLON.StandardMaterial("silverMat", scene);
-    silverMat.diffuseColor = new BABYLON.Color3(.9,.9,.9);
-    silverMat.specularColor = new BABYLON.Color3(.8,.8,.8);
-    silverMat.alpha = 1;
-
     BABYLON.SceneLoader.ImportMesh("","", "./models/face.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
             hemiLight.includedOnlyMeshes.push(mesh);
+            scene.meshes.push(mesh);
             mesh.position.y -= .1;
             mesh.position.z += .2;
         });
     });    
 
     torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:3.5, thickness: .04, tessellation: 128, updatable: true });
-    torus.position.y = 0;
+    torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(0, 7, 400));
+    torus.rotation.z = BABYLON.Tools.ToRadians(zRotCos(0, 6, 400));
+    torus.position.y = .1;
     var torusYAnim = new BABYLON.Animation("torusYAnim", "position.y", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
         BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
     var torusYKeys = [];
@@ -96,29 +93,6 @@ const onSceneReady = (scene) => {
     bronzeMat.specularPower = 1;
     torus.material = bronzeMat;
 
-    //start fade in
-    // var silverMatR = new BABYLON.Animation("silverMatAlpha", "diffuseColor.r", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    // var silverMatG = new BABYLON.Animation("silverMatAlpha", "diffuseColor.g", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    // var silverMatB = new BABYLON.Animation("silverMatAlpha", "diffuseColor.b", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    // var alphaKeys = [];
-    // alphaKeys.push({
-    //     frame: 0,
-    //     value: 0
-    // });
-    // alphaKeys.push({
-    //     frame: 90,
-    //     value: .9
-    // });
-    // silverMatR.setKeys(alphaKeys);
-    // silverMatG.setKeys(alphaKeys);
-    // silverMatB.setKeys(alphaKeys);
-    // scene.beginDirectAnimation(silverMat, [silverMatR, silverMatB, silverMatG], 0, 90);
-    // BABYLON.Animation.CreateAndStartAnimation("lightFade", light, "intensity", 60, 120, 0, .5, false);
-    // BABYLON.Animation.CreateAndStartAnimation("downlightFade", downLight, "intensity", 60, 120, -.1, .2, false);
-
     //window resize, zoom out
     const resize = () => {
         camera.upperRadiusLimit = k / window.innerWidth + resizeOffset;
@@ -128,6 +102,18 @@ const onSceneReady = (scene) => {
     if (window) {
         window.addEventListener("resize", resize);
     }
+
+    //fade in canvas
+    scene.executeWhenReady(function() {
+        var i = 1;
+        var fadeInterval = setInterval(() => {
+            document.getElementById('faceBabylonDiv').style.opacity = i * .05;
+            i++;
+            if (i > 20){
+                clearInterval(fadeInterval);
+            }
+        }, 30);
+    })
 
 };
 
@@ -150,9 +136,10 @@ const onRender = (scene) => {
 
 
 function Face3d() {
+
     return (
-        <div className='faceBabylon'>
-            <SceneComponent className='faceBabylonCanvas' antialias onSceneReady={onSceneReady} onRender={onRender} id="name-canvas" />
+        <div className='faceBabylon' id='faceBabylonDiv'>
+            <SceneComponent className='faceBabylonCanvas' antialias onSceneReady={onSceneReady} onRender={onRender} id="face-canvas" />
         </div>
     )
 }

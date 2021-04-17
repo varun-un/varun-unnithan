@@ -11,6 +11,7 @@
     top: 1.5%;
     left: 0%;
     position: relative;
+    opacity: 0;
 }
 
 .faceBabylonCanvas, .picOrbitCanvas {
@@ -44,6 +45,7 @@
     line-height: 1;
     top: 1.7%;
     left: 54%;
+    opacity: 0;
 }
 
 [data-ca3_icon]::before {
