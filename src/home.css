@@ -1,5 +1,6 @@
 .homePage {
-    background-color: black;
+    /* background-color: black; */
+    background-image: linear-gradient(180deg, black, rgb(70, 70, 70));
     position: absolute;
     width: 100%;
     height: 600%;
@@ -118,9 +119,17 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .about-page {
     position: relative;
     top: 5%;
-    height: 30%;
+    height: 28%;
     width: 100%;
     /* background-color: navy; */
+}
+
+.bgPhrases {
+    position: absolute;
+    top:0%;
+    left:0%;
+    height: 100%;
+    width: 100%;
 }
 
 .leftDesc {
@@ -133,7 +142,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     display: inline-block;
     margin: 0%;
     padding: 0%;
-    opacity: .04;
+    opacity: .03;
     white-space:nowrap;
 }
 
@@ -147,12 +156,95 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: silver;
     font-size: 8vw;
-    opacity: .04;
+    opacity: .03;
     white-space:nowrap;
 }
 
-.picOrbit {
-    height:0%;
+.aboutContent {
+    position: absolute;
+    z-index: 2;
+    height:100%;
+    width:100%;
+    /* background-color: blanchedalmond; */
+}
+
+.intro {
     position: relative;
-    z-index: 0;
+    top: 30%;
+    left:0%;
+    height: 8vw;
+    width: 100%;
+}
+
+.rectangle {
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    left: 48%;
+    width: 0;
+    background-color: rgb(0, 0, 54);
+}
+
+.hiDiv {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height:6vw;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    color: silver;
+    z-index: 5;
+}
+
+.hi {
+    position: relative;
+    text-align: center;
+    top: 0%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6vw;
+    margin: 0%;
+    padding: 0%;
+    color: silver;
+    z-index: 5;
+}
+
+.description{
+    top: 34%;
+    position: relative;
+    display:inline-flex;
+    flex-wrap:wrap;
+    width:100%;
+    height:49%;
+}
+.flex-direction{
+    flex-direction:row;
+}
+.picOrbit{
+    width:auto;
+    height:100%;
+}
+  
+.aboutDesc{
+    width:50%;
+    color: silver;
+    text-align: center;
+    height:100%;
+    font-size: 2vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    margin: 0%;
+}
+  
+@media screen and (max-width: 500px) {
+    .flex-direction{
+        flex-direction:column;
+    }
+    .picOrbit{
+        width:auto;
+        height:49.9%;
+    }
+    .aboutDesc{
+        width:100%;
+        height:49.9%;
+    }
 }

@@ -1,5 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react';
-import { gsap, TweenMax, Power2 } from "gsap";
+import React from 'react';
 import * as BABYLON from '@babylonjs/core';
 import SceneComponent from "./SceneComponent";
 import './home.css';
@@ -20,7 +19,7 @@ const onSceneReady = (scene) => {
     var k = 5500;   //k for scale of radius refactor on window resize
     var resizeOffset = 1;     //offset of radius refactor on resize
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI * 1.65, Math.PI / 2, k / window.innerWidth + resizeOffset, BABYLON.Vector3.Zero(), scene);
+    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI * 1.6, Math.PI / 2, k / window.innerWidth + resizeOffset, BABYLON.Vector3.Zero(), scene);
     camera.attachControl(canvas, true);
     camera.angularSensibilityX = 1500;
     camera.angularSensibilityY = 1500;
