@@ -135,7 +135,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .leftDesc {
     position: relative;
     top: 0%;
-    left:-20em;
+    left:-15em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: silver;
     font-size: 8vw;
@@ -170,7 +170,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .intro {
     position: relative;
-    top: 34%;
+    top: 26vw;
     left:0%;
     height: 8vw;
     width: 100%;
@@ -210,7 +210,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .description{
-    top: 36%;
+    top: 29vw;
     position: relative;
     display:inline-flex;
     flex-wrap:wrap;
@@ -221,8 +221,8 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     flex-direction:row;
 }
 .picOrbit{
-    width:auto;
-    height:100%;
+    width:50%;
+    height:auto;
 }
   
 .aboutDesc{
@@ -231,7 +231,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     text-align: center;
     height:100%;
     font-size: 2vw;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0%;
 }
   
@@ -251,22 +251,65 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .explore {
     position: relative;
-    top: 10%;
-    height: 20%;
+    top: 8%;
+    height: 25%;
     width: 100%;
     background-color: navy;
-    display: flex;
-    flex-direction: column;
+}
+
+.exploreTextDiv {
+    position: relative;
+    top: 22%;
+    height: 10%;
+    width: 80%;
+    left: 10%;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
 
+.exploreText {
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    z-index: 5;
+}
+
+.bgExploreText {
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    margin: 0%;
+    padding: 0%;
+    color: #fd5151;
+    font-family: 'Raleway', sans-serif;
+    z-index: 0;
+}
+
+.circle-container {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    height: 85%;
+}
+
 .circle {
+    position: relative;
     width: 75px;
     height: 75px;
     border-radius: 100%;
+    left: calc(50% - 37.5px);
+    background-color: silver;
+    margin-top: 75px;
+    z-index: 6;
+}
+
+.circle.gold {
     background-color: #fdcf51;
-    margin: 50px;
 }
 
 .circle.red {
@@ -275,4 +318,23 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .circle.blue {
     background-color: #51a0fd;
+}
+
+.circleImg {
+    height: 75px;
+    width: 75px;
+    z-index: 7;
+}
+
+.circleText {
+    color: white;
+    position: absolute;
+    font-size: 3vw;
+    padding: 0%;
+    margin: 0%;
+    top: 0;
+    left: -5vw;
+    transform: scale(0,0);
+    z-index: -1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

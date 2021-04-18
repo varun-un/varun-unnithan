@@ -1,38 +1,147 @@
 import React, {useRef, useEffect, useState} from 'react';
-import { TweenMax, Power3 } from 'gsap';
+import { gsap, TweenMax, Power3, Power1 } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function explore() {
 
+    //all refs for elements
     var circle = useRef(null);
+    var circleGold = useRef(null);
     var circleRed = useRef(null);
     var circleBlue = useRef(null);
 
-    const[state, setState] = useState(false);
+    var eduImg = useRef(null);
+    var eduText = useRef(null);
+    var skillsImg = useRef(null);
+    var skillsText = useRef(null);
+    var expImg = useRef(null);
+    var expText = useRef(null);
+    var projImg = useRef(null);
+    var projText = useRef(null);
 
-    const circleExpand = function() {
-        TweenMax.to(circleRed, .8, {width:200, height: 200, ease: Power3.easeOut});
-        setState(true);
-    }
+    var bg3DText = useRef(null);
 
-    const circleShrink = function() {
-        TweenMax.to(circleRed, .8, {width:75, height: 75, ease: Power3.easeOut});
-        setState(false);
-    }
+    //state for seeing if enlarging or shrinking circles
+    const [state, setState] = useState(false);
 
-    useEffect(() => {                       //change to be on scroll, not on page load
-        TweenMax.staggerFrom([circle, circleRed, circleBlue], .8, {
+    useEffect(() => {
+        gsap.from(circle, {
+            scrollTrigger: {
+                trigger: circle,
+            },
             opacity: 0,
             x: 40,
-            ease: Power3.easeOut
-        }, .2)
+            ease: Power3.easeOut,
+            duration: 1, 
+            delay:.4
+        })
+        gsap.from(circleGold, {
+            scrollTrigger: {
+                trigger: circle,
+            },
+            opacity: 0,
+            x: 40,
+            ease: Power3.easeOut,
+            duration: 1,
+            delay: .8
+        })
+        gsap.from(circleRed, {
+            scrollTrigger: {
+                trigger: circle,
+            },
+            opacity: 0,
+            x: 40,
+            ease: Power3.easeOut,
+            duration: 1,
+            delay: 1.2
+        })
+        gsap.from(circleBlue, {
+            scrollTrigger: {
+                trigger: circle,
+            },
+            opacity: 0,
+            x: 40,
+            ease: Power3.easeOut,
+            duration: 1,
+            delay: 1.6
+        })
+    }, [])
+
+    const circleExpand = function(targetCircle, targetImg, targetText) {
+        console.log(state);
+        if (!state){
+            TweenMax.to(targetImg, .6, {width:200, height: 200, ease: Power3.easeOut});
+            TweenMax.to(targetText, .6, {scale:1, y: () => 100 - .02 * window.innerWidth, x: () => -.125 * window.innerWidth, ease: Power3.easeOut});
+            TweenMax.to(targetCircle, .6, {width:200, height: 200, ease: Power3.easeOut, onUpdate: () => setState(true)});
+        }
+    }
+
+    const circleShrink = function(targetCircle, targetImg, targetText) {
+        console.log(state);
+        if (state) {
+            TweenMax.to(targetImg, .6, {width:75, height: 75, ease: Power3.easeOut});
+            TweenMax.to(targetText, .6, {scale:0, y: 0, x:0, ease: Power3.easeOut});
+            TweenMax.to(targetCircle, .6, {width:75, height: 75, ease: Power3.easeOut, onUpdate: () => setState(false)});
+        }
+    }
+
+    // var i = 0;
+    // const changeState = (newState) => {
+    //     i++;
+    //     if (i >= 1){
+    //         setState(newState);
+    //         i = 0;
+    //     }
+    // }
+
+    useEffect(() => {
+        gsap.to(bg3DText, {
+            scrollTrigger: {
+                trigger: '.exploreText',
+                start: 'bottom bottom',
+                end: 'bottom center',
+                scrub: 1,
+            },
+            ease: Power1.easeOut,
+            x: -3,
+            y:-3
+        })
     }, []);
+
 
     return (
         <div className='explore'>
+            <div className='exploreTextDiv'>
+                <p className='exploreText'>
+                    Learn more about me and check out what I do by clicking the buttons below
+                </p>
+                <p ref={el => {bg3DText = el}} className='bgExploreText'>
+                    Learn more about me and check out what I do by clicking the buttons below
+                </p>
+            </div>
             <div className='circle-container'>
-                <div ref={el => {circle = el}} className='circle'></div>
-                <div ref={el => {circleRed = el}} onClick={state !== true ? circleExpand : circleShrink} className='circle red'></div>
-                <div ref={el => {circleBlue = el}} className='circle blue'></div>
+                <div ref={el => {circle = el}} onMouseEnter={() => circleExpand(circle, eduImg, eduText)} 
+                onMouseLeave={() => circleShrink(circle, eduImg, eduText)} className='circle'>
+                    <img ref={el => {eduImg = el}} className='circleImg' src='./static/school-icon.png'/>
+                    <p ref={el => {eduText = el}} className='circleText'>Education</p>
+                </div>
+                <div ref={el => {circleGold = el}} onMouseEnter={() => circleExpand(circleGold, skillsImg, skillsText)} 
+                onMouseLeave={() => circleShrink(circleGold, skillsImg, skillsText)} className='circle gold'>
+                    <img ref={el => {skillsImg = el}} className='circleImg' src='./static/skills-icon.png'/>
+                    <p ref={el => {skillsText = el}} className='circleText'>Skills</p>
+                </div>
+                <div ref={el => {circleRed = el}} onMouseEnter={() => circleExpand(circleRed, expImg, expText)} 
+                onMouseLeave={() => circleShrink(circleRed, expImg, expText)} className='circle red'>
+                    <img ref={el => {expImg = el}} className='circleImg' src='./static/experience-icon.png'/>
+                    <p ref={el => {expText = el}} className='circleText'>Experience</p>
+                </div>
+                <div ref={el => {circleBlue = el}} onMouseEnter={() => circleExpand(circleBlue, projImg, projText)} 
+                onMouseLeave={() => circleShrink(circleBlue, projImg, projText)} className='circle blue'>
+                    <img ref={el => {projImg = el}} className='circleImg' src='./static/project-icon.png'/>
+                    <p ref={el => {projText = el}} className='circleText'>Projects</p>
+                </div>
             </div>
         </div>
     )
