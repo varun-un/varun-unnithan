@@ -55,7 +55,7 @@ const onSceneReady = (scene) => {
 
     light.intensity = .7;
 
-    BABYLON.SceneLoader.ImportMesh("","", "./models/face.babylon", scene, function(newMeshes){
+    BABYLON.SceneLoader.ImportMesh("","", "./static/face.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
             hemiLight.includedOnlyMeshes.push(mesh);
             scene.meshes.push(mesh);

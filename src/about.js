@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from 'react';
-import { gsap, Power1 } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './home.css';
 
@@ -123,7 +123,7 @@ function about() {
                     </div>
                 </div>
                 <div className='description flex-direction'>
-                    <img src='./models/ameba.gif' className='picOrbit'/>
+                    <img src='./static/ameba.gif' className='picOrbit'/>
                     <p className='aboutDesc'>BlahBlahBlahBlahBlahBlahBlahBlahBlahB lahBlahBlahBlahBlahBlahBlah</p>
                 </div>
             </div>

@@ -118,7 +118,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .about-page {
     position: relative;
-    top: 5%;
+    top: 6.5%;
     height: 28%;
     width: 100%;
     /* background-color: navy; */
@@ -170,7 +170,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .intro {
     position: relative;
-    top: 30%;
+    top: 34%;
     left:0%;
     height: 8vw;
     width: 100%;
@@ -210,7 +210,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .description{
-    top: 34%;
+    top: 36%;
     position: relative;
     display:inline-flex;
     flex-wrap:wrap;
@@ -247,4 +247,32 @@ html body [data-ca3_iconfont="ETmodules"]::before {
         width:100%;
         height:49.9%;
     }
+}
+
+.explore {
+    position: relative;
+    top: 10%;
+    height: 20%;
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: #fdcf51;
+    margin: 50px;
+}
+
+.circle.red {
+    background-color: #fd5151;
+}
+
+.circle.blue {
+    background-color: #51a0fd;
 }

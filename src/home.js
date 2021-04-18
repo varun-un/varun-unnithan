@@ -3,6 +3,7 @@ import { gsap, TweenMax, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Face3d from "./face3d.js";
 import AboutPage from './about.js';
+import Explore from './explore.js'
 import './home.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -23,6 +24,7 @@ function home() {
                 <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
             </div>
             <AboutPage />
+            <Explore />
         </div>
     )
 }

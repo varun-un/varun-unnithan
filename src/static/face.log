@@ -1,0 +1,151 @@
+Exporter version: 2.80.1, Blender version: 2.82 (sub 7)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Users\varun\Documents\Visual Studio\varun-unnithan\dist\models\
+	Python World class constructor completed
+	processing begun of mesh:  RL_G6_Hair
+		processing begun of material:  hair2
+		Custom split normals with tangents being used
+		num positions      :  7614
+		num normals        :  7614
+		num tangents       :  30456
+		num uvs            :  15228
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5632
+	processing begun of mesh:  right eye
+		processing begun of material:  right eye mat
+			WARNING: unsupported node type(ShaderNodeRGBCurve) will trigger baking
+			processing texture eye_texture_exp
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			Baking texture, type: DIFFUSE, mapped using: UVMap
+			processing texture right_eye_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			bake time:  0 min, 1.1875 secs
+		num positions      :  294
+		num normals        :  294
+		num tangents       :  0
+		num uvs            :  588
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  526
+	processing begun of mesh:  left eye
+		processing begun of material:  left eye mat
+			WARNING: unsupported node type(ShaderNodeRGBCurve) will trigger baking
+			processing texture eye_texture_exp
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			Baking texture, type: DIFFUSE, mapped using: UVMap
+			processing texture left_eye_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			bake time:  0 min, 1.2731 secs
+		num positions      :  247
+		num normals        :  247
+		num tangents       :  0
+		num uvs            :  494
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  436
+	processing begun of mesh:  FaceBuilderHead.001
+		processing begun of material:  Material.001
+		processing begun of material:  eye
+		processing begun of material:  eyebrow
+		processing begun of material:  bottom lip
+		processing begun of material:  top lip
+			processing texture eye_texture_exp
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  face.Multimaterial#0
+		num positions      :  6676
+		num normals        :  6676
+		num tangents       :  0
+		num uvs            :  13352
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12812
+	processing begun of mesh:  eyebrow.001
+		processing begun of material:  Material.001
+		processing begun of material:  eye
+		processing begun of material:  eyebrow
+		registered as also a user of material:  Material.001
+		registered as also a user of material:  eye
+		registered as also a user of material:  eyebrow
+		processing begun of multimaterial:  face.Multimaterial#1
+		num positions      :  181
+		num normals        :  181
+		num tangents       :  0
+		num uvs            :  362
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  279
+	processing begun of mesh:  eyebrow.002
+		processing begun of material:  Material.001
+		processing begun of material:  eye
+		processing begun of material:  eyebrow
+		registered as also a user of material:  Material.001
+		registered as also a user of material:  eye
+		registered as also a user of material:  eyebrow
+		processing begun of multimaterial:  face.Multimaterial#2
+		num positions      :  181
+		num normals        :  181
+		num tangents       :  0
+		num uvs            :  362
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  279
+	processing begun of mesh:  top lip
+		processing begun of material:  Material.001
+		processing begun of material:  eye
+		processing begun of material:  eyebrow
+		processing begun of material:  bottom lip
+		processing begun of material:  top lip
+		registered as also a user of material:  Material.001
+		registered as also a user of material:  eye
+		registered as also a user of material:  eyebrow
+		registered as also a user of material:  bottom lip
+		registered as also a user of material:  top lip
+		processing begun of multimaterial:  face.Multimaterial#3
+		num positions      :  138
+		num normals        :  138
+		num tangents       :  0
+		num uvs            :  276
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  230
+	processing begun of mesh:  bottom lip
+		processing begun of material:  Material.001
+		processing begun of material:  eye
+		processing begun of material:  eyebrow
+		processing begun of material:  bottom lip
+		processing begun of material:  top lip
+		registered as also a user of material:  Material.001
+		registered as also a user of material:  eye
+		registered as also a user of material:  eyebrow
+		registered as also a user of material:  bottom lip
+		registered as also a user of material:  top lip
+		processing begun of multimaterial:  face.Multimaterial#4
+		num positions      :  168
+		num normals        :  168
+		num tangents       :  0
+		num uvs            :  336
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  276
+========= Writing of JSON file started =========
+	writing mesh:  RL_G6_Hair
+	writing mesh:  right eye
+	writing mesh:  left eye
+	writing mesh:  FaceBuilderHead.001
+	writing mesh:  eyebrow.001
+	writing mesh:  eyebrow.002
+	writing mesh:  top lip
+	writing mesh:  bottom lip
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 3.8869 secs
