@@ -3,7 +3,8 @@ import { gsap, TweenMax, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Face3d from "./face3d.js";
 import AboutPage from './about.js';
-import Explore from './explore.js'
+import Explore from './explore.js';
+import Contact from './contact.js';
 import './home.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -25,6 +26,7 @@ function home() {
             </div>
             <AboutPage />
             <Explore />
+            <Contact />
         </div>
     )
 }

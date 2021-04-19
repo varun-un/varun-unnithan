@@ -15,7 +15,7 @@
     opacity: 0;
 }
 
-.faceBabylonCanvas, .picOrbitCanvas {
+.faceBabylonCanvas, .picOrbitCanvas, .connect3DCanvas {
     margin: 0%;
     top: 0%;
     left: 0%;
@@ -337,6 +337,21 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     transform: scale(0,0);
     z-index: -1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact {
+    position: relative;
+    background-color: #fd5151;
+    top: 8%;
+    height: 22.6%;
+    width: 100%;
+}
+
+.connect3D {
+    position: absolute;
+    height:90%;
+    top:10%;
+    width: 100%;
 }
 
 

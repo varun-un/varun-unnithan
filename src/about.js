@@ -1,7 +1,6 @@
 import React, {useRef, useEffect} from 'react';
 import { gsap, Power0 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import './home.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,7 +20,7 @@ function about() {
                 trigger: bgLine1,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub: 1,
+                scrub:.5,
             },
             x: () => (window.innerWidth),
             ease: Power0.easeNone
@@ -33,7 +32,7 @@ function about() {
                 trigger: bgLine2,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub:1,
+                scrub:.5,
             },
             x: () => (window.innerWidth)/-1,
             ease: Power0.easeNone
@@ -45,7 +44,7 @@ function about() {
                 trigger: bgLine3,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub:1,
+                scrub:.5,
             },
             x: () => (window.innerWidth),
             ease: Power0.easeNone
@@ -57,7 +56,7 @@ function about() {
                 trigger: bgLine4,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub:1,
+                scrub:.5,
             },
             x: () => (window.innerWidth)/-1,
             ease: Power0.easeNone
@@ -69,7 +68,7 @@ function about() {
                 trigger: bgLine5,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub:1,
+                scrub:.5,
             },
             x: () => (window.innerWidth),
             ease: Power0.easeNone
@@ -81,7 +80,7 @@ function about() {
                 trigger: bgLine6,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub:1,
+                scrub:.5,
             },
             x: () => (window.innerWidth) * -1,
             ease: Power0.easeNone
@@ -93,7 +92,7 @@ function about() {
                 trigger: bgLine7,
                 start: 'top bottom',
                 end: '+=100%',
-                scrub:1,
+                scrub:.5,
             },
             x: () => (window.innerWidth),
             ease: Power0.easeNone
@@ -105,7 +104,7 @@ function about() {
                 trigger: '.rectangle',
                 start: 'bottom bottom',
                 end: '+=50%',
-                scrub:1,
+                scrub:.5,
             },
             width: () => .47 * (window.innerWidth),
             ease: Power0.easeNone
