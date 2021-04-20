@@ -12,21 +12,13 @@ import SceneComponent from "./SceneComponent";
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI/-2, Math.PI / 2, 5, BABYLON.Vector3.Zero(), scene);
+    var camera = new BABYLON.ArcRotateCamera("arcCamera", -.4, Math.PI / 2, 5, new BABYLON.Vector3(-2.29,2.99,-2.5), scene);
     camera.attachControl(canvas, true);
-
-    // var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0,0,-1), scene);
-    // light.parent = camera;
-    // light.intensity = .7;
-
-    // var ground = new BABYLON.MeshBuilder.CreateGround('ground', {width: 4, height: 4, updatable: true}, scene);
-    // var groundMat = new BABYLON.StandardMaterial('groundMat', scene);
-    // groundMat.diffuseColor = new BABYLON.Color3(1,1,1);
-    // ground.material = groundMat;
+    camera.position = new BABYLON.Vector3(13.9, 3.5, -9.19);
+    camera.radius = 17.48;
 
     scene.createDefaultLight()
     scene.lights[0].intensity = 1.5
-
 
     const helper = scene.createDefaultEnvironment({
       createSkybox: false,
@@ -34,9 +26,9 @@ import SceneComponent from "./SceneComponent";
       enableGroundMirror: true,
       skyboxTexture: undefined,
       groundTexture: './static/backgroundGround.png',
-      groundColor: new BABYLON.Color3(.5,.5,.5),
+      groundColor: new BABYLON.Color3(0.2,0.2,0.2),
     });
-    helper.ground.scaling = new BABYLON.Vector3(2, 2, 1);
+    helper.ground.scaling = new BABYLON.Vector3(3, 3, 1);
     var ground = helper.ground;
 
     //set up ground for reflection texture
@@ -50,34 +42,76 @@ import SceneComponent from "./SceneComponent";
     //Create reflector using the position and reflected normal of the flat surface
     var reflector = new BABYLON.Plane.FromPositionAndNormal(ground.position, glassNormal.scale(-1));
 
-    // var mirrorMaterial = new BABYLON.StandardMaterial("MirrorMat", scene);
-    // mirrorMaterial.reflectionTexture = new BABYLON.MirrorTexture("mirror", 512, scene, true);
-    // mirrorMaterial.reflectionTexture.mirrorPlane = reflector;
-    // mirrorMaterial.reflectionTexture.renderList = [];
-    // mirrorMaterial.diffuseTexture = new BABYLON.Texture('./static/backgroundGround.png', scene);
-    // mirrorMaterial.diffuseColor = new BABYLON.Color3(.5,.5,.5);
-    // console.log(ground.material);
-    // console.log(mirrorMaterial);
-    // ground.material = mirrorMaterial;
-    // ground.material.diffuseTexture.hasAlpha = true
-    // ground.material.useAlphaFromDiffuseTexture = true
-    // ground.material.alphaMode = BABYLON.Engine.ALPHA_MULTIPLY
-
-    const light = new BABYLON.SpotLight('spotlight', new BABYLON.Vector3(-2.19, 6.68, -4.62), new BABYLON.Vector3(-0.06, -0.75, 0.66), 1.7, 1, scene);
+    const light = new BABYLON.DirectionalLight('spotlight', new BABYLON.Vector3(-3, -10, 7), scene);
     light.shadowMinZ = 1;
     light.shadowMaxZ = 20;
     light.intensity = 0.7;
 
+    //create and blue shadows
     const shadowGenerator = new BABYLON.ShadowGenerator(512, light);
     shadowGenerator.usePoissonSampling = true;
 
-    // var box = new BABYLON.MeshBuilder.CreateBox('box', { size: 10}, scene);
+
+    //declare bounding boxes (empties)
+    var empty1, empty2, empty3, empty4, empty5;
+    var boundingboxes = [empty1, empty2, empty3, empty4, empty5];
+    var i = 0;
+
+    //bounding box material
+    var boundingMat = new BABYLON.StandardMaterial('boundingMat', scene);
+    boundingMat.diffuseColor = new BABYLON.Color3(0,0,0);
+    boundingMat.alpha = 0;
+
+    //create array for imported meshes
+    scene['linkMeshes'] = [];
 
     BABYLON.SceneLoader.ImportMesh("","", "./static/connect.babylon", scene, function(newMeshes){
-        newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
-            // mesh.scaling = new BABYLON.Vector3(1,1,1);
+        newMeshes.forEach(function (mesh) {         
+            //register mesh, shadows and reflection
             shadowGenerator.getShadowMap().renderList.push(mesh);
             ground.material.reflectionTexture.renderList.push(mesh);
+            scene.linkMeshes.push(mesh);
+
+            //instantiate bounding box for the mesh
+            boundingboxes[i] = BABYLON.MeshBuilder.CreateBox(mesh.name + 'bound', {
+                width: 2 * mesh.getBoundingInfo().boundingBox.extendSize.x,
+                height: 2 * mesh.getBoundingInfo().boundingBox.extendSize.y,
+                depth: 2 * mesh.getBoundingInfo().boundingBox.extendSize.z,
+                updatable: true
+            }, scene);
+            boundingboxes[i].parent = mesh;
+            boundingboxes[i].material = boundingMat;
+            mesh.showBoundingBox = true;
+
+            //offset initial mesh rotation
+            mesh.rotation.y += i*BABYLON.Tools.ToRadians(70);
+
+            //set mesh rotation speed
+            mesh['rotSpeed'] = BABYLON.Tools.ToRadians(12/60);
+
+            var scaleFactor = 1.1;
+            var reverseScaleFactor = 1/scaleFactor;
+
+            boundingboxes[i].actionManager = new BABYLON.ActionManager(scene);
+            boundingboxes[i].actionManager.registerAction(
+                new BABYLON.ExecuteCodeAction(
+                    BABYLON.ActionManager.OnPointerOverTrigger,
+                    () => {
+                        mesh.scaling = new BABYLON.Vector3(scaleFactor,scaleFactor,scaleFactor);
+                        mesh.rotSpeed /= 2;
+                    },
+                )
+              )
+              boundingboxes[i].actionManager.registerAction(
+                new BABYLON.ExecuteCodeAction(
+                    BABYLON.ActionManager.OnPointerOutTrigger,
+                    () => {
+                        mesh.scaling = new BABYLON.Vector3(reverseScaleFactor,reverseScaleFactor,reverseScaleFactor);
+                        mesh.rotSpeed *= 2;
+                    },
+                )
+              )
+              i++;
         });
     });  
 
@@ -122,7 +156,9 @@ import SceneComponent from "./SceneComponent";
  * @param {BABYLON.Scene} scene 
  */
 const onRender = (scene) => {
-    
+    for (var i = 0; i < scene.linkMeshes.length; i++) {
+        scene.linkMeshes[i].rotation.y += scene.linkMeshes[i].rotSpeed;
+    }
 }
 
 

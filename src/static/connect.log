@@ -14,10 +14,10 @@ Exporter version: 2.80.1, Blender version: 2.82 (sub 7)
 	WARNING: No active camera has been assigned, or is not in a currently selected Blender layer
 	processing begun of mesh:  github
 		processing begun of material:  SVGMat.001
-		num positions      :  1203
-		num normals        :  1203
+		num positions      :  1224
+		num normals        :  1224
 		num tangents       :  0
-		num uvs            :  2406
+		num uvs            :  2448
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  1196
@@ -37,10 +37,10 @@ Exporter version: 2.80.1, Blender version: 2.82 (sub 7)
 		num triangles      :  348
 	processing begun of mesh:  resume
 		processing begun of material:  SVGMat.022
-		num positions      :  1512
-		num normals        :  1512
+		num positions      :  1525
+		num normals        :  1525
 		num tangents       :  0
-		num uvs            :  3024
+		num uvs            :  3050
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  1420
@@ -60,10 +60,10 @@ Exporter version: 2.80.1, Blender version: 2.82 (sub 7)
 		processing begun of material:  SVGMat.044
 		processing begun of material:  SVGMat.045
 		processing begun of multimaterial:  connect.Multimaterial#2
-		num positions      :  992
-		num normals        :  992
+		num positions      :  1021
+		num normals        :  1021
 		num tangents       :  0
-		num uvs            :  1984
+		num uvs            :  2042
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  940
@@ -75,4 +75,4 @@ Exporter version: 2.80.1, Blender version: 2.82 (sub 7)
 	writing mesh:  linkedin
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 0.2628 secs
+elapsed time:  0 min, 0.2337 secs

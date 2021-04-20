@@ -24,8 +24,8 @@ function home() {
     document.addEventListener('mousedown', parallax);
     function parallax(e){
         this.querySelectorAll('.titleName').forEach(element => {
-            let x = (window.innerWidth - e.pageX * 10) / 120;
-            let y = (window.innerHeight - e.pageY * 12) / 100;
+            let x = (window.innerWidth - e.pageX * 10) / 160;
+            let y = (window.innerHeight - e.pageY * 12) / 140;
             element.style.transform = `translate(${x}px, ${y}px)`;
         });
     }

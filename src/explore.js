@@ -26,6 +26,7 @@ function explore() {
     //state for seeing if enlarging or shrinking circles
     const [state, setState] = useState(false);
 
+    //fade in at load or scroll
     useEffect(() => {
         gsap.from(circle, {
             scrollTrigger: {
@@ -96,6 +97,7 @@ function explore() {
     //     }
     // }
 
+    //'drop shadow' of text comes out
     useEffect(() => {
         gsap.to(bg3DText, {
             scrollTrigger: {
