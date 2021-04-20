@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react';
+import React, {useRef, useEffect} from 'react';
 import { gsap, TweenMax, Power3, Power1 } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -22,9 +22,6 @@ function explore() {
     var projText = useRef(null);
 
     var bg3DText = useRef(null);
-
-    //state for seeing if enlarging or shrinking circles
-    const [state, setState] = useState(false);
 
     //fade in at load or scroll
     useEffect(() => {
@@ -71,21 +68,15 @@ function explore() {
     }, [])
 
     const circleExpand = function(targetCircle, targetImg, targetText) {
-        console.log(state);
-        if (!state){
             TweenMax.to(targetImg, .6, {width:200, height: 200, ease: Power3.easeOut});
             TweenMax.to(targetText, .6, {scale:1, y: () => 100 - .02 * window.innerWidth, x: () => -.125 * window.innerWidth, ease: Power3.easeOut});
-            TweenMax.to(targetCircle, .6, {width:200, height: 200, ease: Power3.easeOut, onUpdate: () => setState(true)});
-        }
+            TweenMax.to(targetCircle, .6, {width:200, height: 200, ease: Power3.easeOut});
     }
 
     const circleShrink = function(targetCircle, targetImg, targetText) {
-        console.log(state);
-        if (state) {
             TweenMax.to(targetImg, .6, {width:75, height: 75, ease: Power3.easeOut});
             TweenMax.to(targetText, .6, {scale:0, y: 0, x:0, ease: Power3.easeOut});
-            TweenMax.to(targetCircle, .6, {width:75, height: 75, ease: Power3.easeOut, onUpdate: () => setState(false)});
-        }
+            TweenMax.to(targetCircle, .6, {width:75, height: 75, ease: Power3.easeOut});
     }
 
     // var i = 0;
@@ -111,7 +102,6 @@ function explore() {
             y: () => (0.00163398693 * window.innerWidth + .5)
         })
     }, []);
-    console.log(-0.00130718954 * window.innerWidth + 1)
 
 
     return (

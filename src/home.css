@@ -224,7 +224,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-size: 6vw;
     margin: 0%;
     padding: 0%;
-    color: silver;
+    color: white;
     z-index: 5;
 }
 
@@ -362,13 +362,42 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     position: relative;
     /* background-color: #fd5151; */
     top: 8%;
-    height: 22.6%;
+    height: 22.65%;
     width: 100%;
 }
 
 .connect3D {
     position: absolute;
     height:90%;
+    max-height: 90%;
     top:10%;
     width: 100%;
+}
+
+.connectTitle {
+    position: absolute;
+    top: 31%;
+    left: 8%;
+    color: white;
+    font-size: 8vw;
+    font-family: 'Raleway', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: underline;
+    text-decoration-color: #fd5151;
+    text-underline-offset: 10px;
+}
+
+.connectDesc {
+    position: absolute;
+    top: calc(31% + 12vw);
+    left: 8%;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    width: 32%;
+    font-size: calc(1.5vw + 6px);
+    /* background-color: #51a0fd; */
+    font-family: 'Raleway', sans-serif;
+    color: white;
 }

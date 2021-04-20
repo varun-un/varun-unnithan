@@ -7,15 +7,17 @@ import SceneComponent from "./SceneComponent";
  */
  const onSceneReady = (scene) => {
 
-    // scene.clearColor = new BABYLON.Color4(.5,.5,.5,1);
+    // scene.clearColor = new BABYLON.Color4(1,.5,.5,1);
     scene.clearColor = new BABYLON.Color4(0,0,0,0);
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", -.4, Math.PI / 2, 5, new BABYLON.Vector3(-2.29,2.99,-2.5), scene);
-    camera.attachControl(canvas, true);
-    camera.position = new BABYLON.Vector3(13.9, 3.5, -9.19);
-    camera.radius = 17.48;
+    var k = 6000;
+    var resizeOffset = 13.57;
+
+    var camera = new BABYLON.ArcRotateCamera("arcCamera", -.4, Math.PI / 2, k / window.innerWidth + resizeOffset, new BABYLON.Vector3(-2.29,3.1,-2.5), scene);
+    camera.upperBetaLimit = Math.PI/2 + .12;
+    camera.target.z = -0.00227864583 * window.innerWidth + 1;
 
     scene.createDefaultLight()
     scene.lights[0].intensity = 1.5
@@ -62,8 +64,15 @@ import SceneComponent from "./SceneComponent";
     boundingMat.diffuseColor = new BABYLON.Color3(0,0,0);
     boundingMat.alpha = 0;
 
-    //create array for imported meshes
+    //create set for meshes and links
     scene['linkMeshes'] = [];
+    var links = {
+        github: 'https://github.com/varun-un',
+        gmail: 'mailto:varun.unnithan33@gmail.com',
+        resume: './static/Varun Unnithan Resume.pdf',
+        devpost: 'https://devpost.com/varun-unnithan33',
+        linkedin: 'https://www.linkedin.com/in/varun-unnithan'
+    }
 
     BABYLON.SceneLoader.ImportMesh("","", "./static/connect.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         
@@ -81,13 +90,12 @@ import SceneComponent from "./SceneComponent";
             }, scene);
             boundingboxes[i].parent = mesh;
             boundingboxes[i].material = boundingMat;
-            mesh.showBoundingBox = true;
 
             //offset initial mesh rotation
             mesh.rotation.y += i*BABYLON.Tools.ToRadians(70);
 
             //set mesh rotation speed
-            mesh['rotSpeed'] = BABYLON.Tools.ToRadians(12/60);
+            mesh['rotSpeed'] = BABYLON.Tools.ToRadians(16/60);
 
             var scaleFactor = 1.1;
             var reverseScaleFactor = 1/scaleFactor;
@@ -101,8 +109,8 @@ import SceneComponent from "./SceneComponent";
                         mesh.rotSpeed /= 2;
                     },
                 )
-              )
-              boundingboxes[i].actionManager.registerAction(
+            )
+            boundingboxes[i].actionManager.registerAction(
                 new BABYLON.ExecuteCodeAction(
                     BABYLON.ActionManager.OnPointerOutTrigger,
                     () => {
@@ -110,46 +118,45 @@ import SceneComponent from "./SceneComponent";
                         mesh.rotSpeed *= 2;
                     },
                 )
-              )
-              i++;
+            )
+
+            //go to link
+            boundingboxes[i].actionManager.registerAction(
+                new BABYLON.ExecuteCodeAction(
+                    BABYLON.ActionManager.OnPickTrigger,
+                    () => {
+                        window.open(links[mesh.name]);
+                    },
+                )
+            )
+
+            i++;
         });
     });  
 
-    function showWorldAxis(size) {
-        var makeTextPlane = function(text, color, size) {
-            var dynamicTexture = new BABYLON.DynamicTexture("DynamicTexture", 50, scene, true);
-            dynamicTexture.hasAlpha = true;
-            dynamicTexture.drawText(text, 5, 40, "bold 36px Arial", color , "transparent", true);
-            var plane = BABYLON.Mesh.CreatePlane("TextPlane", size, scene, true);
-            plane.material = new BABYLON.StandardMaterial("TextPlaneMaterial", scene);
-            plane.material.backFaceCulling = false;
-            plane.material.specularColor = new BABYLON.Color3(0, 0, 0);
-            plane.material.diffuseTexture = dynamicTexture;
-        return plane;
-            };
-        var axisX = BABYLON.Mesh.CreateLines("axisX", [ 
-            BABYLON.Vector3.Zero(), new BABYLON.Vector3(size, 0, 0), new BABYLON.Vector3(size * 0.95, 0.05 * size, 0), 
-            new BABYLON.Vector3(size, 0, 0), new BABYLON.Vector3(size * 0.95, -0.05 * size, 0)
-            ], scene);
-        axisX.color = new BABYLON.Color3(1, 0, 0);
-        var xChar = makeTextPlane("X", "red", size / 10);
-        xChar.position = new BABYLON.Vector3(0.9 * size, -0.05 * size, 0);
-        var axisY = BABYLON.Mesh.CreateLines("axisY", [
-            BABYLON.Vector3.Zero(), new BABYLON.Vector3(0, size, 0), new BABYLON.Vector3( -0.05 * size, size * 0.95, 0), 
-            new BABYLON.Vector3(0, size, 0), new BABYLON.Vector3( 0.05 * size, size * 0.95, 0)
-            ], scene);
-        axisY.color = new BABYLON.Color3(0, 1, 0);
-        var yChar = makeTextPlane("Y", "green", size / 10);
-        yChar.position = new BABYLON.Vector3(0, 0.9 * size, -0.05 * size);
-        var axisZ = BABYLON.Mesh.CreateLines("axisZ", [
-            BABYLON.Vector3.Zero(), new BABYLON.Vector3(0, 0, size), new BABYLON.Vector3( 0 , -0.05 * size, size * 0.95),
-            new BABYLON.Vector3(0, 0, size), new BABYLON.Vector3( 0, 0.05 * size, size * 0.95)
-            ], scene);
-        axisZ.color = new BABYLON.Color3(0, 0, 1);
-        var zChar = makeTextPlane("Z", "blue", size / 10);
-        zChar.position = new BABYLON.Vector3(0, 0.05 * size, 0.9 * size);
+    // camera motion
+    // document.addEventListener('mousemove', logKey);
+    function logKey(e) {
+        var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
+        var yLoc = (e.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2);
+        updateCam(xLoc, yLoc);
+    }
+    function updateCam(xLoc, yLoc){
+        var newAlpha = -1 * xLoc * BABYLON.Tools.ToRadians(8) + (-.4);
+        var newBeta = -1 * yLoc * BABYLON.Tools.ToRadians(3) + (Math.PI / 2);
+        camera.alpha = newAlpha;
+        camera.beta = newBeta;
+    }   
+
+    //window resize, zoom out
+    const resize = () => {
+        var radius =  k / window.innerWidth + resizeOffset;
+        camera.radius = radius;
+        camera.target.z = -0.00227864583 * window.innerWidth + 1;
     };
-    showWorldAxis(15);
+    if (window) {
+        window.addEventListener("resize", resize);
+    }
 }
 
 /**

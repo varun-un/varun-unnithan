@@ -32,21 +32,6 @@ const onSceneReady = (scene) => {
     camera.panningAxis = new BABYLON.Vector3(1,1,0);
     camera.panningInertia = .9;
     camera.panningSensibility = 0;
-
-    //camera motion
-    // document.addEventListener('mousemove', logKey);
-    // function logKey(e) {
-    //     var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
-    //     var yLoc = (e.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2);
-    //     updateCam(xLoc, yLoc);
-    // }
-    // function updateCam(xLoc, yLoc){
-    //     var newAlpha = -1 * xLoc * BABYLON.Tools.ToRadians(30) + (Math.PI / -2);
-    //     var newBeta = -1 * yLoc * BABYLON.Tools.ToRadians(30) + (Math.PI / 2);
-    //     camera.alpha = newAlpha;
-    //     camera.beta = newBeta;
-    // }   
-
     
     var hemiLight = new BABYLON.HemisphericLight("downLight", new BABYLON.Vector3(0,1,0), scene);
     hemiLight.intensity = .5;
@@ -64,34 +49,33 @@ const onSceneReady = (scene) => {
         });
     });    
 
-    torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:3.5, thickness: .04, tessellation: 128, updatable: true });
-    torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(0, 7, 400));
-    torus.rotation.z = BABYLON.Tools.ToRadians(zRotCos(0, 6, 400));
-    torus.position.y = -.4;
-    var torusYAnim = new BABYLON.Animation("torusYAnim", "position.y", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-        BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    var torusYKeys = [];
-    torusYKeys.push({
-        frame: 0,
-        value: -.4
-    });
-    torusYKeys.push({
-        frame: 900,
-        value: .3
-    });
-    torusYKeys.push({
-        frame: 1800,
-        value: -.4
-    });
-    torusYAnim.setKeys(torusYKeys);
-    scene.beginDirectAnimation(torus, [torusYAnim], 0, 1800, true);
+    // torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:3.5, thickness: .04, tessellation: 128, updatable: true });
+    // torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(0, 7, 400));
+    // torus.rotation.z = BABYLON.Tools.ToRadians(zRotCos(0, 6, 400));
+    // torus.position.y = -.4;
+    // var torusYAnim = new BABYLON.Animation("torusYAnim", "position.y", 60, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+    //     BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    // var torusYKeys = [];
+    // torusYKeys.push({
+    //     frame: 0,
+    //     value: -.4
+    // });
+    // torusYKeys.push({
+    //     frame: 900,
+    //     value: .3
+    // });
+    // torusYKeys.push({
+    //     frame: 1800,
+    //     value: -.4
+    // });
+    // torusYAnim.setKeys(torusYKeys);
+    // scene.beginDirectAnimation(torus, [torusYAnim], 0, 1800, true);
 
-    var bronzeMat = new BABYLON.StandardMaterial("bronzeMat", scene);
-    bronzeMat.diffuseColor = new BABYLON.Color3(1.0, 0.766, 0.336);
-    bronzeMat.specularColor = new BABYLON.Color3(1.0, 0.9, 0.6);
-    bronzeMat.specularPower = 1;
-    bronzeMat.alpha = 0;
-    torus.material = bronzeMat;
+    // var bronzeMat = new BABYLON.StandardMaterial("bronzeMat", scene);
+    // bronzeMat.diffuseColor = new BABYLON.Color3(1.0, 0.766, 0.336);
+    // bronzeMat.specularColor = new BABYLON.Color3(1.0, 0.9, 0.6);
+    // bronzeMat.specularPower = 1;
+    // torus.material = bronzeMat;
 
     //window resize, zoom out
     const resize = () => {
@@ -117,21 +101,21 @@ const onSceneReady = (scene) => {
 
 };
 
-var frame = 0;
-var speed = 1000/60;
-//equations for the rotation axis of the torus
-const xRotSin = (curFrame, amplitude, period) => (amplitude * Math.sin(((Math.PI * 2) / period) * curFrame));
-const zRotCos = (curFrame, amplitude, period) => (amplitude * Math.cos(((Math.PI * 2) / period) * curFrame));
+// var frame = 0;
+// var speed = 1000/60;
+// //equations for the rotation axis of the torus
+// const xRotSin = (curFrame, amplitude, period) => (amplitude * Math.sin(((Math.PI * 2) / period) * curFrame));
+// const zRotCos = (curFrame, amplitude, period) => (amplitude * Math.cos(((Math.PI * 2) / period) * curFrame));
 /**
  * 
  * @param {BABYLON.Scene} scene 
  */
 const onRender = (scene) => {
-    if (torus !== undefined) {
-        frame += scene.getEngine().getDeltaTime() / speed;
-        torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(frame, 7, 400));
-        torus.rotation.z = BABYLON.Tools.ToRadians(zRotCos(frame, 6, 400));
-    }
+    // if (torus !== undefined) {
+    //     frame += scene.getEngine().getDeltaTime() / speed;
+    //     torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(frame, 7, 400));
+    //     torus.rotation.z = BABYLON.Tools.ToRadians(zRotCos(frame, 6, 400));
+    // }
 };
 
 
