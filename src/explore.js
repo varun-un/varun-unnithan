@@ -105,10 +105,11 @@ function explore() {
                 scrub: 1,
             },
             ease: Power1.easeOut,
-            x: -3,
-            y:-3
+            x: () => (-0.00163398693 * window.innerWidth - .5),
+            y: () => (0.00163398693 * window.innerWidth + .5)
         })
     }, []);
+    console.log(-0.00130718954 * window.innerWidth + 1)
 
 
     return (
