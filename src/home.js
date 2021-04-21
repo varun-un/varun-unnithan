@@ -5,6 +5,7 @@ import Face3d from "./face3d.js";
 import AboutPage from './about.js';
 import Explore from './explore.js';
 import Contact from './contact.js';
+import { Footer } from './global.js';
 import './home.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -31,20 +32,23 @@ function home() {
     }
 
     return (
-        <div className="homePage">
-            <Face3d />
-            <section>
-                <h2 ref={el => {titleElem2 = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</h2>
-                <div className='titleTextBox'>
-                    <h2 ref={el => {titleElem = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</h2>
+        <div>
+            <div className="homePage">
+                <Face3d />
+                <section>
+                    <h2 ref={el => {titleElem2 = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</h2>
+                    <div className='titleTextBox'>
+                        <h2 ref={el => {titleElem = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</h2>
+                    </div>
+                </section>
+                <div className='scrollArrowDiv'>
+                    <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
                 </div>
-            </section>
-            <div className='scrollArrowDiv'>
-                <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+                <AboutPage />
+                <Explore />
+                <Contact />
             </div>
-            <AboutPage />
-            <Explore />
-            <Contact />
+            <Footer top='600' />
         </div>
     )
 }

@@ -41,11 +41,17 @@ function Footer(props) {
     return (
         <div style={{top: props.top + '%'}} className='footer'>
             <div className='imgContainer'>
-                <img src='./static/github.png' className='linkIcon' alt='Github'></img>
-                <img src='./static/linkedin.png' className='linkIcon' alt='Linked'></img>
-                <img src='./static/devpost.png' className='linkIcon' alt='Devpost'></img>
+                <a href='https://github.com/varun-un'>
+                    <img src='./static/github.png' className='linkIcon' alt='Github'></img>
+                </a>
+                <a href='https://www.linkedin.com/in/varun-unnithan'>
+                    <img src='./static/linkedin.png' className='linkIcon' alt='Linked'></img>
+                </a>
+                <a href='https://devpost.com/varun-unnithan33'>
+                    <img src='./static/devpost.png' className='linkIcon' alt='Devpost'></img>
+                </a>
             </div>
-            <p className='footerMessage'>Created by Varun Unnithan, 2021 | varun.unnithan33@gmail.com</p>
+            <p className='footerMessage'>Created by Varun Unnithan 2021 | varun.unnithan33@gmail.com</p>
         </div>
     )
 }
