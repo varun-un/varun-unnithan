@@ -14,6 +14,11 @@
     position: relative;
     opacity: 0;
     z-index: 2;
+    cursor: grab;
+}
+
+.faceBabylon:active {
+    cursor: grabbing;
 }
 
 .faceBabylonCanvas, .picOrbitCanvas, .connect3DCanvas {
@@ -87,7 +92,6 @@ section h2 {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
 	background-size: contain;
 	background-repeat: no-repeat;
-    cursor:pointer;
 	height: 60px;
 	width: 80px;
 	line-height: 60px;
@@ -100,7 +104,7 @@ section h2 {
 	color: #FFF;
 	text-align: center;
 	font-size: 70px;
-	z-index: 100;
+	z-index: 5;
 	text-decoration: none;
 	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
 
@@ -325,6 +329,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     background-color: silver;
     margin-top: 75px;
     z-index: 6;
+    cursor: pointer;
 }
 
 .circle.gold {
@@ -348,11 +353,11 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .circleText {
     color: white;
     position: absolute;
-    font-size: 3vw;
+    font-size: calc(2vw + 8px);
     padding: 0%;
     margin: 0%;
     top: 0;
-    left: -5vw;
+    left: calc(-4vw - 8px);
     transform: scale(0,0);
     z-index: -1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -362,7 +367,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     position: relative;
     /* background-color: #fd5151; */
     top: 8%;
-    height: 22.65%;
+    height: 22.7%;
     width: 100%;
 }
 
@@ -376,7 +381,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .connectTitle {
     position: absolute;
-    top: 31%;
+    top: 25.5%;
     left: 8%;
     color: white;
     font-size: 8vw;
@@ -390,7 +395,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .connectDesc {
     position: absolute;
-    top: calc(31% + 12vw);
+    top: calc(24% + 9vw + 6vh);
     left: 8%;
     margin: 0%;
     padding: 0%;

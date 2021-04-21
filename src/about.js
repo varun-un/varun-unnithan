@@ -130,7 +130,7 @@ function about() {
                     </div>
                 </div>
                 <div className='description flex-direction'>
-                    <img src='./static/ameba.gif' className='picOrbit'/>
+                    <img src='./static/ameba.gif' className='picOrbit' alt='A headshot of Varun Unnithan' />
                     <p className='aboutDesc'>BlahBlahBlahBlahBlahBlahBlahBlahBlahB lahBlahBlahBlahBlahBlahBlah</p>
                 </div>
             </div>

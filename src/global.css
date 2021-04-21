@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.692);
+    border: none;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    transition: .2s;
+}
+
+.navbar:hover {
+    background-color:rgb(0, 0, 0);
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: .2s;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.menu-bars {
+    width: 27.6px;
+    height: 27.6px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 60px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover {
+        color: #fd5151;
+    }
+
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(40,40,40);
+}
+
+.imgContainer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 50px;
+    width: 300px;
+}
+
+.linkIcon {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    background-color:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.linkIcon:hover {
+    background-color: rgb(70,70,70);
+}
+
+.footerMessage {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 11px;
+    color: gray;
+}

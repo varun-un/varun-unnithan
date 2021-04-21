@@ -17,7 +17,7 @@ import SceneComponent from "./SceneComponent";
 
     var camera = new BABYLON.ArcRotateCamera("arcCamera", -.4, Math.PI / 2, k / window.innerWidth + resizeOffset, new BABYLON.Vector3(-2.29,3.1,-2.5), scene);
     camera.upperBetaLimit = Math.PI/2 + .12;
-    camera.target.z = -0.00227864583 * window.innerWidth + 1;
+    camera.target.z = -0.0029296875 * window.innerWidth + 2;
 
     scene.createDefaultLight()
     scene.lights[0].intensity = 1.5
@@ -135,7 +135,7 @@ import SceneComponent from "./SceneComponent";
     });  
 
     // camera motion
-    // document.addEventListener('mousemove', logKey);
+    document.addEventListener('mousemove', logKey);
     function logKey(e) {
         var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
         var yLoc = (e.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2);
@@ -152,7 +152,7 @@ import SceneComponent from "./SceneComponent";
     const resize = () => {
         var radius =  k / window.innerWidth + resizeOffset;
         camera.radius = radius;
-        camera.target.z = -0.00227864583 * window.innerWidth + 1;
+        camera.target.z = -0.0029296875 * window.innerWidth + 2;
     };
     if (window) {
         window.addEventListener("resize", resize);
