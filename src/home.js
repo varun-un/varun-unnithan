@@ -41,9 +41,6 @@ function home() {
                         <h2 ref={el => {titleElem = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</h2>
                     </div>
                 </section>
-                <div className='scrollArrowDiv'>
-                    <a className="scroll-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-                </div>
                 <AboutPage />
                 <Explore />
                 <Contact />

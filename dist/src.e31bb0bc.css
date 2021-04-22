@@ -74,66 +74,9 @@ section h2 {
     color: #fd5151;
 }
 
-
-[data-ca3_icon]::before {
-    font-weight: normal;
-    content: attr(data-ca3_icon);
-}
-
-.scrollArrowDiv {
-    height: 70px;
-    width: 100%;
-    position: relative;
-    top: .4%;
-    left: 0%;
-}
-
-.scroll-arrow {
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 60px;
-	width: 80px;
-	line-height: 60px;
-	position: relative;
-    border: 1px red;
-    top: 0%;
-	left: calc(50% - 40px);
-    display:block;
-	bottom: 0px;
-	color: #FFF;
-	text-align: center;
-	font-size: 70px;
-	z-index: 5;
-	text-decoration: none;
-	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-
-	-webkit-animation: ca3_fade_move_down 4s ease-in-out infinite;
-	-moz-animation:    ca3_fade_move_down 4s ease-in-out infinite;
-	animation:         ca3_fade_move_down 4s ease-in-out infinite;
-}
-
-
-/*animated scroll arrow animation*/
-@-webkit-keyframes ca3_fade_move_down {
-  0%   { -webkit-transform:translate(0,-10px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -webkit-transform:translate(0,10px); opacity: 0; }
-}
-@-moz-keyframes ca3_fade_move_down {
-  0%   { -moz-transform:translate(0,-10px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -moz-transform:translate(0,10px); opacity: 0; }
-}
-@keyframes ca3_fade_move_down {
-  0%   { transform:translate(0,-10px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { transform:translate(0,10px); opacity: 0; }
-}
-
 .about-page {
     position: relative;
-    top: 6.5%;
+    top: 8.5%;
     height: 28%;
     width: 100%;
     /* background-color: navy; */
@@ -268,7 +211,7 @@ section h2 {
 
 .explore {
     position: relative;
-    top: 8%;
+    top: 10%;
     height: 25%;
     width: 100%;
     /* background-color: navy; */
@@ -361,7 +304,7 @@ section h2 {
     position: relative;
     /* background-color: #fd5151; */
     top: 8%;
-    height: 22.7%;
+    height: 24.5%;
     width: 100%;
 }
 
