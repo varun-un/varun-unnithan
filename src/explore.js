@@ -10,7 +10,7 @@ function explore() {
     //all refs for elements
     var circle = useRef(null);
     var circleGold = useRef(null);
-    var circleRed = useRef(null);
+    var circlePurple = useRef(null);
     var circleBlue = useRef(null);
 
     var eduImg = useRef(null);
@@ -46,7 +46,7 @@ function explore() {
             duration: 1,
             delay: .8
         })
-        gsap.from(circleRed, {
+        gsap.from(circlePurple, {
             scrollTrigger: {
                 trigger: circle,
             },
@@ -131,8 +131,8 @@ function explore() {
                     </div>
                 </Link>
                 <Link to="/experience">
-                    <div ref={el => {circleRed = el}} onMouseEnter={() => circleExpand(circleRed, expImg, expText)} 
-                    onMouseLeave={() => circleShrink(circleRed, expImg, expText)} className='circle red'>
+                    <div ref={el => {circlePurple = el}} onMouseEnter={() => circleExpand(circlePurple, expImg, expText)} 
+                    onMouseLeave={() => circleShrink(circlePurple, expImg, expText)} className='circle purple'>
                         <img ref={el => {expImg = el}} className='circleImg' src='./static/experience-icon.png'/>
                         <p ref={el => {expText = el}} className='circleText'>Experience</p>
                     </div>

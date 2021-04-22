@@ -5,6 +5,8 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
+    margin: 0;
+    padding: 0;
 }
   
 ::-webkit-scrollbar-track {
@@ -12,12 +14,16 @@ body {
 }
    
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #fd5151; 
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #e24a4a; 
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #d64646;  
 }
 
 * {

@@ -1,0 +1,26 @@
+{
+    "name": "Varun Unnithan",
+    "short_name": "Varun Unnithan",
+    "icons": [
+        {
+            "src": "public/favicon.ico",
+            "type": "image/x-icon",
+            "sizes": "32x32 24x24 16x16"
+        },
+        {
+            "src": "public/logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "public/logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "theme_color": "#fd5151",
+    "background_color": "#000000",
+    "display": "standalone",
+    "description": "A website to highlight Varun Unnithan, as well as his skills and the work he has done."
+}

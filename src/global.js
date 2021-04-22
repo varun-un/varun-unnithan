@@ -15,7 +15,7 @@ function Header(props) {
                 <span className="navbar-toggle" onClick={toggle} id="js-navbar-toggle">
                     <img src='./static/menu-icon.png' className='menu-bars'></img>
                 </span>
-                <a href="#" className="logo"><b>Varun Unnithan</b></a>
+                <Link to="/" className="logo"><b>Varun Unnithan</b></Link>
                 <ul className="main-nav" id="js-menu">
                     <li>
                         <Link to="/" className={`nav-links  ${props.location.pathname === "/" ? "current" : ""}`}>

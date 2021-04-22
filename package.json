@@ -1,15 +1,15 @@
 {
-  "name": "portfolio-site",
+  "name": "varun-unnithan",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website to highlight Varun Unnithan, as well as his skills and the work he has done.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "@babylonjs/core": "^4.2.0",
     "babylonjs": "^4.2.0",
