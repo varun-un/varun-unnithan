@@ -1,5 +1,7 @@
 import React from 'react';
-import * as BABYLON from '@babylonjs/core';
+import {
+    Scene, Color4, ArcRotateCamera, Vector3, HemisphericLight, SceneLoader, Tools
+} from '@babylonjs/core';
 import SceneComponent from "./SceneComponent";
 import './home.css';
 
@@ -7,19 +9,19 @@ import './home.css';
 let torus;
 /**
  * 
- * @param {BABYLON.Scene} scene 
+ * @param {Scene} scene 
  */
 const onSceneReady = (scene) => {
 
     // scene.clearColor = new BABYLON.Color4(.5,.5,.5,1);
-    scene.clearColor = new BABYLON.Color4(0,0,0,0);
+    scene.clearColor = new Color4(0,0,0,0);
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
     var k = 5500;   //k for scale of radius refactor on window resize
     var resizeOffset = 1;     //offset of radius refactor on resize
 
-    var camera = new BABYLON.ArcRotateCamera("arcCamera", Math.PI * 1.6, Math.PI / 2, k / window.innerWidth + resizeOffset, BABYLON.Vector3.Zero(), scene);
+    var camera = new ArcRotateCamera("arcCamera", Math.PI * 1.6, Math.PI / 2, k / window.innerWidth + resizeOffset, Vector3.Zero(), scene);
     camera.attachControl(canvas, true);
     camera.angularSensibilityX = 1500;
     camera.angularSensibilityY = 1500;
@@ -29,18 +31,18 @@ const onSceneReady = (scene) => {
     camera.lowerRadiusLimit = k / window.innerWidth + resizeOffset;
     camera.wheelDeltaPercentage = 0;
     camera.allowUpsideDown = true;
-    camera.panningAxis = new BABYLON.Vector3(1,1,0);
+    camera.panningAxis = new Vector3(1,1,0);
     camera.panningInertia = .9;
     camera.panningSensibility = 0;
     
-    var hemiLight = new BABYLON.HemisphericLight("downLight", new BABYLON.Vector3(0,1,0), scene);
+    var hemiLight = new HemisphericLight("downLight", new Vector3(0,1,0), scene);
     hemiLight.intensity = .5;
-    var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0,0,-1), scene);
+    var light = new HemisphericLight("light", new Vector3(0,0,-1), scene);
     light.parent = camera;
 
     light.intensity = .7;
 
-    BABYLON.SceneLoader.ImportMesh("","", "./static/face.babylon", scene, function(newMeshes){
+    SceneLoader.ImportMesh("","", "./static/face.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
             hemiLight.includedOnlyMeshes.push(mesh);
             scene.meshes.push(mesh);
@@ -48,7 +50,7 @@ const onSceneReady = (scene) => {
             mesh.position.z += .2;
 
             if (mesh.name == 'left eye') {
-                mesh.rotation.y += BABYLON.Tools.ToRadians(-5);
+                mesh.rotation.y += Tools.ToRadians(-5);
             }
         });
     });    
@@ -112,7 +114,7 @@ const onSceneReady = (scene) => {
 // const zRotCos = (curFrame, amplitude, period) => (amplitude * Math.cos(((Math.PI * 2) / period) * curFrame));
 /**
  * 
- * @param {BABYLON.Scene} scene 
+ * @param {Scene} scene 
  */
 const onRender = (scene) => {
     // if (torus !== undefined) {
