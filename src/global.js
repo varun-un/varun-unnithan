@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link, withRouter } from "react-router-dom";
 import './global.css';
 
-function Header() {
+function Header(props) {
 
     function toggle() {
         var mainNav = document.getElementById('js-menu');
@@ -17,19 +18,29 @@ function Header() {
                 <a href="#" className="logo"><b>Varun Unnithan</b></a>
                 <ul className="main-nav" id="js-menu">
                     <li>
-                        <a href="#" className="nav-links">Home</a>
+                        <Link to="/" className={`nav-links  ${props.location.pathname === "/" ? "current" : ""}`}>
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="nav-links">Education</a>
+                        <Link to="/education" className={`nav-links  ${props.location.pathname === "/education" ? "current" : ""}`}>
+                            Education
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="nav-links">Skills</a>
+                        <Link to="/skills" className={`nav-links  ${props.location.pathname === "/skills" ? "current" : ""}`}>
+                            Skills
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="nav-links">Experience</a>
+                        <Link to="/experience" className={`nav-links  ${props.location.pathname === "/experience" ? "current" : ""}`}>
+                            Experience
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="nav-links">Projects</a>
+                        <Link to="/projects" className={`nav-links  ${props.location.pathname === "/projects" ? "current" : ""}`}>
+                            Projects
+                        </Link>
                     </li>
                 </ul>
             </nav>
@@ -56,4 +67,5 @@ function Footer(props) {
     )
 }
 
-export { Header, Footer };
+export default withRouter(Header);
+export {Footer};

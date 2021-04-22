@@ -55,6 +55,13 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.nav-links.current {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+    text-decoration-color: #fd5151;
+    text-underline-offset: 2px;
+}
+
 .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
@@ -162,7 +169,7 @@ body {
 }
 
 .linkIcon:hover {
-    background-color: rgb(134, 134, 134);
+    background-color: rgb(167, 167, 167);
 }
 
 .footerMessage {

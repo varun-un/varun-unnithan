@@ -46,6 +46,10 @@ const onSceneReady = (scene) => {
             scene.meshes.push(mesh);
             mesh.position.y -= .1;
             mesh.position.z += .2;
+
+            if (mesh.name == 'left eye') {
+                mesh.rotation.y += BABYLON.Tools.ToRadians(-5);
+            }
         });
     });    
 

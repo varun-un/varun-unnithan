@@ -243,11 +243,12 @@ section h2 {
 .aboutDesc{
     width:50%;
     color: silver;
-    text-align: center;
+    text-align: left;
     height:100%;
-    font-size: 2vw;
+    font-size: calc(1.5vw + 1vh);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0%;
+    padding: 50px;
 }
   
 @media screen and (max-width: 500px) {
@@ -261,6 +262,7 @@ section h2 {
     .aboutDesc{
         width:100%;
         height:49.9%;
+        text-align: center;
     }
 }
 
@@ -456,6 +458,13 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.nav-links.current {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+    text-decoration-color: #fd5151;
+    text-underline-offset: 2px;
+}
+
 .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
@@ -563,7 +572,7 @@ body {
 }
 
 .linkIcon:hover {
-    background-color: rgb(134, 134, 134);
+    background-color: rgb(167, 167, 167);
 }
 
 .footerMessage {

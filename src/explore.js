@@ -1,4 +1,5 @@
 import React, {useRef, useEffect} from 'react';
+import { Link } from "react-router-dom";
 import { gsap, TweenMax, Power3, Power1 } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -115,26 +116,34 @@ function explore() {
                 </p>
             </div>
             <div className='circle-container'>
-                <div ref={el => {circle = el}} onMouseEnter={() => circleExpand(circle, eduImg, eduText)} 
-                onMouseLeave={() => circleShrink(circle, eduImg, eduText)} className='circle'>
-                    <img ref={el => {eduImg = el}} className='circleImg' src='./static/school-icon.png'/>
-                    <p ref={el => {eduText = el}} className='circleText'>Education</p>
-                </div>
-                <div ref={el => {circleGold = el}} onMouseEnter={() => circleExpand(circleGold, skillsImg, skillsText)} 
-                onMouseLeave={() => circleShrink(circleGold, skillsImg, skillsText)} className='circle gold'>
-                    <img ref={el => {skillsImg = el}} className='circleImg' src='./static/skills-icon.png'/>
-                    <p ref={el => {skillsText = el}} className='circleText'>Skills</p>
-                </div>
-                <div ref={el => {circleRed = el}} onMouseEnter={() => circleExpand(circleRed, expImg, expText)} 
-                onMouseLeave={() => circleShrink(circleRed, expImg, expText)} className='circle red'>
-                    <img ref={el => {expImg = el}} className='circleImg' src='./static/experience-icon.png'/>
-                    <p ref={el => {expText = el}} className='circleText'>Experience</p>
-                </div>
-                <div ref={el => {circleBlue = el}} onMouseEnter={() => circleExpand(circleBlue, projImg, projText)} 
-                onMouseLeave={() => circleShrink(circleBlue, projImg, projText)} className='circle blue'>
-                    <img ref={el => {projImg = el}} className='circleImg' src='./static/project-icon.png'/>
-                    <p ref={el => {projText = el}} className='circleText'>Projects</p>
-                </div>
+                <Link to="/education">
+                    <div ref={el => {circle = el}} onMouseEnter={() => circleExpand(circle, eduImg, eduText)} 
+                    onMouseLeave={() => circleShrink(circle, eduImg, eduText)} className='circle'>
+                        <img ref={el => {eduImg = el}} className='circleImg' src='./static/school-icon.png'/>
+                        <p ref={el => {eduText = el}} className='circleText'>Education</p>
+                    </div>
+                </Link>
+                <Link to="/skills">
+                    <div ref={el => {circleGold = el}} onMouseEnter={() => circleExpand(circleGold, skillsImg, skillsText)} 
+                    onMouseLeave={() => circleShrink(circleGold, skillsImg, skillsText)} className='circle gold'>
+                        <img ref={el => {skillsImg = el}} className='circleImg' src='./static/skills-icon.png'/>
+                        <p ref={el => {skillsText = el}} className='circleText'>Skills</p>
+                    </div>
+                </Link>
+                <Link to="/experience">
+                    <div ref={el => {circleRed = el}} onMouseEnter={() => circleExpand(circleRed, expImg, expText)} 
+                    onMouseLeave={() => circleShrink(circleRed, expImg, expText)} className='circle red'>
+                        <img ref={el => {expImg = el}} className='circleImg' src='./static/experience-icon.png'/>
+                        <p ref={el => {expText = el}} className='circleText'>Experience</p>
+                    </div>
+                </Link>
+                <Link to="/projects">
+                    <div ref={el => {circleBlue = el}} onMouseEnter={() => circleExpand(circleBlue, projImg, projText)} 
+                    onMouseLeave={() => circleShrink(circleBlue, projImg, projText)} className='circle blue'>
+                        <img ref={el => {projImg = el}} className='circleImg' src='./static/project-icon.png'/>
+                        <p ref={el => {projText = el}} className='circleText'>Projects</p>
+                    </div>
+                </Link>
             </div>
         </div>
     )

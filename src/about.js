@@ -131,7 +131,16 @@ function about() {
                 </div>
                 <div className='description flex-direction'>
                     <img src='./static/ameba.gif' className='picOrbit' alt='A headshot of Varun Unnithan' />
-                    <p className='aboutDesc'>BlahBlahBlahBlahBlahBlahBlahBlahBlahB lahBlahBlahBlahBlahBlahBlah</p>
+                    <p className='aboutDesc'>
+                        I'm currently an 11th grader from New Jersey, where I attend <i>The Academy for Mathematics,
+                        Science, and Engineering</i> in Rockaway. However, regardless of this, I tend to think of myself not
+                        as a student, but as a developer, innovator, and most of all, a thinker. I enjoy learning about all 
+                        kinds of topics, ranging genetics to quantum mechanics, however, the subjects which fascinate me the most 
+                        aerospace and computer science. I've created projects and learned regarding these topics, as it's
+                        something I enjoy doing in my free time. In the future, whether it be for college, or for a job, I hope 
+                        to pursue these fields, as well as do my best to innovate and develop new products that can push 
+                        the envelope of human capability and understanding. 
+                    </p>
                 </div>
             </div>
         </div>
