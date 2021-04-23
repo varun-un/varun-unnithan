@@ -30,7 +30,7 @@ import SceneComponent from "./SceneComponent";
       groundShadowLevel: 0.5,
       enableGroundMirror: true,
       skyboxTexture: undefined,
-      groundTexture: './static/backgroundGround.png',
+      groundTexture: './backgroundGround.png',
       groundColor: new Color3(0.2,0.2,0.2),
     });
     helper.ground.scaling = new Vector3(3, 3, 1);
@@ -72,12 +72,12 @@ import SceneComponent from "./SceneComponent";
     var links = {
         github: 'https://github.com/varun-un',
         gmail: 'mailto:varun.unnithan33@gmail.com',
-        resume: './static/Varun Unnithan Resume.pdf',
+        resume: './Varun Unnithan Resume.pdf',
         devpost: 'https://devpost.com/varun-unnithan33',
         linkedin: 'https://www.linkedin.com/in/varun-unnithan'
     }
 
-    SceneLoader.ImportMesh("","", "./static/connect.babylon", scene, function(newMeshes){
+    SceneLoader.ImportMesh("","", "./connect.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         
             //register mesh, shadows and reflection
             shadowGenerator.getShadowMap().renderList.push(mesh);

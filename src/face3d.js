@@ -42,7 +42,7 @@ const onSceneReady = (scene) => {
 
     light.intensity = .7;
 
-    SceneLoader.ImportMesh("","", "./static/face.babylon", scene, function(newMeshes){
+    SceneLoader.ImportMesh("","", "./face.babylon", scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
             hemiLight.includedOnlyMeshes.push(mesh);
             scene.meshes.push(mesh);
@@ -50,7 +50,7 @@ const onSceneReady = (scene) => {
             mesh.position.z += .2;
 
             if (mesh.name == 'left eye') {
-                mesh.rotation.y += Tools.ToRadians(-5);
+                mesh.rotation.y += Tools.ToRadians(-6);
             }
         });
     });    

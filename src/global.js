@@ -13,7 +13,7 @@ function Header(props) {
         <div>
             <nav className="navbar">
                 <span className="navbar-toggle" onClick={toggle} id="js-navbar-toggle">
-                    <img src='./static/menu-icon.png' className='menu-bars'></img>
+                    <img src='./menu-icon.png' className='menu-bars'></img>
                 </span>
                 <Link to="/" className="logo"><b>Varun Unnithan</b></Link>
                 <ul className="main-nav" id="js-menu">
@@ -53,13 +53,13 @@ function Footer(props) {
         <div style={{top: props.top + '%'}} className='footer'>
             <div className='imgContainer'>
                 <a href='https://github.com/varun-un'>
-                    <img src='./static/github.png' className='linkIcon' alt='Github'></img>
+                    <img src='./github.png' className='linkIcon' alt='Github'></img>
                 </a>
                 <a href='https://www.linkedin.com/in/varun-unnithan'>
-                    <img src='./static/linkedin.png' className='linkIcon' alt='Linked'></img>
+                    <img src='./linkedin.png' className='linkIcon' alt='Linked'></img>
                 </a>
                 <a href='https://devpost.com/varun-unnithan33'>
-                    <img src='./static/devpost.png' className='linkIcon' alt='Devpost'></img>
+                    <img src='./devpost.png' className='linkIcon' alt='Devpost'></img>
                 </a>
             </div>
             <p className='footerMessage'>Created by Varun Unnithan 2021 | varun.unnithan33@gmail.com</p>

@@ -130,7 +130,7 @@ function about() {
                     </div>
                 </div>
                 <div className='description flex-direction'>
-                    <img src='./static/ameba.gif' className='picOrbit' alt='A headshot of Varun Unnithan' />
+                    <img src='./ameba.gif' className='picOrbit' alt='A headshot of Varun Unnithan' />
                     <p className='aboutDesc'>
                         I'm currently an 11th grader from New Jersey, where I attend <i>The Academy for Mathematics,
                         Science, and Engineering</i> in Rockaway. However, regardless of this, I tend to think of myself not
