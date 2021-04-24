@@ -4,7 +4,7 @@ import './pages.css';
 function pageTitle(props) {
     
     return (
-        <div className='pageTitleDiv'>
+        <div className='pageTitleDiv flex-direction'>
             <div className='titleFlexL'>
                 <div className='bgCircle'></div>
                 <h2 className='title'>{props.title}</h2>

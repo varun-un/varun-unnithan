@@ -9,6 +9,9 @@ html {
     background-color: magenta;
     display: inline-flex;
     flex-wrap: wrap;
+}
+
+.flex-direction {
     flex-direction: row;
 }
 
@@ -116,7 +119,44 @@ html {
 
 
 @media only screen and (max-width: 768px) {
-    
+    .pageTitleDiv {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .titleFlexL {
+        width: 100%;
+        height:40vh;
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+
+    .titleFlexR {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .jumpTitle {
+        margin-top: 0%;
+        font-size: 6vw;
+    }
+
+    .jumpItem:hover .jumpCircle {
+        width: 0;
+        height: 0;
+    }
+
+    .jumpText {
+        font-size: 5vw;
+        top: calc(50% - 2.5vw);
+    }
+
+    .jumpItem:hover .jumpText {
+        font-size: 6vw;
+        top: calc(50% - 3vw);
+    }
 }
 
 .education {

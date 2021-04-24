@@ -1,5 +1,6 @@
 import React from 'react';
 import PageTitle from './pageTitle.js';
+import PageSection from './pageSection.js';
 import { Footer } from './global.js';
 import './pages.css';
 
