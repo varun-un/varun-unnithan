@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-function pageSection() {
+function pageSection(props) {
     return (
-        <div>
-            
+        <div className='pageSection'>
+            <h2 className='sectionTitle'>{props.section}</h2>
+            {props.children}
         </div>
     )
 }

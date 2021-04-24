@@ -2,6 +2,18 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: inherit; 
+}
+
+.noUnderline {
+    text-decoration: inherit; 
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .pageTitleDiv {
     position: relative;
     height:60vh;
@@ -28,7 +40,7 @@ html {
     position: absolute;
     width: calc(18vw + 35px);
     height: calc(18vw + 35px);
-    top: calc(50% - 9vw - 17.5px);
+    top: calc(50% - 8.5vw - 17.5px);
     left: 5%;
     background-image: linear-gradient(90deg, silver, black); 
     -moz-border-radius: 50%; 
@@ -44,7 +56,7 @@ html {
     left: 13.5%;
     font-size: 8vw;
     color: #fd5151;
-    font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .titleFlexR {
@@ -86,6 +98,8 @@ html {
 .jumpItem:hover .jumpCircle {
     width: calc((60vh - 80px - 3vw)/3);
     height: calc((60vh - 80px - 3vw)/3);
+    left: calc(50% - ((60vh - 75px - 3vw)/6));
+    top: 0%;
 }
 
 .jumpItem:hover .jumpText {
@@ -98,10 +112,11 @@ html {
     width: 0;
     height: 0;
     border-radius: 100%;
-    left: calc(50% - ((60vh - 75px - 3vw)/6));
+    left: 50%;
+    top: 50%;
     background-color: #fd5151;
     cursor: default;
-    transition: width .5s, height .5s;
+    transition: width .5s, height .5s, top .5s, left .5s;
 }
 
 .jumpText {
@@ -110,6 +125,7 @@ html {
     font-size: 3vw;
     text-align: center;
     transition: font-size .5s, top .5s;
+    font-family: 'Roboto', sans-serif;
 }
 
 .jumpLink {
@@ -119,6 +135,13 @@ html {
 
 
 @media only screen and (max-width: 768px) {
+    .bgCircle { 
+        position: absolute;
+        width: calc(18vh + 35px);
+        height: calc(18vh + 35px);
+        top: calc(50% - 9vh - 17.5px);
+    }
+
     .pageTitleDiv {
         flex-direction: column;
         height: 80vh;
@@ -130,7 +153,8 @@ html {
     }
 
     .title {
-        font-size: 10vw;
+        left: 20%;
+        font-size: 12vw;
     }
 
     .titleFlexR {
@@ -140,7 +164,8 @@ html {
 
     .jumpTitle {
         margin-top: 0%;
-        font-size: 6vw;
+        font-size: 5vw;
+        text-decoration-thickness: 4px;
     }
 
     .jumpItem:hover .jumpCircle {
@@ -159,9 +184,149 @@ html {
     }
 }
 
+.pageSection {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(180deg, black, rgb(70, 70, 70));
+    /* background-color: cornflowerblue; */
+    margin-top: 50px;
+}
+
+.sectionTitle {
+    overflow: hidden;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4.5vw;
+    color: white;
+}
+
+.sectionTitle:before,
+.sectionTitle:after {
+    background-color: #fd5151;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    border-radius: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.sectionTitle:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.sectionTitle:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.cardContainer {
+    position: relative;
+    background-color: darkgrey;
+    margin-top: 10vh;
+    left: 10%;
+    width: 80%;
+    height: fit-content;
+}
+
+.card {
+    position: relative;
+    margin: 10px;
+    padding: 30px 40px;
+    height: fit-content;
+    height: -moz-fit-content;
+    background: rgb(40,40,40);
+    border: 2.5px solid rgb(30,30,30);
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.subsectionTitle {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #fd5151;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 3px;
+    font-size: 2vw;
+}
+
+.sectionDuration {
+    color: rgb(151, 151, 151);
+    font-size: calc(.75vw + 6px);
+}
+
+.sectionBody {
+    position: relative;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .pageSection {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .sectionTitle {
+        overflow: hidden;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 4.5vh;
+        color: white;
+    }
+    
+    .sectionTitle:before,
+    .sectionTitle:after {
+        height: 1vh;
+    }
+
+    .cardContainer {
+        margin-top: 6vh;
+        left: 2%;
+        width: 96%;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .subsectionTitle {
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: #fd5151;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+        line-height: 4vh;
+        font-size: 2.75vh;
+    }
+    
+    .sectionDuration {
+        line-height: 0vh;
+    }
+    
+    .sectionBody {
+        position: relative;
+        color: white;
+        font-size: 1.75vh;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+
 .education {
     position: absolute;
     width: 100%;
-    height: 150%;
+    height: 450%;
     background-color: aqua;
 }
