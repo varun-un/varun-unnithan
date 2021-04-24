@@ -45,7 +45,7 @@ function home() {
                 <Explore />
                 <Contact />
             </div>
-            <Footer top='600' />
+            <Footer top='600%' />
         </div>
     )
 }

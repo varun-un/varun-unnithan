@@ -153,6 +153,10 @@ body {
     background-color: rgb(40,40,40);
 }
 
+.footer.r {
+    position: relative;
+}
+
 .imgContainer {
     display: flex;
     margin: auto;

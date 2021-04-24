@@ -69,15 +69,15 @@ function explore() {
     }, [])
 
     const circleExpand = function(targetCircle, targetImg, targetText) {
-            TweenMax.to(targetImg, .6, {width:200, height: 200, ease: Power3.easeOut});
-            TweenMax.to(targetText, .6, {scale:1, y: () => 100 - .02 * window.innerWidth, x: () => -.125 * window.innerWidth, ease: Power3.easeOut});
-            TweenMax.to(targetCircle, .6, {width:200, height: 200, ease: Power3.easeOut});
+        TweenMax.to(targetImg, .6, {width:200, height: 200, ease: Power3.easeOut});
+        TweenMax.to(targetText, .6, {scale:1, y: () => 100 - .02 * window.innerWidth, x: () => -.125 * window.innerWidth, ease: Power3.easeOut});
+        TweenMax.to(targetCircle, .6, {width:200, height: 200, ease: Power3.easeOut});
     }
 
     const circleShrink = function(targetCircle, targetImg, targetText) {
-            TweenMax.to(targetImg, .6, {width:75, height: 75, ease: Power3.easeOut});
-            TweenMax.to(targetText, .6, {scale:0, y: 0, x:0, ease: Power3.easeOut});
-            TweenMax.to(targetCircle, .6, {width:75, height: 75, ease: Power3.easeOut});
+        TweenMax.to(targetImg, .6, {width:75, height: 75, ease: Power3.easeOut});
+        TweenMax.to(targetText, .6, {scale:0, y: 0, x:0, ease: Power3.easeOut});
+        TweenMax.to(targetCircle, .6, {width:75, height: 75, ease: Power3.easeOut});
     }
 
     // var i = 0;
@@ -116,34 +116,34 @@ function explore() {
                 </p>
             </div>
             <div className='circle-container'>
-                <Link to="/education">
-                    <div ref={el => {circle = el}} onMouseEnter={() => circleExpand(circle, eduImg, eduText)} 
-                    onMouseLeave={() => circleShrink(circle, eduImg, eduText)} className='circle'>
+                <div ref={el => {circle = el}} onMouseEnter={() => circleExpand(circle, eduImg, eduText)} 
+                onMouseLeave={() => circleShrink(circle, eduImg, eduText)} className='circle'>
+                    <Link to="/education">
                         <img ref={el => {eduImg = el}} className='circleImg' src='./school-icon.png'/>
-                        <p ref={el => {eduText = el}} className='circleText'>Education</p>
-                    </div>
-                </Link>
-                <Link to="/skills">
-                    <div ref={el => {circleGold = el}} onMouseEnter={() => circleExpand(circleGold, skillsImg, skillsText)} 
-                    onMouseLeave={() => circleShrink(circleGold, skillsImg, skillsText)} className='circle gold'>
+                    </Link>
+                    <p ref={el => {eduText = el}} className='circleText'>Education</p>
+                </div>
+                <div ref={el => {circleGold = el}} onMouseEnter={() => circleExpand(circleGold, skillsImg, skillsText)} 
+                onMouseLeave={() => circleShrink(circleGold, skillsImg, skillsText)} className='circle gold'>
+                    <Link to="/skills">
                         <img ref={el => {skillsImg = el}} className='circleImg' src='./skills-icon.png'/>
-                        <p ref={el => {skillsText = el}} className='circleText'>Skills</p>
-                    </div>
-                </Link>
-                <Link to="/experience">
-                    <div ref={el => {circlePurple = el}} onMouseEnter={() => circleExpand(circlePurple, expImg, expText)} 
-                    onMouseLeave={() => circleShrink(circlePurple, expImg, expText)} className='circle purple'>
+                    </Link>
+                    <p ref={el => {skillsText = el}} className='circleText'>Skills</p>
+                </div>
+                <div ref={el => {circlePurple = el}} onMouseEnter={() => circleExpand(circlePurple, expImg, expText)} 
+                onMouseLeave={() => circleShrink(circlePurple, expImg, expText)} className='circle purple'>
+                    <Link to="/experience">
                         <img ref={el => {expImg = el}} className='circleImg' src='./experience-icon.png'/>
-                        <p ref={el => {expText = el}} className='circleText'>Experience</p>
-                    </div>
-                </Link>
-                <Link to="/projects">
-                    <div ref={el => {circleBlue = el}} onMouseEnter={() => circleExpand(circleBlue, projImg, projText)} 
-                    onMouseLeave={() => circleShrink(circleBlue, projImg, projText)} className='circle blue'>
+                        </Link>
+                    <p ref={el => {expText = el}} className='circleText'>Experience</p>
+                </div>
+                <div ref={el => {circleBlue = el}} onMouseEnter={() => circleExpand(circleBlue, projImg, projText)} 
+                onMouseLeave={() => circleShrink(circleBlue, projImg, projText)} className='circle blue'>
+                    <Link to="/projects">
                         <img ref={el => {projImg = el}} className='circleImg' src='./project-icon.png'/>
-                        <p ref={el => {projText = el}} className='circleText'>Projects</p>
-                    </div>
-                </Link>
+                    </Link>
+                    <p ref={el => {projText = el}} className='circleText'>Projects</p>
+                </div>
             </div>
         </div>
     )

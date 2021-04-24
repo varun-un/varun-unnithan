@@ -31,7 +31,7 @@ import SceneComponent from "./SceneComponent";
       enableGroundMirror: true,
       skyboxTexture: undefined,
       groundTexture: './backgroundGround.png',
-      groundColor: new Color3(0.2,0.2,0.2),
+      groundColor: new Color3(0.3,0.3,0.3),
     });
     helper.ground.scaling = new Vector3(3, 3, 1);
     var ground = helper.ground;

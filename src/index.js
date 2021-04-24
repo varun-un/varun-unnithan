@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./home.js";
 import Header from './global.js';
+import Education from './education.js';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -10,7 +11,7 @@ ReactDOM.render(
             <Header />
             <Switch>
                 <Route path='/' exact component={() => <Home />} />
-                <Route path='/education' exact component={() => <Home />} />
+                <Route path='/education' exact component={() => <Education />} />
                 <Route path='/skills' exact component={() => <Home />} />
                 <Route path='/experience' exact component={() => <Home />} />
                 <Route path='/projects' exact component={() => <Home />} />

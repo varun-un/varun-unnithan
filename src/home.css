@@ -194,7 +194,7 @@ section h2 {
     padding: 50px;
 }
   
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .flex-direction{
         flex-direction:column;
     }
@@ -266,7 +266,7 @@ section h2 {
     background-color: silver;
     margin-top: 75px;
     z-index: 6;
-    cursor: pointer;
+    cursor: default;
 }
 
 .circle.gold {

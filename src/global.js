@@ -50,7 +50,7 @@ function Header(props) {
 
 function Footer(props) {
     return (
-        <div style={{top: props.top + '%'}} className='footer'>
+        <div style={{top: props.top}} className='footer'>
             <div className='imgContainer'>
                 <a href='https://github.com/varun-un'>
                     <img src='./github.png' className='linkIcon' alt='Github'></img>
