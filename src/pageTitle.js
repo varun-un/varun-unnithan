@@ -11,7 +11,7 @@ function pageTitle(props) {
             </div>
             <div className='titleFlexR'>
                 <div className='jumpBox'>
-                    <p className='jumpTitle'><b>Jump To:</b></p>
+                    <p className='jumpTitle'>Jump To:</p>
                     {props.sections.map((section, index) => (
                         <div className='jumpItem' key={'x'+index}>
                             <div className='jumpCircle' key={'y'+index}></div>
@@ -20,6 +20,9 @@ function pageTitle(props) {
                     ))}
                 </div>
             </div>
+            <div className='stars'></div>
+            <div className='stars2'></div>
+            <div className='stars starOffset'></div>
         </div>
     )
 }

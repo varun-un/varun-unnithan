@@ -10,7 +10,7 @@ import SceneComponent from "./SceneComponent";
  */
  const onSceneReady = (scene) => {
 
-    // scene.clearColor = new BABYLON.Color4(1,.5,.5,1);
+    // scene.clearColor = new Color4(1,.5,.5,1);
     scene.clearColor = new Color4(0,0,0,0);
 
     const canvas = scene.getEngine().getRenderingCanvas();
@@ -31,7 +31,7 @@ import SceneComponent from "./SceneComponent";
       enableGroundMirror: true,
       skyboxTexture: undefined,
       groundTexture: './backgroundGround.png',
-      groundColor: new Color3(0.3,0.3,0.3),
+      groundColor: new Color3(1,1,1),
     });
     helper.ground.scaling = new Vector3(3, 3, 1);
     var ground = helper.ground;

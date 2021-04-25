@@ -7,6 +7,7 @@ import Explore from './explore.js';
 import Contact from './contact.js';
 import { Footer } from './global.js';
 import './home.css';
+import './stars.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,7 +36,12 @@ function home() {
 
     return (
         <div>
-            <div className="homePage">
+            <div className="homePage" id=''>
+                <div className='homeStars'>
+                    <div className='stars'></div>
+                    <div className='stars2'></div>  
+                    <div className='stars starOffset'></div>
+                </div>
                 <Face3d />
                 <section>
                     <h2 ref={el => {titleElem2 = el}} className='titleName'>Varun <br></br>&nbsp;&nbsp;Unnithan</h2>

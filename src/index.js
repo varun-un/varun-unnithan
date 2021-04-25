@@ -5,6 +5,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Home from "./home.js";
 import Header from './global.js';
 import Education from './education.js';
+import './stars.css';
 
 ReactDOM.render(
     <React.StrictMode>
