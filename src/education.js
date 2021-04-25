@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from "react-router-dom";
 import PageTitle from './pageTitle.js';
 import PageSection from './pageSection.js';
 import SectionBody from './sectionBody.js';
@@ -6,6 +7,9 @@ import { Footer } from './global.js';
 import './pages.css';
 
 function education() {
+
+
+
     return (
         <div>
             <div className='education'>
@@ -13,7 +17,7 @@ function education() {
                 <PageSection section='School'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>The Academy for Mathematics, Science, and Engineering</h3><br />
-                        <p className='sectionDuration'><i>July 2018 - June 2022</i></p>
+                        <p className='sectionDuration'><i>July 2018 - Present<br/>Expected Graduation: July 2022</i></p>
                         <br />
                         <p className='sectionBody'>
                             The Academy for Mathematics, Science, and Engineering, located at Morris Hills High School and part of the 
@@ -42,13 +46,56 @@ function education() {
                             <li>AP Calculus BC</li>
                         </ul>  
                     </SectionBody>
-                    <SectionBody />
                 </PageSection>
-                <PageSection section='Activities' />
+                <PageSection section='Activities'>
+                <SectionBody>
+                        <h3 className='subsectionTitle'>Future Business Leaders of America</h3><br />
+                        <p className='sectionDuration'><i>2019 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I am a member of the Morris Hills High School FBLA (Future Business Leaders of America) chapter. FBLA is a 
+                            national organization for high schoolers to prepare students for careers in business, and is also the largest
+                            business student organization in the world. As a member of FBLA, I have learned many things about business and
+                            finance, as well as competed in many of the competitive events the club has to offer. <br /><br />
+                            Last year, 2020, I competed in Introduction to Financial Math competitive event, where I placed 1st in the 
+                            local district and 5th in the state of New Jersey. This year, 2021, I participated in the Coding and Programming 
+                            competitive event, where I had to code and present a program for a provided theme, which 
+                            can be seen <Link to="/projects#fblaquiz">here</Link>. In this event, I placed 2nd in the state of New Jersey.
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>Key Club</h3><br />
+                        <p className='sectionDuration'><i>2019 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I hold an officer position for the Morris Hills Key Club, which is a the Morris Hills High School Chapter
+                            of Key Club. Key Club is an international, student-led organization for community service and volunteering. I 
+                            currently hold the position of club secretary for the Morris Hills chapter, with this being my second year of
+                            doing so. <br /><br />
+                            As club secretary, my job is to keep track of club data and member information, as well as serve as the 
+                            intermediary for communication between the Morris Hills Key Club chapter and the larger Key Club district. I 
+                            also work with the other chapter officers to set up and hold events for community service and fundraising to
+                            benefit the community. I have helped hold events such as our virtual food drives, through which we have collected
+                            over $2,000 for the Community FoodBank of New Jersey. 
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>Junior State of America</h3><br />
+                        <p className='sectionDuration'><i>2018 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I am a member of the Morris Hills High School JSA (Junior State of America) chapter. JSA is a national
+                            organization with high-school chapters nationwide whose goal is to engage students in debates and discussions 
+                            regarding important issues involving politics, the government and their community. As a member of JSA, I have 
+                            improved my oratory and presentation skills, as well as learned much about the issues currently plaguing the 
+                            nation.
+                        </p>  
+                    </SectionBody>
+                </PageSection>
             </div>
-            <Footer top='450%' />
+            <Footer top='none' />
         </div>
     )
 }
 
-export default education
+export default withRouter(education);
