@@ -53,7 +53,7 @@ a {
     margin: 0%;
     padding: 0%;
     align-self: center;
-    left: 13.5%;
+    left: 20%;
     font-size: 8vw;
     color: #fd5151;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -69,7 +69,8 @@ a {
 .jumpTitle {
     position: relative;
     text-align: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-bottom: 5px;
     font-size: 3vw;
     color: silver;
     text-decoration: underline;
@@ -80,13 +81,13 @@ a {
 
 .jumpBox {
     position: relative;
-    top: 5px;
+    top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items:flex-start;
+    justify-content:center;
+    align-items:center;
     /* background-color: black; */
-    height: calc(100% - 75px - 3vw);
+    height: calc(100% - 3vw);
 }
 
 .jumpItem {
@@ -105,7 +106,7 @@ a {
 
 .jumpItem:hover .jumpText {
     font-size: 4vw;
-    top: calc(50% - 2vw - 5px);
+    top: calc(50% - 2vw - 12px);
 }
 
 .jumpCircle {
@@ -156,6 +157,10 @@ a {
     .title {
         left: 20%;
         font-size: 12vw;
+    }
+
+    .jumpBox {
+        top: 0;
     }
 
     .titleFlexR {

@@ -4,7 +4,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     margin: 0;
     padding: 0;
 }
@@ -185,6 +185,6 @@ body {
 .footerMessage {
     text-align: center;
     margin-top: 7px;
-    font-size: 11px;
+    font-size: 9px;
     color: gray;
 }

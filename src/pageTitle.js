@@ -10,8 +10,8 @@ function pageTitle(props) {
                 <h1 className='title'>{props.title}</h1>
             </div>
             <div className='titleFlexR'>
-                <p className='jumpTitle'><b>Jump To:</b></p>
                 <div className='jumpBox'>
+                    <p className='jumpTitle'><b>Jump To:</b></p>
                     {props.sections.map((section, index) => (
                         <div className='jumpItem' key={'x'+index}>
                             <div className='jumpCircle' key={'y'+index}></div>

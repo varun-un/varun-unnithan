@@ -31,6 +31,8 @@ function home() {
         });
     }
 
+    var footerTop = window.innerWidth <= 768 ? '475%' : '600%';
+
     return (
         <div>
             <div className="homePage">
@@ -45,7 +47,7 @@ function home() {
                 <Explore />
                 <Contact />
             </div>
-            <Footer top='600%' />
+            <Footer top={footerTop} />
         </div>
     )
 }

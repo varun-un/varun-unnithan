@@ -17,6 +17,13 @@
     cursor: grab;
 }
 
+@media only screen and (max-width: 768px) {
+    .faceBabylon {
+        width: 50%;
+        top: 3.5%;
+    }
+}
+
 .faceBabylon:active {
     cursor: grabbing;
 }
@@ -76,7 +83,7 @@ section h2 {
 
 .about-page {
     position: relative;
-    top: 8.5%;
+    top: 7%;
     height: 28%;
     width: 100%;
     /* background-color: navy; */
@@ -128,7 +135,7 @@ section h2 {
 
 .intro {
     position: relative;
-    top: 26vw;
+    top: 21vw;
     left:0%;
     height: 8vw;
     width: 100%;
@@ -168,7 +175,7 @@ section h2 {
 }
 
 .description{
-    top: 29vw;
+    top: 23vw;
     position: relative;
     display:inline-flex;
     flex-wrap:wrap;
@@ -195,8 +202,17 @@ section h2 {
 }
   
 @media screen and (max-width: 768px) {
+    .intro {
+        top: 20vw;
+    }
+
+    .description{
+        top: 24vw;
+    }
+
     .flex-direction{
         flex-direction:column;
+        justify-content: center;
     }
     .picOrbit{
         width:auto;
@@ -206,6 +222,9 @@ section h2 {
         width:100%;
         height:49.9%;
         text-align: center;
+        padding: 20px;
+        padding-top: 10px;
+        font-size: calc(1vw + 1.5vh);
     }
 }
 
@@ -219,7 +238,7 @@ section h2 {
 
 .exploreTextDiv {
     position: relative;
-    top: 22%;
+    top: 12%;
     height: 10%;
     width: 80%;
     left: 10%;
@@ -235,7 +254,7 @@ section h2 {
     margin: 0%;
     padding: 0%;
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     z-index: 5;
 }
 
@@ -246,13 +265,13 @@ section h2 {
     margin: 0%;
     padding: 0%;
     color: #fd5151;
-    font-family: 'Raleway', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     z-index: 0;
 }
 
 .circle-container {
     position: relative;
-    top: 25%;
+    top: 14%;
     width: 100%;
     height: 85%;
 }
@@ -344,13 +363,74 @@ section h2 {
     color: white;
 }
 
+@media only screen and (max-width: 768px) {
+    .about-page {
+        top: 5.5%;
+    }
+
+    .explore {
+        top: 10%;
+    }
+
+    .exploreTextDiv {
+        top: 2%;
+    }
+    
+    .bgExploreText,
+    .exploreText {
+        font-size: 6vw;
+    }
+
+    .circle-container {
+        position: relative;
+        top: 2%;
+        width: 100%;
+        height: 85%;
+    }
+
+    .circleText {
+        font-size: calc(4vw + 8px);
+        left: calc(-16vw - 8px);
+    }
+
+    .contact {
+        top: 15%;
+        height: 20%;
+    }
+
+    .connect3D {
+        top: 0%;
+        height: 90%;
+    }
+    
+    .connectTitle {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+    }
+    
+    .connectDesc {
+        position: absolute;
+        top: calc(3% + 9vw + 5vh);
+        left: 8%;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        width: 32%;
+        font-size: calc(1.5vw + 6px);
+    }
+
+    .homePage {
+        height: 475%;
+    }
+}
 body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     margin: 0;
     padding: 0;
 }
@@ -531,7 +611,7 @@ body {
 .footerMessage {
     text-align: center;
     margin-top: 7px;
-    font-size: 11px;
+    font-size: 9px;
     color: gray;
 }
 html {
@@ -589,7 +669,7 @@ a {
     margin: 0%;
     padding: 0%;
     align-self: center;
-    left: 13.5%;
+    left: 20%;
     font-size: 8vw;
     color: #fd5151;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -605,7 +685,8 @@ a {
 .jumpTitle {
     position: relative;
     text-align: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-bottom: 5px;
     font-size: 3vw;
     color: silver;
     text-decoration: underline;
@@ -616,13 +697,13 @@ a {
 
 .jumpBox {
     position: relative;
-    top: 5px;
+    top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items:flex-start;
+    justify-content:center;
+    align-items:center;
     /* background-color: black; */
-    height: calc(100% - 75px - 3vw);
+    height: calc(100% - 3vw);
 }
 
 .jumpItem {
@@ -641,7 +722,7 @@ a {
 
 .jumpItem:hover .jumpText {
     font-size: 4vw;
-    top: calc(50% - 2vw - 5px);
+    top: calc(50% - 2vw - 12px);
 }
 
 .jumpCircle {
@@ -692,6 +773,10 @@ a {
     .title {
         left: 20%;
         font-size: 12vw;
+    }
+
+    .jumpBox {
+        top: 0;
     }
 
     .titleFlexR {

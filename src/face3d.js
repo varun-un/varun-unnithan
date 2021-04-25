@@ -18,8 +18,8 @@ const onSceneReady = (scene) => {
 
     const canvas = scene.getEngine().getRenderingCanvas();
 
-    var k = 5500;   //k for scale of radius refactor on window resize
-    var resizeOffset = 1;     //offset of radius refactor on resize
+    var k = 4000;   //k for scale of radius refactor on window resize
+    var resizeOffset = 1.97;     //constant of radius refactor on resize
 
     var camera = new ArcRotateCamera("arcCamera", Math.PI * 1.6, Math.PI / 2, k / window.innerWidth + resizeOffset, Vector3.Zero(), scene);
     camera.attachControl(canvas, true);

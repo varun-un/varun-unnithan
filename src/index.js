@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Home from "./home.js";
 import Header from './global.js';
 import Education from './education.js';

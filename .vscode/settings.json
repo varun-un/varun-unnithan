@@ -1,12 +1,17 @@
 {
     "cSpell.words": [
+        "animationloopmode",
+        "animationtype",
         "babylonjs",
         "devpost",
+        "float",
         "linkedin",
         "preconnect"
     ],
     "cSpell.ignoreWords": [
         "fblaquiz",
+        "hemi",
+        "light",
         "projects"
     ]
 }
