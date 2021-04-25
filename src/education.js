@@ -14,7 +14,7 @@ function education() {
         <div>
             <div className='education'>
                 <PageTitle title='Education' sections={['School', 'Activities']} links={['#school', '#activities']}/>
-                <PageSection section='School'>
+                <PageSection section='School' id='school'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>The Academy for Mathematics, Science, and Engineering</h3><br />
                         <p className='sectionDuration'><i>July 2018 - Present<br/>Expected Graduation: July 2022</i></p>
@@ -47,7 +47,7 @@ function education() {
                         </ul>  
                     </SectionBody>
                 </PageSection>
-                <PageSection section='Activities'>
+                <PageSection section='Activities' id='activities'>
                 <SectionBody>
                         <h3 className='subsectionTitle'>Future Business Leaders of America</h3><br />
                         <p className='sectionDuration'><i>2019 - Present</i></p>
