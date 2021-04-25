@@ -618,6 +618,28 @@ body {
     font-size: 9px;
     color: gray;
 }
+
+
+/* Page transitions */
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 150ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
 /* stars from: https://pastebin.com/gEfdRwgc */
 
 .stars {
@@ -1458,6 +1480,11 @@ a {
     }
 }
 
+.pageAbs {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
 
 .education {
     position: relative;

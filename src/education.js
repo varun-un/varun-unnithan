@@ -9,7 +9,7 @@ import './pages.css';
 function education() {
 
     return (
-        <div>
+        <div className='pageAbs'>
             <div className='education'>
                 <PageTitle title='Education' sections={['School', 'Activities']} links={['#school', '#activities']}/>
                 <div id='school'></div>

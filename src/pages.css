@@ -331,6 +331,11 @@ a {
     }
 }
 
+.pageAbs {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
 
 .education {
     position: relative;
