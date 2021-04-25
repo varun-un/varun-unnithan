@@ -105,7 +105,7 @@ a {
 
 .jumpItem:hover .jumpText {
     font-size: 4vw;
-    top: calc(50% - 2vw);
+    top: calc(50% - 2vw - 5px);
 }
 
 .jumpCircle {
@@ -122,11 +122,15 @@ a {
 
 .jumpText {
     position: relative;
-    top: calc(50% - 1.5vw);
+    top: calc(50% - 1.5vw - 5px);
     font-size: 3vw;
     text-align: center;
     transition: font-size .5s, top .5s;
     font-family: 'Roboto', sans-serif;
+}
+
+.jumpLink {
+    text-decoration: none;
     color: silver;
 }
 
