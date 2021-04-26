@@ -9,3 +9,6 @@ lerna-debug.log*
 #development cache and dependencies
 node_modules/
 .cache/
+
+#vscode
+.vscode/
