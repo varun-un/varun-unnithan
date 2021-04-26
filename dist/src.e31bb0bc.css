@@ -1,6 +1,6 @@
 .homePage {
     /* background-color: black; */
-    background-image: linear-gradient(180deg, black, rgb(50, 50, 50));
+    background-image: linear-gradient(180deg, black, rgb(66, 66, 66));
     position: absolute;
     width: 100%;
     height: 600%;
@@ -1440,6 +1440,28 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+.toolImg {
+    float: right;
+    width: auto;
+    height: 2vw;
+    margin-left: 1vw;
+}
+
+.projectLink {
+    float: none;
+    width: auto;
+    height: 3vw;
+    margin-left: 1vw;
+    vertical-align: middle;
+    border-radius: 5px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.projectLink:hover {
+    background-color: rgb(167, 167, 167);
+}
+
 @media only screen and (max-width: 768px) {
     .pageSection {
         margin-top: 0px;
@@ -1489,6 +1511,14 @@ a {
         color: white;
         font-size: 2.2vh;
         font-family: 'Roboto', sans-serif;
+    }
+
+    .toolImg {
+        height: 3vh;
+    }
+
+    .projectLink {
+        height: 4vh;
     }
 }
 

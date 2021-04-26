@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PageTitle from './pageTitle.js';
 import PageSection from './pageSection.js';
 import SectionBody from './sectionBody.js';
@@ -15,7 +15,10 @@ function skills() {
                 <div id='coding'></div>
                 <PageSection section='Coding'>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>Java</h3><br />
+                        <h3 className='subsectionTitle'>
+                            Java
+                            <img src='./java.png' className='toolImg' title="Java"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             Java is an object-oriented programming language, used often to create applications or build back-end
@@ -29,7 +32,10 @@ function skills() {
                         </p> 
                     </SectionBody>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>Javascript</h3><br />
+                        <h3 className='subsectionTitle'>
+                            Javascript
+                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             Javascript is a a scripting programming language used largely for creating interactive webpages, as well as 
@@ -44,17 +50,24 @@ function skills() {
                     </SectionBody>
                     <div id='react'></div>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>ReactJS</h3><br />
+                        <h3 className='subsectionTitle'>
+                            React
+                            <img src='./react.png' className='toolImg' title="ReactJS"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
                             ReactJS, or React, is a Javascript library for creating component-based UIs as well as single-page applications.
-                            I have learned the basics of React and the JSX it is built upon, and have a good understanding of how React works
-                            with the HTML DOM. Though this may be a relatively new library to me, I believe I have a good understanding of it
-                            and can quickly learn how to utilize React to its full potential.
+                            I have learned the basics of React and JSX, the syntax used to embed HTML into Javascript, and have a good 
+                            understanding of how React works with the HTML DOM. Though this may be a relatively new library to me, I believe 
+                            I have a good understanding of it and can quickly learn how to utilize React to its full potential.
                         </p> 
                     </SectionBody>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>HTML and CSS</h3><br />
+                        <h3 className='subsectionTitle'>
+                            HTML and CSS
+                            <img src='./html.png' className='toolImg' title="HTML5"></img>
+                            <img src='./css.png' className='toolImg' title="CSS3"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
                             HTML and CSS are the languages used to build and design webpages as well as define their structure. Between 
@@ -67,7 +80,10 @@ function skills() {
                 <div id='3d&cad'></div>
                 <PageSection section='3D & CAD'>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>SolidWorks</h3><br />
+                        <h3 className='subsectionTitle'>
+                            SolidWorks
+                            <img src='./solidworks.png' className='toolImg' title="SolidWorks"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             SolidWorks is a computer-aided modeling and drafting program that can be used to create and test 3D prototypes. 
@@ -77,7 +93,10 @@ function skills() {
                         </p> 
                     </SectionBody>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>Blender</h3><br />
+                        <h3 className='subsectionTitle'>
+                            Blender
+                            <img src='./blender.png' className='toolImg' title="Blender"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
                             Blender is a computer graphics program used for modeling 3D objects as well as creating visual effects and 3D 
@@ -89,7 +108,10 @@ function skills() {
                     </SectionBody>
                     <div id='babylon'></div>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>Babylon.js</h3><br />
+                        <h3 className='subsectionTitle'>
+                            Babylon.js
+                            <img src='./babylon.png' className='toolImg' title="Babylon.js"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
                             Babylon.js is a real time 3D engine and library based in Javascript to create and interact with 3D graphics 
