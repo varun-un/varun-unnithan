@@ -48,7 +48,10 @@ function Header(props) {
     )
 }
 
+
 function Footer(props) {
+
+    //for pages w/ relative positioning
     if (props.top == 'none'){
         return (
             <div className='footer r'>
@@ -67,6 +70,7 @@ function Footer(props) {
             </div>
         )
     }
+    //if positioning is absolute
     else {
         return (
             <div style={{top: props.top}} className='footer'>

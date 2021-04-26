@@ -11,7 +11,7 @@ function education() {
     return (
         <div className='pageAbs'>
             <div className='education'>
-                <PageTitle title='Education' sections={['School', 'Activities']} links={['#school', '#activities']}/>
+                <PageTitle title='Education' sections={['School', 'Activities']} links={['#school', '#activities']} starOffset='2' />
                 <div id='school'></div>
                 <PageSection section='School'>
                     <SectionBody>
@@ -24,8 +24,8 @@ function education() {
                             Students with career interests in mathematics, science, or engineering. The program focuses on challenging 
                             students and preparing them to succeed in the field of STEM both in college and in their careers. In 2016, 
                             the Academy was ranked by <i>Newsweek</i> as the&nbsp;
-                            <a href='https://www.newsweek.com/high-schools/americas-top-high-schools-2016'>second-best high school in 
-                            America.</a><br /><br />
+                            <a href='https://www.newsweek.com/high-schools/americas-top-high-schools-2016' target="_blank">second-best 
+                            high school in America.</a><br /><br />
                             I was accepted into the Academy for Mathematics, Science, and Engineering after scoring highly on the entrance 
                             exam and interview, and since then I have completed nearly three years in the program. Throughout the past
                             three years, I have maintained a weighted GPA of 103.26, on a 100-point scale, which translates to a 4.0 GPA 
@@ -53,7 +53,7 @@ function education() {
                         <p className='sectionDuration'><i>2019 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
-                            I am a member of the Morris Hills High School FBLA (Future Business Leaders of America) chapter. FBLA is a 
+                            I am a member of the Morris Hills High School Future Business Leaders of America (FBLA) chapter. FBLA is a 
                             national organization for high schoolers to prepare students for careers in business, and is also the largest
                             business student organization in the world. As a member of FBLA, I have learned many things about business and
                             finance, as well as competed in many of the competitive events the club has to offer. <br /><br />
@@ -84,7 +84,7 @@ function education() {
                         <p className='sectionDuration'><i>2018 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
-                            I am a member of the Morris Hills High School JSA (Junior State of America) chapter. JSA is a national
+                            I am a member of the Morris Hills High School Junior State of America (JSA) chapter. JSA is a national
                             organization with high-school chapters nationwide whose goal is to engage students in debates and discussions 
                             regarding important issues involving politics, the government and their community. As a member of JSA, I have 
                             improved my oratory and presentation skills, as well as learned much about the issues currently plaguing the 

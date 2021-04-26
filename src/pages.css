@@ -12,6 +12,7 @@ a {
 
 .underline {
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .pageTitleDiv {
@@ -110,7 +111,7 @@ a {
 
 .jumpItem:hover .jumpText {
     font-size: 4vw;
-    top: calc(50% - 2vw - 12px);
+    top: calc(50% - 2vw - 9px);
 }
 
 .jumpCircle {
@@ -200,6 +201,7 @@ a {
     /* background-image: linear-gradient(180deg, black, rgb(70, 70, 70)); */
     /* background-color: cornflowerblue; */
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .sectionTitle {
@@ -337,10 +339,12 @@ a {
     right: 0;
 }
 
+.skills,
 .education {
     position: relative;
     width: 100%;
     height: fit-content;
     padding-bottom: 25px;
-    background-image: linear-gradient(180deg, black, rgb(70, 70, 70));
+    /* background-image: linear-gradient(180deg, black, rgb(44, 44, 44)); */
 }
+

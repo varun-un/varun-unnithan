@@ -376,6 +376,7 @@
     width: 2px;
     height: 2px;
     background: transparent;
+    overflow: hidden;
     z-index: -1;
     animation: animStar 350s linear infinite;
     box-shadow: 1448px 320px #bbb, 1775px 1663px #bbb, 332px 1364px #bbb,
@@ -480,18 +481,27 @@
     318px 218px #bbb, 607px 319px #bbb, 495px 535px #bbb, 1552px 1575px #bbb,
     1562px 67px #bbb, 403px 926px #bbb, 1096px 1800px #bbb, 1814px 1709px #bbb,
     1882px 1831px #bbb, 533px 46px #bbb, 823px 969px #bbb, 530px 165px #bbb,
-    1030px 352px #bbb, 1681px 313px #bbb, 338px 115px #bbb, 1607px 211px #bbb,
+    1030px 352px #bbb, 1681px 1313px #bbb, 338px 115px #bbb, 1607px 211px #bbb,
     1718px 1184px #bbb, 1589px 659px #bbb, 278px 355px #bbb, 464px 1464px #bbb,
     1165px 277px #bbb, 950px 694px #bbb, 1746px 293px #bbb, 793px 911px #bbb,
     528px 773px #bbb, 1883px 1694px #bbb, 748px 182px #bbb, 1924px 1531px #bbb,
     100px 636px #bbb, 1473px 1445px #bbb, 1264px 1244px #bbb, 850px 1377px #bbb,
     987px 1976px #bbb, 933px 1761px #bbb, 922px 1270px #bbb, 500px 396px #bbb,
     1324px 8px #bbb, 1967px 1814px #bbb, 1072px 1401px #bbb, 961px 37px #bbb,
-    156px 81px #bbb, 1915px 502px #bbb, 1076px 1846px #bbb, 152px 1669px #bbb,
-    986px 1529px #bbb, 1667px 1137px #bbb;
+    156px 81px #bbb, 1915px 502px #bbb, 1076px 1846px #bbb, 152px 2669px #bbb,
+    986px 1529px #bbb, 1667px 1137px #bbb, 1967px 2814px #bbb, 1072px 1901px #bbb, 961px 2137px #bbb,
+    156px 81px #bbb, 1915px 502px #bbb, 1076px 1846px #bbb, 152px 2669px #bbb,
+    986px 2229px #bbb, 1667px 2737px #bbb, 1967px 2314px #bbb, 1072px 3401px #bbb, 961px 2537px #bbb,
+    156px 3581px #bbb, 1915px 32502px #bbb, 1076px 3846px #bbb, 152px 2969px #bbb,
+    986px 2529px #bbb, 1667px 2837px #bbb;
 }
 
 .starOffset {
+    top: 4000px;
+    overflow: hidden;
+}
+
+.starOffset2 {
     top: 2000px;
     overflow: hidden;
 }
@@ -501,6 +511,6 @@
         transform: translateY(0px);
     }
     to {
-        transform: translateY(-2000px);
+        transform: translateY(-3000px);
     }
 }
