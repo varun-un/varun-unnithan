@@ -377,7 +377,7 @@
     height: 2px;
     background: transparent;
     overflow: hidden;
-    z-index: -1;
+    z-index: 0;
     animation: animStar 350s linear infinite;
     box-shadow: 1448px 320px #bbb, 1775px 1663px #bbb, 332px 1364px #bbb,
     878px 340px #bbb, 569px 1832px #bbb, 1422px 1684px #bbb, 1946px 1907px #bbb,

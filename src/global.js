@@ -18,27 +18,27 @@ function Header(props) {
                 <Link to="/" className="logo"><b>Varun Unnithan</b></Link>
                 <ul className="main-nav" id="js-menu">
                     <li>
-                        <Link to="/" className={`nav-links  ${props.location.pathname === "/" ? "current" : ""}`}>
+                        <Link to="/" className={`nav-links  ${props.location.pathname === "/" ? "current" : ""}`} onClick={toggle}>
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/education" className={`nav-links  ${props.location.pathname === "/education" ? "current" : ""}`}>
+                        <Link to="/education" className={`nav-links  ${props.location.pathname === "/education" ? "current" : ""}`} onClick={toggle}>
                             Education
                         </Link>
                     </li>
                     <li>
-                        <Link to="/skills" className={`nav-links  ${props.location.pathname === "/skills" ? "current" : ""}`}>
+                        <Link to="/skills" className={`nav-links  ${props.location.pathname === "/skills" ? "current" : ""}`} onClick={toggle}>
                             Skills
                         </Link>
                     </li>
                     <li>
-                        <Link to="/experience" className={`nav-links  ${props.location.pathname === "/experience" ? "current" : ""}`}>
+                        <Link to="/experience" className={`nav-links  ${props.location.pathname === "/experience" ? "current" : ""}`} onClick={toggle}>
                             Experience
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects" className={`nav-links  ${props.location.pathname === "/projects" ? "current" : ""}`}>
+                        <Link to="/projects" className={`nav-links  ${props.location.pathname === "/projects" ? "current" : ""}`} onClick={toggle}>
                             Projects
                         </Link>
                     </li>

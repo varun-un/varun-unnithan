@@ -103,25 +103,29 @@ import SceneComponent from "./SceneComponent";
             var scaleFactor = 1.1;
             var reverseScaleFactor = 1/scaleFactor;
 
-            boundingboxes[i].actionManager = new ActionManager(scene);
-            boundingboxes[i].actionManager.registerAction(
-                new ExecuteCodeAction(
-                    ActionManager.OnPointerOverTrigger,
-                    () => {
-                        mesh.scaling = new Vector3(scaleFactor,scaleFactor,scaleFactor);
-                        mesh.rotSpeed /= 2;
-                    },
+            if (window.innerWidth >= 768) {
+
+                //register hover actions
+                boundingboxes[i].actionManager = new ActionManager(scene);
+                boundingboxes[i].actionManager.registerAction(
+                    new ExecuteCodeAction(
+                        ActionManager.OnPointerOverTrigger,
+                        () => {
+                            mesh.scaling = new Vector3(scaleFactor,scaleFactor,scaleFactor);
+                            mesh.rotSpeed /= 2;
+                        },
+                    )
                 )
-            )
-            boundingboxes[i].actionManager.registerAction(
-                new ExecuteCodeAction(
-                    ActionManager.OnPointerOutTrigger,
-                    () => {
-                        mesh.scaling = new Vector3(reverseScaleFactor,reverseScaleFactor,reverseScaleFactor);
-                        mesh.rotSpeed *= 2;
-                    },
+                boundingboxes[i].actionManager.registerAction(
+                    new ExecuteCodeAction(
+                        ActionManager.OnPointerOutTrigger,
+                        () => {
+                            mesh.scaling = new Vector3(reverseScaleFactor,reverseScaleFactor,reverseScaleFactor);
+                            mesh.rotSpeed *= 2;
+                        },
+                    )
                 )
-            )
+            }
 
             //go to link
             boundingboxes[i].actionManager.registerAction(
@@ -140,6 +144,9 @@ import SceneComponent from "./SceneComponent";
     // camera motion
     if (window.innerWidth >= 768) {
         document.addEventListener('mousemove', logKey);
+    }
+    else {
+        camera.detachControl(canvas);
     }
     function logKey(e) {
         var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
@@ -177,7 +184,8 @@ const onRender = (scene) => {
 function connect3d() {
     return (
         <div className='connect3D'>
-            <SceneComponent className='connect3DCanvas' antialias onSceneReady={onSceneReady} onRender={onRender} id="connect-canvas" />
+            <SceneComponent className='connect3DCanvas' antialias onSceneReady={onSceneReady} onRender={onRender}  
+            id="connect-canvas" />
         </div>
     )
 }
