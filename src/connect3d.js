@@ -138,7 +138,9 @@ import SceneComponent from "./SceneComponent";
     });  
 
     // camera motion
-    document.addEventListener('mousemove', logKey);
+    if (window.innerWidth >= 768) {
+        document.addEventListener('mousemove', logKey);
+    }
     function logKey(e) {
         var xLoc = (e.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2);
         var yLoc = (e.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2);
