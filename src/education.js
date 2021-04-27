@@ -21,7 +21,7 @@ function education() {
                         <p className='sectionBody'>
                             The Academy for Mathematics, Science, and Engineering, located at Morris Hills High School and part of the 
                             Morris County Vocational School District, is a rigorous, highly focused four year program for Morris County 
-                            Students with career interests in mathematics, science, or engineering. The program focuses on challenging 
+                            students with career interests in mathematics, science, or engineering. The program focuses on challenging 
                             students and preparing them to succeed in the field of STEM both in college and in their careers. In 2016, 
                             the Academy was ranked by <i>Newsweek</i> as the&nbsp;
                             <a href='https://www.newsweek.com/high-schools/americas-top-high-schools-2016' target="_blank">second-best 
@@ -69,15 +69,15 @@ function education() {
                         <p className='sectionDuration'><i>2019 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
-                            I hold an officer position for the Morris Hills Key Club, which is a the Morris Hills High School Chapter
+                            I hold an officer position for the Morris Hills Key Club, which is the Morris Hills High School Chapter
                             of Key Club. Key Club is an international, student-led organization for community service and volunteering. I 
                             currently hold the position of club secretary for the Morris Hills chapter, with this being my second year of
                             doing so. <br /><br />
                             As club secretary, my job is to keep track of club data and member information, as well as serve as the 
                             intermediary for communication between the Morris Hills Key Club chapter and the larger Key Club district. I 
                             also work with the other chapter officers to set up and hold events for community service and fundraising to
-                            benefit the community. I have helped hold events such as our virtual food drives, through which we have collected
-                            over $2,000 for the Community FoodBank of New Jersey. 
+                            benefit the community. I have helped hold and participate in events such as our virtual food drives, through 
+                            which we collected over $2,000 for the Community FoodBank of New Jersey, and fun performances for younger kids. 
                         </p>  
                     </SectionBody>
                     <SectionBody>
@@ -86,8 +86,8 @@ function education() {
                         <br />
                         <p className='sectionBody'>
                             I am a member of the Morris Hills High School Junior State of America (JSA) chapter. JSA is a national
-                            organization with high-school chapters nationwide whose goal is to engage students in debates and discussions 
-                            regarding important issues involving politics, the government and their community. As a member of JSA, I have 
+                            organization with high-school chapters nationwide, whose goal is to engage students in debates and discussions 
+                            regarding important issues involving politics, the government, and their community. As a member of JSA, I have 
                             improved my oratory and presentation skills, as well as learned much about the issues currently plaguing the 
                             nation.
                         </p>  

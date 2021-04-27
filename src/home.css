@@ -199,7 +199,11 @@ section h2 {
     font-size: calc(1vw + 1vh);
     font-family: 'Roboto', sans-serif;
     margin: 0%;
-    padding: 50px;
+    padding: 2px 50px;
+}
+
+.red {
+    color: #fd5151;
 }
   
 @media screen and (max-width: 768px) {

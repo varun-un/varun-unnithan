@@ -38,9 +38,10 @@ function skills() {
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
-                            Javascript is a a scripting programming language used largely for creating interactive webpages, as well as 
-                            having applications outside of websites. I currently have a good mastery and handle on much of Javascript and 
-                            its syntax, and I am able to use the language to create webpages, algorithms and even game-like programs.
+                            Javascript is a a scripting programming language used largely for creating interactive webpages, though it is 
+                            also used for building applications outside of websites. I currently have a good mastery and handle on much of 
+                            Javascript and its syntax, and I am able to use the language to create webpages, algorithms and even game-like 
+                            programs.
                             <br /><br />
                             Outside of vanilla Javascript, I also have experience with the <a href="#babylon">Babylon.js</a>
                             &nbsp;library for creating 3D objects with Javascript, as well as with the <a href="#react">React</a>
@@ -102,7 +103,7 @@ function skills() {
                             Blender is a computer graphics program used for modeling 3D objects as well as creating visual effects and 3D 
                             animations. Within Blender, I know how to model and create meshes, as well as use UV mapping and procedural
                             texturing to create scenes. I am also experienced with keyframe animation within Blender to create animated 
-                            scenes. I also use Blender to create 3D models as part of my workflow coding 3D based programs, such as those
+                            scenes. I also use Blender to create 3D models as part of my workflow for coding 3D based programs, such as those
                             with Babylon.js. 
                         </p> 
                     </SectionBody>
@@ -160,7 +161,7 @@ function skills() {
                         </p> 
                     </SectionBody>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>Teamwork</h3><br />
+                        <h3 className='subsectionTitle'>Teamwork and Communication</h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             Teamwork and communication are two of my strong points, as I am able to work cohesively with others to accomplish

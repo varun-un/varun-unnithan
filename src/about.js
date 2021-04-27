@@ -130,16 +130,26 @@ function about() {
                     </div>
                 </div>
                 <div className='description flex-direction'>
-                    <img src='./ameba.gif' className='picOrbit' alt='A headshot of Varun Unnithan' />
+                    <img src='./varun-headshot.png' className='picOrbit' alt='A headshot of Varun Unnithan' />
                     <p className='aboutDesc'>
                         I'm currently an 11th grader from New Jersey, where I attend <i>The Academy for Mathematics,
-                        Science, and Engineering</i> in Rockaway. However, regardless of this, I tend to think of myself not
-                        as a student, but as a developer, innovator, and most of all, a thinker. I enjoy learning about all 
-                        kinds of topics, ranging genetics to quantum mechanics, however, the subjects which fascinate me the most 
-                        aerospace and computer science. I've created projects and learned regarding these topics, as it's
-                        something I enjoy doing in my free time. In the future, whether it be for college, or for a job, I hope 
-                        to pursue these fields, as well as do my best to innovate and develop new products that can push 
-                        the envelope of human capability and understanding. 
+                        Science, and Engineering</i>. Beyond just being a student however, I look to expand my breadth of knowledge, as in 
+                        my eyes, that is something not only incredibly rewarding in and of itself, but also extremely powerful. And so, all 
+                        throughout my life, I have always tried to learn of new topics and ideas which fascinate me, ranging from quantum 
+                        mechanics to psychology, all with the goal of furthering my own knowledge and abilities. However, throughout my 
+                        experiences, the concepts of <b className='red'>space</b> and <b className='red'>computer science</b> are ones which 
+                        have especially intrigued me. Learning the secrets of our fascinating universe, along with being able to create 
+                        amazing computer programs to do things that were previously unheard of, are ambitions which drive me forward. However, 
+                        despite the two being different fields, I have the same goal for both: to further the human understanding and 
+                        capabilities. 
+                        <br /><br />
+                        Applying the knowledge I have gained is what I see as the first step to reaching my end goal. And so, I have 
+                        started to utilize my abilities to create projects which both improve my own understanding, but also lead to the
+                        creation of products which I believe can have a positive impact. I am currently looking for an internship in 
+                        a STEM-related field, as I believe that my abilities and knowledge can help any team succeed and create amazing
+                        products like these.
+                        <br /><br />
+                        I hope you'll join me on this journey to create something truly amazing.
                     </p>
                 </div>
             </div>

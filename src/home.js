@@ -40,7 +40,7 @@ function home() {
                 <div className='homeStars'>
                     <div className='stars'></div>
                     <div className='stars2'></div>  
-                    <div className='stars starOffset'></div>
+                    <div className='stars starOffset3'></div>
                 </div>
                 <Face3d />
                 <section>

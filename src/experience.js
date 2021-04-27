@@ -33,7 +33,7 @@ function experience() {
                             Youth Promise is a student-run volunteer tutoring organization with the goal of providing kids, especially those
                             in underserved communities, with free 1 on 1 tutoring. As a volunteer with Youth Promise, I have tutored 
                             primarily middle school students in math and science, creating lesson plans, teaching lessons, and assessing 
-                            students abilities. I also serve as part of the Youth Promise interview team, where I help to conduct interviews
+                            students' abilities. I also serve as part of the Youth Promise interview team, where I help to conduct interviews
                             to gauge incoming tutors and their teaching abilities.  
                         </p>  
                     </SectionBody>
@@ -48,7 +48,8 @@ function experience() {
                             I serve as a volunteer phone banker for the Humane Society of the United States (HSUS), where I contact people
                             to urge them to support humane and animal rights legislation. In this position, I talk with the citizens of the
                             areas whose local governments are considering such ordinances, and I inform them of the importance of voting for 
-                            and encouraging these laws. In doing so, I help encourage the protection of animals nationwide.
+                            and encouraging these laws. In doing so, I help encourage the protection of animals nationwide, while also
+                            improving my own communication skills as well.
                         </p>  
                     </SectionBody>
                     <SectionBody>
@@ -60,7 +61,7 @@ function experience() {
                             PAL intramural basketball league. As a coach, I communicated with the players' parents and organized practices 
                             for the team. I led these practices, and created drills and training plans to nurture each player's skills and 
                             improve the team's chemistry. I also created and implemented game plans to utilize each player's talents to 
-                            their fullest in order to maximize the team's success in games. My experience coaching has helped me further 
+                            their fullest, in order to maximize the team's success in games. My experience coaching has helped me further 
                             my leadership and communication abilities.
                         </p>  
                     </SectionBody>

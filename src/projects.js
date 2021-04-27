@@ -42,6 +42,7 @@ function projects() {
                             </a>
                         </p>  
                     </SectionBody>
+                    <div id='fblaquiz'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             FBLA Quiz
@@ -52,7 +53,7 @@ function projects() {
                         <p className='sectionBody'>
                             The FBLA Quiz program is a project I have created for the 2021 FBLA Coding and Programming Competitive Event. 
                             This program reads random questions and answers from a database, then uses that data to administer a quiz to 
-                            the user, while also including features for tracking users scores and progress, as well as administering 
+                            the user, while also including features for tracking users' scores and progress, as well as administering 
                             different types of questions. FBLA Quiz is built with Java, and uses the Java Swing library to generate the 
                             GUI. In addition to using vanilla Java, this program also uses the JSON Simple library, to allow for database 
                             connectivity with JSON files, and the Apache PDFBox library, to allow the program to create and write PDF files.
@@ -88,7 +89,7 @@ function projects() {
                             a better background on who I am as a person and my skills, as well as shed light on the different activities 
                             I have partaken in. In order to build this site, I used a myriad of different tools and languages, some of
                             which were new to me, making this project a learning experience as well. This site was built using 
-                            React, and so it is largely built with Javascript, however it also incorporates HTML (through JSX) and CSS
+                            React, and so it is largely based in Javascript, however it also incorporates HTML, through JSX, and CSS
                             as well. In order to create the 3D models used in the webpage, Blender was first used to model and sculpt the
                             objects, with these models then being embedded into the website using Babylon.js. Finally, the GreenSock 
                             Animation Platform (GSAP) and ScrollTrigger libraries were used to create some of the site's animations within
@@ -118,8 +119,8 @@ function projects() {
                             drinking in a fun way for users. Using the website, users can track their daily calories, water, and other 
                             nutrition facts, data which is then used to create a daily health score for users, with this score also being
                             used for friends to compete against one another on the site. Working with a team of 3 others, this program was
-                            with HTML, CSS, and Javascript for the frontend and website design, and PHP to communicate with the server in 
-                            the backend.
+                            built with HTML, CSS, and Javascript for the frontend and website design, and PHP to communicate with the server 
+                            in the backend.
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/nutritioUS' target='_blank'>

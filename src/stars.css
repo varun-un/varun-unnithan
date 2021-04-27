@@ -506,6 +506,11 @@
     overflow: hidden;
 }
 
+.starOffset3 {
+    top: 1970px;
+    overflow: hidden;
+}
+
 @keyframes animStar {
     from {
         transform: translateY(0px);
