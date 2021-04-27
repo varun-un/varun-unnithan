@@ -2,13 +2,13 @@
   "name": "varun-unnithan",
   "version": "1.0.0",
   "description": "A website to highlight Varun Unnithan, as well as his skills and the work he has done.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --experimental-scope-hoisting"
+    "build": "parcel build ./src/index.html"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Varun", "Unnithan", "high school", "stem", "internship", "coding", "programming", "portfolio"],
+  "author": "Varun Unnithan",
   "license": "",
   "dependencies": {
     "@babylonjs/core": "^4.2.0",

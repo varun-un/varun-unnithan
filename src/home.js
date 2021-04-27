@@ -33,6 +33,7 @@ function home() {
     }
 
     var footerTop = window.innerWidth <= 768 ? '475%' : '600%';
+    var offsetType = window.innerWidth <= 768 ? '3' : '';
 
     return (
         <div>
@@ -40,7 +41,7 @@ function home() {
                 <div className='homeStars'>
                     <div className='stars'></div>
                     <div className='stars2'></div>  
-                    <div className='stars starOffset3'></div>
+                    <div className={'stars starOffset' + offsetType}></div>
                 </div>
                 <Face3d />
                 <section>
