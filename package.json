@@ -7,7 +7,16 @@
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
-  "keywords": ["Varun", "Unnithan", "high school", "stem", "internship", "coding", "programming", "portfolio"],
+  "keywords": [
+    "Varun",
+    "Unnithan",
+    "high school",
+    "stem",
+    "internship",
+    "coding",
+    "programming",
+    "portfolio"
+  ],
   "author": "Varun Unnithan",
   "license": "",
   "dependencies": {
