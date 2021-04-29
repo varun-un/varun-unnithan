@@ -2,13 +2,13 @@ import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Home from './home.js';
 import Header from './global.js';
 import ScrollUp from './scrollUp.js';
 import './stars.css';
 import './global.css';
 
 //import page components
-const Home = lazy(() => import("./home.js"));
 const Education = lazy(() => import("./education.js"));
 const Skills = lazy(() => import("./skills.js"));
 const Experience = lazy(() => import("./experience.js"));
