@@ -59,7 +59,7 @@ function education() {
                             business student organization in the world. As a member of FBLA, I have learned many things about business and
                             finance, as well as competed in many of the competitive events the club has to offer. <br /><br />
                             Last year, 2020, I competed in Introduction to Financial Math competitive event, where I placed 1st in the 
-                            local district and 5th in the state of New Jersey. This year, 2021, I participated in the Coding and Programming 
+                            local district and 5th in the state of New Jersey. In 2021, I participated in the Coding and Programming 
                             competitive event, where I had to code and present a program for a provided theme, which 
                             can be seen <Link to="/projects#fblaquiz">here</Link>. In this event, I placed 2nd in the state of New Jersey.
                         </p>  
@@ -69,10 +69,9 @@ function education() {
                         <p className='sectionDuration'><i>2019 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
-                            I hold an officer position for the Morris Hills Key Club, which is the Morris Hills High School Chapter
-                            of Key Club. Key Club is an international, student-led organization for community service and volunteering. I 
-                            currently hold the position of club secretary for the Morris Hills chapter, with this being my second year of
-                            doing so. <br /><br />
+                            I hold an officer position for the Morris Hills Key Club, with Key Club being an international, student-led 
+                            organization for community service and volunteering. I currently hold the position of club secretary for the 
+                            Morris Hills chapter, with this being my second year of doing so. <br /><br />
                             As club secretary, my job is to keep track of club data and member information, as well as serve as the 
                             intermediary for communication between the Morris Hills Key Club chapter and the larger Key Club district. I 
                             also work with the other chapter officers to set up and hold events for community service and fundraising to
