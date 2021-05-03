@@ -37,7 +37,7 @@ function education() {
                             <b className='underline'>My Courses:</b> <br /><br />
                         </p> 
                         <ul className='sectionBody'>
-                            <li>Ap Physics 1</li>
+                            <li>AP Physics 1</li>
                             <li>AP Computer Science Principles</li>
                             <li>Ap Computer Science A</li>
                             <li>AP Chemistry</li>
