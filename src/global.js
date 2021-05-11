@@ -51,22 +51,28 @@ function Header(props) {
 
 function Footer(props) {
 
+    const footerContent = () => (
+        <div>
+            <div className='imgContainer'>
+                <a href='https://github.com/varun-un' target='_blank'>
+                    <img src='./github.png' className='linkIcon' alt='Github: varun-un'></img>
+                </a>
+                <a href='https://www.linkedin.com/in/varun-unnithan' target='_blank'>
+                    <img src='./linkedin.png' className='linkIcon' alt='LinkedIn: varun-unnithan'></img>
+                </a>
+                <a href='https://devpost.com/varun-unnithan33' target='_blank'>
+                    <img src='./devpost.png' className='linkIcon' alt='Devpost: varun-unnithan33'></img>
+                </a>
+            </div>
+            <p className='footerMessage'>Created by Varun Unnithan 2021 | varun.unnithan33@gmail.com</p>
+        </div>
+    )
+
     //for pages w/ relative positioning
     if (props.top == 'none'){
         return (
             <div className='footer r'>
-                <div className='imgContainer'>
-                    <a href='https://github.com/varun-un' target='_blank'>
-                        <img src='./github.png' className='linkIcon' alt='Github: varun-un'></img>
-                    </a>
-                    <a href='https://www.linkedin.com/in/varun-unnithan' target='_blank'>
-                        <img src='./linkedin.png' className='linkIcon' alt='LinkedIn: varun-unnithan'></img>
-                    </a>
-                    <a href='https://devpost.com/varun-unnithan33' target='_blank'>
-                        <img src='./devpost.png' className='linkIcon' alt='Devpost: varun-unnithan33'></img>
-                    </a>
-                </div>
-                <p className='footerMessage'>Created by Varun Unnithan 2021 | varun.unnithan33@gmail.com</p>
+                {footerContent()}
             </div>
         )
     }
@@ -74,18 +80,7 @@ function Footer(props) {
     else {
         return (
             <div style={{top: props.top}} className='footer'>
-                <div className='imgContainer'>
-                    <a href='https://github.com/varun-un'>
-                        <img src='./github.png' className='linkIcon' alt='Github: varun-un'></img>
-                    </a>
-                    <a href='https://www.linkedin.com/in/varun-unnithan'>
-                        <img src='./linkedin.png' className='linkIcon' alt='LinkedIn: varun-unnithan'></img>
-                    </a>
-                    <a href='https://devpost.com/varun-unnithan33'>
-                        <img src='./devpost.png' className='linkIcon' alt='Devpost: varun-unnithan33'></img>
-                    </a>
-                </div>
-                <p className='footerMessage'>Created by Varun Unnithan 2021 | varun.unnithan33@gmail.com</p>
+                {footerContent()}
             </div>
         )
     }

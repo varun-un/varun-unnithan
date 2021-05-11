@@ -27,8 +27,7 @@ function skills() {
                             and since then I have self-taught myself much more about the language, in order to improve my ability to utilize
                             Java and its features. <br /><br />
                             Beyond just a functional knowledge of Java and its syntax, I am also familiar with the Java Swing library, which
-                            is a library built into Java for the purpose of creating component-based GUIs. A project in which I used this 
-                            can be found <Link to="/projects#fblaquiz">here</Link>.
+                            is a library built into Java for the purpose of creating component-based GUIs.
                         </p> 
                     </SectionBody>
                     <SectionBody>

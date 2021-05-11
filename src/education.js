@@ -11,7 +11,8 @@ function education() {
     return (
         <div className='pageAbs'>
             <div className='education'>
-                <PageTitle title='Education' sections={['School', 'Activities']} links={['#school', '#activities']} starOffset='2' />
+                <PageTitle title='Education' sections={['School', 'Activities', 'Courses']} 
+                links={['#school', '#activities', '#courses']} starOffset='2' />
                 <div id='school'></div>
                 <PageSection section='School'>
                     <SectionBody>
@@ -34,12 +35,12 @@ function education() {
                             STEM.
                         </p> <br /><br />
                         <p className='sectionBody'>
-                            <b className='underline'>My Courses:</b> <br /><br />
+                            <b className='underline'>School Courses:</b> <br /><br />
                         </p> 
                         <ul className='sectionBody'>
                             <li>AP Physics 1</li>
                             <li>AP Computer Science Principles</li>
-                            <li>Ap Computer Science A</li>
+                            <li>AP Computer Science A</li>
                             <li>AP Chemistry</li>
                             <li>AP Biology</li>
                             <li>AP Statistics</li>
@@ -90,6 +91,28 @@ function education() {
                             improved my oratory and presentation skills, as well as learned much about the issues currently plaguing the 
                             nation.
                         </p>  
+                    </SectionBody>
+                </PageSection>
+                <div id='courses'></div>
+                <PageSection section='Courses'>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>Astrophysics: Cosmology</h3><br />
+                        <p className='sectionDuration'><i>January 2021 - May 2021</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I have taken and completed the <i>ANU-ASTRO4x: Astrophysics: Cosmology</i> course on edX taught by Paul Francis 
+                            and Brian Schmidt of the Australian National University. Through this course I gained a better understanding of 
+                            Einsteinian physics and its applications on planetary and galactic motions. I also learned about other aspects
+                            of astrophysics and cosmology, such as Hubble's Law, spacetime metrics, Friedmann equations, inflation theory, 
+                            dark energy and the cosmic microwave background. Finally, I learned more about the technical skills used in 
+                            cosmology, such as the tools and techniques used to measure distances and other values. This course not only 
+                            furthered my knowledge about space and astrophysics, but has also made me even more excited to continue learning 
+                            about the subject.
+                            <br /><br ></br>
+                            <a href='https://courses.edx.org/certificates/ed784bac8f4a4c1385cf6a7d4aca45a4' target='_blank'>
+                                View Certificate
+                            </a>
+                        </p> 
                     </SectionBody>
                 </PageSection>
             </div>
