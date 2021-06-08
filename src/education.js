@@ -33,7 +33,20 @@ function education() {
                             <b> 4.0 GPA</b> on a 4-point scale. My time in the program has taught me skills like problem solving and teamwork, 
                             while also preparing me with the necessary skills and knowledge to become a successful member in the field of 
                             STEM.
-                        </p> <br /><br />
+                        </p> 
+                        <br /><br />
+                        <p className='sectionBody'>
+                            <b className='underline'>Honor Societies:</b> <br /><br />
+                        </p> 
+                        <ul className='sectionBody'>
+                            <li>National Honor Society</li> 
+                            <li>Science National Honors Society</li>
+                            <li>Math Honor Society</li>
+                            <li>Technology Education Honor Society</li>
+                            <li>Rho Kappa National Social Studies Honor Society</li>
+                            <li>Spanish Honor Society</li>
+                        </ul> 
+                        <br /><br />
                         <p className='sectionBody'>
                             <b className='underline'>School Courses:</b> <br /><br />
                         </p> 
