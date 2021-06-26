@@ -13,19 +13,6 @@ function experience() {
                 <div id='tutoring'></div>
                 <PageSection section='Tutoring'>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>A Grade Ahead</h3><br />
-                        <p className='sectionDuration'><i>July 2019 - Present</i></p>
-                        <br />
-                        <p className='sectionBody'>
-                            A Grade Ahead is a company that provides tutoring for children, primarily in grades 1-8, in Math and English.
-                            I have been a volunteer extra help tutor at A Grade Ahead, where I help to teach students topics which may 
-                            be new or unfamiliar to them. As a tutor, I help to identify areas which students may struggle in, and then 
-                            provide them with the necessary instruction in that area. I also supervise students and help to regulate the 
-                            classroom atmosphere. Through this tutoring, I have learned how to effectively communicate topics and ideas to
-                            students, while also reinforcing the foundations of these topics in my own mind as well.
-                        </p>  
-                    </SectionBody>
-                    <SectionBody>
                         <h3 className='subsectionTitle'>Youth Promise</h3><br />
                         <p className='sectionDuration'><i>September 2020 - Present</i></p>
                         <br />
@@ -35,6 +22,19 @@ function experience() {
                             primarily middle school students in math and science, creating lesson plans, teaching lessons, and assessing 
                             students' abilities. I also serve as part of the Youth Promise interview team, where I help to conduct interviews
                             to gauge incoming tutors and their teaching abilities.  
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>A Grade Ahead</h3><br />
+                        <p className='sectionDuration'><i>July 2019 - April 2020</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            A Grade Ahead is a company that provides tutoring for children, primarily in grades 1-8, in Math and English.
+                            I have been a volunteer extra help tutor at A Grade Ahead, where I help to teach students topics which may 
+                            be new or unfamiliar to them. As a tutor, I help to identify areas which students may struggle in, and then 
+                            provide them with the necessary instruction in that area. I also supervise students and help to regulate the 
+                            classroom atmosphere. Through this tutoring, I have learned how to effectively communicate topics and ideas to
+                            students, while also reinforcing the foundations of these topics in my own mind as well.
                         </p>  
                     </SectionBody>
                 </PageSection>

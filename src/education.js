@@ -29,7 +29,7 @@ function education() {
                             high school in America.</a><br /><br />
                             I was accepted into the Academy for Mathematics, Science, and Engineering after scoring highly on the entrance 
                             exam and interview, and since then I have completed nearly three years in the program. Throughout the past
-                            three years, I have maintained a weighted GPA of<b> 103.26</b>, on a 100-point scale, which translates to a 
+                            three years, I have maintained a weighted GPA of<b> 103.19</b>, on a 100-point scale, which translates to a 
                             <b> 4.0 GPA</b> on a 4-point scale. My time in the program has taught me skills like problem solving and teamwork, 
                             while also preparing me with the necessary skills and knowledge to become a successful member in the field of 
                             STEM.
@@ -72,10 +72,25 @@ function education() {
                             national organization for high schoolers to prepare students for careers in business, and is also the largest
                             business student organization in the world. As a member of FBLA, I have learned many things about business and
                             finance, as well as competed in many of the competitive events the club has to offer. <br /><br />
-                            Last year, 2020, I competed in Introduction to Financial Math competitive event, where I placed 1st in the 
+                            In 2020, I competed in Introduction to Financial Math competitive event, where I placed 1st in the 
                             local district and 5th in the state of New Jersey. In 2021, I participated in the Coding and Programming 
                             competitive event, where I had to code and present a program for a provided theme, which 
                             can be seen <Link to="/projects#fblaquiz">here</Link>. In this event, I placed 2nd in the state of New Jersey.
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>Junior State of America</h3><br />
+                        <p className='sectionDuration'><i>2018 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I currently am the vice president of the Morris Hills High School Junior State of America (JSA) chapter. 
+                            JSA is a national organization with high-school chapters nationwide, whose goal is to engage students in debates 
+                            and discussions 
+                            regarding important issues involving politics, the government, and their community. As vice president, my job 
+                            is to help plan and run all club meetings, working closely with both the other officers and with the club body, 
+                            while also maintaining the club's social media presence. In addition, as a member of JSA, I have 
+                            improved my oratory and presentation skills, as well as having learned a lot about the issues currently plaguing 
+                            the nation.
                         </p>  
                     </SectionBody>
                     <SectionBody>
@@ -91,18 +106,6 @@ function education() {
                             also work with the other chapter officers to set up and hold events for community service and fundraising to
                             benefit the community. I have helped hold and participate in events such as our virtual food drives, through 
                             which we collected over $2,000 for the Community FoodBank of New Jersey, and fun performances for younger kids. 
-                        </p>  
-                    </SectionBody>
-                    <SectionBody>
-                        <h3 className='subsectionTitle'>Junior State of America</h3><br />
-                        <p className='sectionDuration'><i>2018 - Present</i></p>
-                        <br />
-                        <p className='sectionBody'>
-                            I am a member of the Morris Hills High School Junior State of America (JSA) chapter. JSA is a national
-                            organization with high-school chapters nationwide, whose goal is to engage students in debates and discussions 
-                            regarding important issues involving politics, the government, and their community. As a member of JSA, I have 
-                            improved my oratory and presentation skills, as well as learned much about the issues currently plaguing the 
-                            nation.
                         </p>  
                     </SectionBody>
                 </PageSection>

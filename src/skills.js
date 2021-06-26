@@ -23,7 +23,7 @@ function skills() {
                         <p className='sectionBody'>
                             Java is an object-oriented programming language, used often to create applications or build back-end
                             modules for the internet. I have known Java for nearly two years now, starting with the AP Computer Science A
-                            class I took in my high school. In this class I excelled, scoring a perfect 5 on the AP Computer Science A test,
+                            class I took in my high school. In this class I excelled, scoring a 5 on the AP Computer Science A test,
                             and since then I have self-taught myself much more about the language, in order to improve my ability to utilize
                             Java and its features. <br /><br />
                             Beyond just a functional knowledge of Java and its syntax, I am also familiar with the Java Swing library, which
@@ -101,7 +101,7 @@ function skills() {
                         <p className='sectionBody'>
                             Blender is a computer graphics program used for modeling 3D objects as well as creating visual effects and 3D 
                             animations. Within Blender, I know how to model and create meshes, as well as use UV mapping and procedural
-                            texturing to create scenes. I am also experienced with keyframe animation within Blender to create animated 
+                            texturing to create scenes. I also am able to use rigging and keyframe animation within Blender to create animated 
                             scenes. I also use Blender to create 3D models as part of my workflow for coding 3D based programs, such as those
                             with Babylon.js. 
                         </p> 
@@ -117,7 +117,7 @@ function skills() {
                             Babylon.js is a real time 3D engine and library based in Javascript to create and interact with 3D graphics 
                             within a web browser. Babylon.js is built on top of WebGL, and allows for 3D models to be integrated into 
                             webpages, such as the ones on this website. In Babylon.js I know how to create and import 3D models, as well
-                            as interact with them through user input. I currently have a good foundational understanding of the engine, and
+                            as interact with them through user inputs. I currently have a good foundational understanding of the engine, and
                             I look to continue to expand my expertise in it.
                         </p> 
                     </SectionBody>
@@ -129,7 +129,7 @@ function skills() {
                         <p className='sectionDuration'>Skill Level: Advanced</p><br />
                         <p className='sectionBody'>
                             In the field of math, I am very proficient, as I have a good grasp of many mathematical techniques and processes.
-                            I have mastered up to Single Variable Calculus (Calculus 2), and am currently enrolled in an AP Calculus BC class.
+                            I have mastered up to Single Variable Calculus (Calculus 2), and have finished an AP Calculus BC class.
                             This also means that I have a very good grasp of algebra and differential equations, which are important in 
                             engineering. Most importantly, however, I have good mathematical reasoning, meaning I can solve many math-based 
                             problems effectively.
@@ -139,8 +139,8 @@ function skills() {
                         <h3 className='subsectionTitle'>Physics</h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
-                            I have a good understanding of basic physics principles, having taken an AP Physics 1 class and gotten a perfect
-                            score of 5 in the AP Physics 1 test. I understand kinematics and am able to use physics to model the motion and 
+                            I have a good understanding of basic physics principles, having taken an AP Physics 1 class and scoring a 5 on 
+                            its AP test. I understand kinematics and am able to use physics to model the motion and 
                             energy of objects and their systems well. I also have a good understanding of electricity and electronic 
                             components, having also taken a course on electrical components. <br /><br />
                             I also have a working knowledge of cosmology and astrophysics, as I understand some aspects of the universe 

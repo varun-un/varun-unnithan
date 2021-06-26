@@ -48,7 +48,7 @@ function projects() {
                             FBLA Quiz
                             <img src='./java.png' className='toolImg' title="Java"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>December 2020 - Present</i></p>
+                        <p className='sectionDuration'><i>December 2020 - June 2021</i></p>
                         <br />
                         <p className='sectionBody'>
                             The FBLA Quiz program is a project I have created for the 2021 FBLA Coding and Programming Competitive Event. 
@@ -58,9 +58,8 @@ function projects() {
                             GUI. In addition to using vanilla Java, this program also uses the JSON Simple library, to allow for database 
                             connectivity with JSON files, and the Apache PDFBox library, to allow the program to create and write PDF files.
                             <br /><br />
-                            This first version of this project was completed in March 2021, where it was then submitted to the state level of
-                            the FBLA Coding and Programming Event, where it placed 2nd in the state of New Jersey. However, this project is
-                            still ongoing, as it is continuing to be developed and improved.
+                            In March 2021, this program was submitted to the state level of the FBLA Coding and Programming Event, where it 
+                            placed 2nd in the state of New Jersey. 
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/FBLAQuiz' target='_blank'>
