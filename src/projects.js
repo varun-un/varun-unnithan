@@ -70,6 +70,29 @@ function projects() {
                 </PageSection>
                 <div id='side'></div>
                 <PageSection section='Side Projects'>
+                <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Raymarcher
+                            <img src='./java.png' className='toolImg' title="Java"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>June 2021 - July 2021</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            Raymarcher is a real-time 3D rendering engine which I have made, based in Java. I have always been interested
+                            in how computers create 3D scenes, whether they be in games I have played or in animation and modelling 
+                            softwares, such as in Blender or Solidworks, and so this project was a learning experience for me. I decided
+                            to try and build everything from scratch for this rendering engine, not using external libraries to abstract
+                            away certain aspects of the process, so that I could gain a better understanding of how these programs worked.
+                            Raymarcher specifically uses the raymarching technique and can render 3D scenes with meshes and geometry 
+                            which the user may define. Beyond just the computer programming side of it, this project also taught me a lot
+                            about the mathematics behind these 3D engines, and helped me gain a better understanding of linear algebra.
+                            <br /><br />
+                            Visit: 
+                            <a href='https://github.com/varun-un/Raymarcher' target='_blank'>
+                                <img src='./github.png' className='projectLink' title="Github"></img>
+                            </a>
+                        </p>  
+                    </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             varununnithan.me
@@ -86,11 +109,11 @@ function projects() {
                         <p className='sectionBody'>
                             The making of this site itself was another project I have undertaken. The goal of this site is to provide 
                             a better background on who I am as a person and my skills, as well as shed light on the different activities 
-                            I have partaken in. In order to build this site, I used a myriad of different tools and languages, some of
+                            I have partaken in. In order to build this site, I used a bunch of different tools and languages, some of
                             which were new to me, making this project a learning experience as well. This site was built using 
                             React, and so it is largely based in Javascript, however it also incorporates HTML, through JSX, and CSS
                             as well. In order to create the 3D models used in the webpage, Blender was first used to model and sculpt the
-                            objects, with these models then being embedded into the website using Babylon.js. Finally, the GreenSock 
+                            meshes, with these models then being embedded into the website using Babylon.js. Finally, the GreenSock 
                             Animation Platform (GSAP) and ScrollTrigger libraries were used to create some of the site's animations within
                             Javascript. <br /><br />
                             Though this project's goal is to release a site pertaining to myself, which can be considered accomplished, this
