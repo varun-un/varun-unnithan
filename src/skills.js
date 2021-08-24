@@ -54,12 +54,12 @@ function skills() {
                             React
                             <img src='./react.png' className='toolImg' title="ReactJS"></img>
                         </h3><br />
-                        <p className='sectionDuration'>Skill Level: Learning</p><br />
+                        <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
                             ReactJS, or React, is a Javascript library for creating component-based UIs as well as single-page applications.
-                            I have learned the basics of React and JSX, the syntax used to embed HTML into Javascript, and have a good 
-                            understanding of how React works with the HTML DOM. Though this may be a relatively new library to me, I believe 
-                            I have a good understanding of it and can quickly learn how to utilize React to its full potential.
+                            I know  React and JSX, the syntax used to embed HTML into Javascript, and have a good 
+                            understanding of how React and its hooks work. I also have some experience with React Native to create mobile
+                            applications for both IOS and Android via React.
                         </p> 
                     </SectionBody>
                     <SectionBody>

@@ -145,11 +145,9 @@ function about() {
                         <br /><br />
                         Applying the knowledge I have gained is what I see as the first step to reaching my end goal. And so, I have 
                         started to utilize my abilities to create projects which both improve my own understanding, but also lead to the
-                        creation of products which I believe can have a positive impact. I am currently looking for an internship in 
-                        a STEM-related field, as I believe that my abilities and knowledge can help any team succeed and create amazing
-                        products like these.
+                        creation of products which I believe can have a positive impact. 
                         <br /><br />
-                        I hope you'll join me on this journey to create something truly amazing.
+                        I hope you'll join me on this journey to create something amazing.
                     </p>
                 </div>
             </div>

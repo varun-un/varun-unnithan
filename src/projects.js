@@ -19,6 +19,8 @@ function projects() {
                             <img src='./css.png' className='toolImg' title="CSS3"></img>
                             <img src='./javascript.png' className='toolImg' title="Javascript"></img>
                             <img src='./babylon.png' className='toolImg' title="Babylon.js"></img>
+                            <img src='./react.png' className='toolImg' title="ReactJS"></img>
+                            <img src='./gsap.png' className='toolImg' title="GSAP"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>March 2021 - Present</i></p>
                         <br />
@@ -33,12 +35,15 @@ function projects() {
                             Since a goal of Aether Connect is accessibility, this project plans to deploy as a website, which will serve as
                             the platform on which the simulations will lie. In order to do this, Aether Connect is largely built with 
                             Javascript, with HTML and CSS being used to create the website itself. The Javascript-based Babylon.js 
-                            rendering engine is used to create the interactive 3D simulations. Aether Connect is currently a work in
-                            progress, however, I look to publish its first deployment by the summer of 2021.
+                            rendering engine is used to create the interactive 3D simulations. GSAP and Preact (a lightweight version of
+                            React) are used for site components and element animations.
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/AetherConnect' target='_blank'>
                                 <img src='./github.png' className='projectLink' title="Github"></img>
+                            </a>
+                            <a href='https://aetherconnect.netlify.app/' target='_blank'>
+                                <img src='./web.png' className='projectLink' title="Website"></img>
                             </a>
                         </p>  
                     </SectionBody>
@@ -107,10 +112,10 @@ function projects() {
                         <p className='sectionDuration'><i>April 2021</i></p>
                         <br />
                         <p className='sectionBody'>
-                            The making of this site itself was another project I have undertaken. The goal of this site is to provide 
+                            The making of this site itself is technically another project I've done. The goal of this site is to provide 
                             a better background on who I am as a person and my skills, as well as shed light on the different activities 
                             I have partaken in. In order to build this site, I used a bunch of different tools and languages, some of
-                            which were new to me, making this project a learning experience as well. This site was built using 
+                            which were new to me, making this project a great learning experience for me. This site was built using 
                             React, and so it is largely based in Javascript, however it also incorporates HTML, through JSX, and CSS
                             as well. In order to create the 3D models used in the webpage, Blender was first used to model and sculpt the
                             meshes, with these models then being embedded into the website using Babylon.js. Finally, the GreenSock 
@@ -123,6 +128,9 @@ function projects() {
                             Visit: 
                             <a href='https://github.com/varun-un/varun-unnithan' target='_blank'>
                                 <img src='./github.png' className='projectLink' title="Github"></img>
+                            </a>
+                            <a href='https://www.varununnithan.me/' target='_blank'>
+                                <img src='./web.png' className='projectLink' title="Website"></img>
                             </a>
                         </p>  
                     </SectionBody>
