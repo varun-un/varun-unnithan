@@ -17,7 +17,7 @@ function education() {
                 <PageSection section='School'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>The Academy for Mathematics, Science, and Engineering</h3><br />
-                        <p className='sectionDuration'><i>July 2018 - Present<br/>Expected Graduation: July 2022</i></p>
+                        <p className='sectionDuration'><i>July 2018 - Present<br/>Expected Graduation: June 2022</i></p>
                         <br />
                         <p className='sectionBody'>
                             The Academy for Mathematics, Science, and Engineering, located at Morris Hills High School and part of the 
