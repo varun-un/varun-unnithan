@@ -9,7 +9,42 @@ function experience() {
     return (
         <div className='pageAbs'>
             <div className='experience'>
-                <PageTitle title='Experience' sections={['Tutoring', 'Volunteering']} links={['#tutoring', '#volunteering']} starOffset='2' />
+                <PageTitle title='Experience' sections={['Internships', 'Tutoring', 'Volunteering']} links={['#internships', '#tutoring', '#volunteering']} starOffset='2' />
+                <div id='internships'></div>
+                <PageSection section='Internships'>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Software Engineer
+                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
+                            <img src='./react.png' className='toolImg' title="React Native"></img>
+                            <img src='./nodejs.png' className='toolImg' title="Node.JS"></img>
+                            <img src='./sql.png' className='toolImg' title="SQL"></img>
+                            <img src='./aws.png' className='toolImg' title="AWS"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>Resilience Inc.</i></p>
+                        <p className='sectionDuration'><i>August 2021 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I am a software engineering intern at Resilience Inc., where I am part of the AIMEE
+                            app development team. There, I help develop the AIMEE mobile app, which allows users
+                            to engage in social emotional learning through audio excersizes and emotion 
+                            identification/tracking. Specifically, I am in charge of the app's back-end 
+                            development, and in my time as an intern, have worked to implement user accounts into 
+                            the application. I have also worked on security features, such as implementing JSON
+                            Web Tokens, as well as creating a database to store user data for the application. 
+                            During this internship, I've learned and used Javascript, React Native, Node.js, SQL,
+                            and AWS.
+                            <br/><br/>
+                            Throughout this internship, I've learned a lot about the workflow involved when it comes 
+                            to developing and releasing projects for production. I also communicated with both upper 
+                            levels of management and fellow team members the work I was doing and what needed to be 
+                            done, which I was able to do due to my skills in communication. I also took the lead for 
+                            many parts of the project, such as the implementation of a login system in the app, or 
+                            the setting up of the AWS server, which required me to work as a leader to distribute 
+                            and manage tasks.
+                        </p>  
+                    </SectionBody>
+                </PageSection>
                 <div id='tutoring'></div>
                 <PageSection section='Tutoring'>
                     <SectionBody>

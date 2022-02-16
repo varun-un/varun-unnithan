@@ -44,22 +44,42 @@ function skills() {
                             <br /><br />
                             Outside of vanilla Javascript, I also have experience with the <a href="#babylon">Babylon.js</a>
                             &nbsp;library for creating 3D objects with Javascript, as well as with the <a href="#react">React</a>
-                            &nbsp;library. I also have limited experience with the GSAP library, which is used to create animations in 
-                            Javascript for HTML elements.
+                            &nbsp;library. I have worked with React Native to develop mobile applications, as well as used 
+                            <a href="#nodejs">Node.js</a>&nbsp;to utilize Javascript for backend applications. I also have 
+                            limited experience with the GSAP library, which is used to create animations in Javascript for HTML elements.
+                        </p> 
+                    </SectionBody>
+                    <div id='nodejs'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Node.js
+                            <img src='./nodejs.png' className='toolImg' title="Node.js"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Good</p><br />
+                        <p className='sectionBody'>
+                            Node.js is a Javascript-based runtime environment that allows Javascript code to be executed outside
+                            of the browser, and is often used to create the back-end for many web applications. I have experience
+                            writing backend systems using Node.js, specifically with the Express.js framework, from my software
+                            engineering internship at Resilience. I know how to create web applications and API routes with 
+                            Node.js, as well as understand the ideas behind how Node.js functions to create back-end systems.
+                            I am able to use Node.js with middleware and hashing libraries to establish secure connections to
+                            a server, as well as how to connect to relational databases via SQL through it. With my understanding
+                            of Node.js comes my understanding of how HTTP requests work, and how to write REST APIs.
                         </p> 
                     </SectionBody>
                     <div id='react'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            React
+                            React & React Native
                             <img src='./react.png' className='toolImg' title="ReactJS"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
                             ReactJS, or React, is a Javascript library for creating component-based UIs as well as single-page applications.
                             I know  React and JSX, the syntax used to embed HTML into Javascript, and have a good 
-                            understanding of how React and its hooks work. I also have some experience with React Native to create mobile
-                            applications for both IOS and Android via React.
+                            understanding of how React and its hooks work. I also have experience with React Native to create mobile
+                            applications for both IOS and Android via React, and used such during my software engineering internship at
+                            Resilience.
                         </p> 
                     </SectionBody>
                     <SectionBody>
@@ -128,8 +148,8 @@ function skills() {
                         <h3 className='subsectionTitle'>Mathematics</h3><br />
                         <p className='sectionDuration'>Skill Level: Advanced</p><br />
                         <p className='sectionBody'>
-                            In the field of math, I am very proficient, as I have a good grasp of many mathematical techniques and processes.
-                            I have mastered up to Single Variable Calculus (Calculus 2), and have finished an AP Calculus BC class.
+                            In the field of math, I am very proficient, as I have a good grasp of many mathematical techniques and processes,
+                            having mastered and taken classes up to Calculus 3.
                             This also means that I have a very good grasp of algebra and differential equations, which are important in 
                             engineering. Most importantly, however, I have good mathematical reasoning, meaning I can solve many math-based 
                             problems effectively.

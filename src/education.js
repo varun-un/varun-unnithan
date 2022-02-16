@@ -29,7 +29,7 @@ function education() {
                             high school in America.</a><br /><br />
                             I was accepted into the Academy for Mathematics, Science, and Engineering after scoring highly on the entrance 
                             exam and interview, and since then I have completed nearly three years in the program. Throughout the past
-                            three years, I have maintained a weighted GPA of<b> 103.19</b>, on a 100-point scale, which translates to a 
+                            three years, I have maintained a weighted GPA of<b> 103.2</b>, on a 100-point scale, which translates to roughly a 
                             <b> 4.0 GPA</b> on a 4-point scale. My time in the program has taught me skills like problem solving and teamwork, 
                             while also preparing me with the necessary skills and knowledge to become a successful member in the field of 
                             STEM.
@@ -51,6 +51,8 @@ function education() {
                             <b className='underline'>School Courses:</b> <br /><br />
                         </p> 
                         <ul className='sectionBody'>
+                            <li>Calculus 3</li>
+                            <li>AP Physics C</li>
                             <li>AP Physics 1</li>
                             <li>AP Computer Science Principles</li>
                             <li>AP Computer Science A</li>

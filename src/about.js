@@ -132,7 +132,7 @@ function about() {
                 <div className='description flex-direction'>
                     <img src='./headshot.png' className='picOrbit' alt='Headshot of Varun Unnithan' />
                     <p className='aboutDesc'>
-                        I'm a rising senior in high school from New Jersey, where I attend <i>The Academy for Mathematics,
+                        I'm a senior in high school from New Jersey, where I attend <i>The Academy for Mathematics,
                         Science, and Engineering</i>. Beyond just being a student however, I look to expand my breadth of knowledge, as in 
                         my eyes, that is something not only incredibly rewarding in and of itself, but also extremely powerful. And so, all 
                         throughout my life, I have always tried to learn of new topics and ideas which fascinate me, ranging from quantum 
