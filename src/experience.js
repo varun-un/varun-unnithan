@@ -27,7 +27,7 @@ function experience() {
                         <p className='sectionBody'>
                             I am a software engineering intern at Resilience Inc., where I am part of the AIMEE
                             app development team. There, I help develop the AIMEE mobile app, which allows users
-                            to engage in social emotional learning through audio excersizes and emotion 
+                            to engage in social emotional learning through audio exercises and emotion 
                             identification/tracking. Specifically, I am in charge of the app's back-end 
                             development, and in my time as an intern, have worked to implement user accounts into 
                             the application. I have also worked on security features, such as implementing JSON

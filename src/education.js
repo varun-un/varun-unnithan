@@ -132,6 +132,25 @@ function education() {
                             </a>
                         </p> 
                     </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>Paradox and Infinity</h3><br />
+                        <p className='sectionDuration'><i>June 2021 - September 2021</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I have taken and completed the <i>Paradox and Infinity</i> course on edX taught by Agustín Rayo from MIT. 
+                            This course modeled one typically offered to MIT students, and dives deeper into the theoretical aspects of 
+                            mathematics, as well as its intersection with philosophy. Throughout the course, I gained a better understanding
+                            of mathematical concepts such as higher infinities, cardinalities, probability, and the Banach-Tarski Paradox, 
+                            while also getting to explore the limits of mathematics, which brought into question philosophical ideas
+                            such as free will and the prisoner's dilemma. I also learned more about set theory, Godel's Theorem, and 
+                            computability. Through this course I gained a better understanding of the extents to which mathematical 
+                            concepts can be applied and further fueled my interest in mathematics.
+                            <br /><br ></br>
+                            <a href='https://courses.edx.org/certificates/1ecb56b0cf56401aa8d8ab039ca57544' target='_blank'>
+                                View Certificate
+                            </a>
+                        </p> 
+                    </SectionBody>
                 </PageSection>
             </div>
             <Footer top='none' />

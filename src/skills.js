@@ -159,10 +159,10 @@ function skills() {
                         <h3 className='subsectionTitle'>Physics</h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
-                            I have a good understanding of basic physics principles, having taken an AP Physics 1 class and scoring a 5 on 
-                            its AP test. I understand kinematics and am able to use physics to model the motion and 
-                            energy of objects and their systems well. I also have a good understanding of electricity and electronic 
-                            components, having also taken a course on electrical components. <br /><br />
+                            I have a good understanding of basic physics principles, having taken courses such as AP Physics C and AP Physics 
+                            1. I have an understanding of mechanical properties, including kinematics, energy, an rotational motion. I also 
+                            have a good understanding of electrostatics and magnetism, which aids in my understanding of electronic components, 
+                            having also taken a course on electrical components. <br /><br />
                             I also have a working knowledge of cosmology and astrophysics, as I understand some aspects of the universe 
                             such as planetary motion, the geometry of the universe, and techniques used to measure these things. 
                         </p> 
@@ -184,9 +184,10 @@ function skills() {
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             Teamwork and communication are two of my strong points, as I am able to work cohesively with others to accomplish
-                            whatever goals are necessary in a timely manner. I have experience working with others, whether it be for 
-                            projects I have done, or for club boards I have been in, with strong communication skills being at the forefront
-                            of the factors for my success in these group situations. 
+                            whatever goals are necessary in a timely manner. I am able to confidently lead a team to accomplish a task, as well as 
+                            work cohesively within one. I have experience working with others, whether it be for 
+                            projects I have done, work experiences I have, or for club boards I have been in, with strong communication skills 
+                            being at the forefront of the factors for my success in these group situations. 
                         </p> 
                     </SectionBody>
                     <SectionBody>
