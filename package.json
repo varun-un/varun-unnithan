@@ -20,8 +20,8 @@
   "author": "Varun Unnithan",
   "license": "",
   "dependencies": {
-    "@babylonjs/core": "^4.2.0",
-    "babylonjs": "^4.2.0",
+    "@babylonjs/core": "^4.2.1",
+    "babylonjs": "^4.2.1",
     "gsap": "^3.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
