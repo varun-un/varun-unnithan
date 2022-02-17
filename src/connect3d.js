@@ -3,6 +3,7 @@ import {
     Color3, Color4, ArcRotateCamera, Scene, Vector3, Plane, DirectionalLight, ShadowGenerator, StandardMaterial, SceneLoader, MeshBuilder,
     Tools, ActionManager, ExecuteCodeAction
 } from '@babylonjs/core';
+import "@babylonjs/core/Materials/PBR/pbrBaseMaterial";
 import SceneComponent from "./SceneComponent";
 
 /**
