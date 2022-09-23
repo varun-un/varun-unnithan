@@ -5,6 +5,9 @@ import {
 import SceneComponent from "./SceneComponent";
 import './home.css';
 
+require("../static/left_eye_baked_DIFFUSE.jpg")
+require("../static/right_eye_baked_DIFFUSE.jpg")
+
 
 let torus;
 /**
@@ -42,7 +45,7 @@ const onSceneReady = (scene) => {
 
     light.intensity = .7;
 
-    SceneLoader.ImportMesh("","", "./face.babylon", scene, function(newMeshes){
+    SceneLoader.ImportMesh("","", require("../static/face.babylon"), scene, function(newMeshes){
         newMeshes.forEach(function (mesh) {         //for each in the array of meshes imported
             hemiLight.includedOnlyMeshes.push(mesh);
             scene.meshes.push(mesh);
@@ -53,7 +56,7 @@ const onSceneReady = (scene) => {
                 mesh.rotation.y += Tools.ToRadians(-6);
             }
         });
-    });    
+    })
 
     // torus = BABYLON.MeshBuilder.CreateTorus("ring", { diameter:3.5, thickness: .04, tessellation: 128, updatable: true });
     // torus.rotation.x = BABYLON.Tools.ToRadians(xRotSin(0, 7, 400));

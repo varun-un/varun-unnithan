@@ -17,7 +17,7 @@ function skills() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Java
-                            <img src='./java.png' className='toolImg' title="Java"></img>
+                            <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
@@ -33,7 +33,7 @@ function skills() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Javascript
-                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
+                            <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
@@ -53,7 +53,7 @@ function skills() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Node.js
-                            <img src='./nodejs.png' className='toolImg' title="Node.js"></img>
+                            <img src={require('../static/nodejs.png')} className='toolImg' title="Node.js"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
@@ -71,7 +71,7 @@ function skills() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             React & React Native
-                            <img src='./react.png' className='toolImg' title="ReactJS"></img>
+                            <img src={require('../static/react.png')} className='toolImg' title="ReactJS"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
@@ -82,11 +82,56 @@ function skills() {
                             Resilience.
                         </p> 
                     </SectionBody>
+                    <div id='sql'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            SQL & MySQL
+                            <img src={require('../static/sql.png')} className='toolImg' title="SQL"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Good</p><br />
+                        <p className='sectionBody'>
+                            SQL is the language through which relational databases can be interacted with. I have experience, both in the conceptual
+                            and the practical application of this, with an understanding of how to perform basic create, read, update, and delete (CRUD) 
+                            operations in SQL to work with relational databases. I also have experience working with MySQL, as well as Amazon Web Services
+                            (AWS) and their Relational Database Service (RDS), to store and manage such databases.
+                        </p> 
+                    </SectionBody>
+                    <div id='python'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Python
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Learning</p><br />
+                        <p className='sectionBody'>
+                            Python is a general-purpose language popularly used for functions within data science and machine learning. I am currently in
+                            the process of learning to write code in Python, as well as how to use libraries within it, such as NumPy and TensorFlow, to
+                            write programs for the purpose of data processing and machine learning. Along with learning a practical application of this,
+                            I also have a conceptual understanding of how machine learning works to aid in the learning process.
+                        </p> 
+                    </SectionBody>
+                    <div id='qiskit'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            QISKit
+                            <img src={require('../static/qiskit.png')} className='toolImg' title="Qiskit"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Learning</p><br />
+                        <p className='sectionBody'>
+                            QISKit, short for Quantum Information Software Kit, is a software development kit (SDK) for interfacing with quantum computers
+                            and writing quantum algorithms that would run with qubits on a quantum machine. Quantum algorithms and programs have the potential
+                            to be incredibly powerful in terms of processing power and may become the future of data processing and computing. I have a basic 
+                            understanding of these concepts, and am working to learn more about the specifics of how qubits and quantum computers work, from 
+                            learning more about quantum gates to better understanding quantum entanglement. <br /><br />
+                            QISKit is a a way to write code for these quantum machines on a classical computer, and it uses a syntax based off of Python
+                            in an environment similar to that of Jupyter Notebook in order to create these programs for the machines of the future.
+                        </p> 
+                    </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             HTML and CSS
-                            <img src='./html.png' className='toolImg' title="HTML5"></img>
-                            <img src='./css.png' className='toolImg' title="CSS3"></img>
+                            <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
+                            <img src={require('../static/css.png')} className='toolImg' title="CSS3"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
@@ -102,20 +147,20 @@ function skills() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             SolidWorks
-                            <img src='./solidworks.png' className='toolImg' title="SolidWorks"></img>
+                            <img src={require('../static/solidworks.png')} className='toolImg' title="SolidWorks"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             SolidWorks is a computer-aided modeling and drafting program that can be used to create and test 3D prototypes. 
-                            I have a very good grasp of SolidWorks and its feature-based modeling system, having used it for over two years 
-                            now in the two CAD classes I have taken in school. I know how to read engineering drawings, and have used 
+                            I have a very good grasp of SolidWorks and its feature-based modeling system, having used it for over 2-3 years 
+                            and taken courses in school for it. I know how to read engineering drawings, and have used 
                             SolidWorks to both replicate these drawings, as well as create my own from 3D models I have designed. 
                         </p> 
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Blender
-                            <img src='./blender.png' className='toolImg' title="Blender"></img>
+                            <img src={require('../static/blender.png')} className='toolImg' title="Blender"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
@@ -130,7 +175,7 @@ function skills() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Babylon.js
-                            <img src='./babylon.png' className='toolImg' title="Babylon.js"></img>
+                            <img src={require('../static/babylon.png')} className='toolImg' title="Babylon.js"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
@@ -149,8 +194,8 @@ function skills() {
                         <p className='sectionDuration'>Skill Level: Advanced</p><br />
                         <p className='sectionBody'>
                             In the field of math, I am very proficient, as I have a good grasp of many mathematical techniques and processes,
-                            having mastered and taken classes up to Calculus 3.
-                            This also means that I have a very good grasp of algebra and differential equations, which are important in 
+                            having mastered and taken classes up to Calculus 3 and Differential Equations.
+                            This also means that I have a very good grasp of algebra and mathematical concepts, which are important in 
                             engineering. Most importantly, however, I have good mathematical reasoning, meaning I can solve many math-based 
                             problems effectively.
                         </p> 

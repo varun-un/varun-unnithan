@@ -1,0 +1,7 @@
+{
+    "extends": "@parcel/config-default",
+    "transformers": {
+        "*.babylon": ["@parcel/transformer-raw"],
+        "*.pdf": ["@parcel/transformer-raw"]
+    }
+}

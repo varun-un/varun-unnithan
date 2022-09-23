@@ -15,14 +15,14 @@ function projects() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Aether Connect
-                            <img src='./html.png' className='toolImg' title="HTML5"></img>
-                            <img src='./css.png' className='toolImg' title="CSS3"></img>
-                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
-                            <img src='./babylon.png' className='toolImg' title="Babylon.js"></img>
-                            <img src='./react.png' className='toolImg' title="ReactJS"></img>
-                            <img src='./gsap.png' className='toolImg' title="GSAP"></img>
+                            <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
+                            <img src={require('../static/css.png')} className='toolImg' title="CSS3"></img>
+                            <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
+                            <img src={require('../static/babylon.png')} className='toolImg' title="Babylon.js"></img>
+                            <img src={require('../static/react.png')} className='toolImg' title="ReactJS"></img>
+                            <img src={require('../static/gsap.png')} className='toolImg' title="GSAP"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>March 2021 - Present</i></p>
+                        <p className='sectionDuration'><i>March 2021 - June 2021</i></p>
                         <br />
                         <p className='sectionBody'>
                             Aether Connect is a personal project which I have started in order to help teach more advanced topics to 
@@ -40,10 +40,10 @@ function projects() {
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/AetherConnect' target='_blank'>
-                                <img src='./github.png' className='projectLink' title="Github"></img>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                             <a href='https://aetherconnect.netlify.app/' target='_blank'>
-                                <img src='./web.png' className='projectLink' title="Website"></img>
+                                <img src={require('../static/web.png')} className='projectLink' title="Website"></img>
                             </a>
                         </p>  
                     </SectionBody>
@@ -51,7 +51,7 @@ function projects() {
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             FBLA Quiz
-                            <img src='./java.png' className='toolImg' title="Java"></img>
+                            <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>December 2020 - June 2021</i></p>
                         <br />
@@ -68,7 +68,7 @@ function projects() {
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/FBLAQuiz' target='_blank'>
-                                <img src='./github.png' className='projectLink' title="Github"></img>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                         </p>  
                     </SectionBody>
@@ -78,7 +78,7 @@ function projects() {
                 <SectionBody>
                         <h3 className='subsectionTitle'>
                             Raymarcher
-                            <img src='./java.png' className='toolImg' title="Java"></img>
+                            <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>June 2021 - July 2021</i></p>
                         <br />
@@ -94,20 +94,20 @@ function projects() {
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/Raymarcher' target='_blank'>
-                                <img src='./github.png' className='projectLink' title="Github"></img>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                         </p>  
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             varununnithan.me
-                            <img src='./html.png' className='toolImg' title="HTML5"></img>
-                            <img src='./css.png' className='toolImg' title="CSS3"></img>
-                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
-                            <img src='./react.png' className='toolImg' title="ReactJS"></img>
-                            <img src='./blender.png' className='toolImg' title="Blender"></img>
-                            <img src='./babylon.png' className='toolImg' title="Babylon.js"></img>
-                            <img src='./gsap.png' className='toolImg' title="GSAP"></img>
+                            <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
+                            <img src={require('../static/css.png')} className='toolImg' title="CSS3"></img>
+                            <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
+                            <img src={require('../static/react.png')} className='toolImg' title="ReactJS"></img>
+                            <img src={require('../static/blender.png')} className='toolImg' title="Blender"></img>
+                            <img src={require('../static/babylon.png')} className='toolImg' title="Babylon.js"></img>
+                            <img src={require('../static/gsap.png')} className='toolImg' title="GSAP"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>April 2021</i></p>
                         <br />
@@ -127,20 +127,20 @@ function projects() {
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/varun-unnithan' target='_blank'>
-                                <img src='./github.png' className='projectLink' title="Github"></img>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                             <a href='https://www.varununnithan.me/' target='_blank'>
-                                <img src='./web.png' className='projectLink' title="Website"></img>
+                                <img src={require('../static/web.png')} className='projectLink' title="Website"></img>
                             </a>
                         </p>  
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             nutritioUS
-                            <img src='./html.png' className='toolImg' title="HTML5"></img>
-                            <img src='./css.png' className='toolImg' title="CSS3"></img>
-                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
-                            <img src='./php.png' className='toolImg' title="PHP"></img>
+                            <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
+                            <img src={require('../static/css.png')} className='toolImg' title="CSS3"></img>
+                            <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
+                            <img src={require('../static/php.png')} className='toolImg' title="PHP"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>April 2021</i></p>
                         <br />
@@ -154,21 +154,21 @@ function projects() {
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/varun-un/nutritioUS' target='_blank'>
-                                <img src='./github.png' className='projectLink' title="Github"></img>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                             <a href='https://devpost.com/software/nutritious-ewvb14' target='_blank'>
-                                <img src='./devpost.png' className='projectLink' title="Devpost"></img>
+                                <img src={require('../static/devpost.png')} className='projectLink' title="Devpost"></img>
                             </a>
                         </p>  
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Student Connect
-                            <img src='./html.png' className='toolImg' title="HTML5"></img>
-                            <img src='./css.png' className='toolImg' title="CSS3"></img>
-                            <img src='./javascript.png' className='toolImg' title="Javascript"></img>
-                            <img src='./java.png' className='toolImg' title="Java"></img>
-                            <img src='./jsp.png' className='toolImg' title="JSP"></img>
+                            <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
+                            <img src={require('../static/css.png')} className='toolImg' title="CSS3"></img>
+                            <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
+                            <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
+                            <img src={require('../static/jsp.png')} className='toolImg' title="JSP"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>March 2021</i></p>
                         <br />
@@ -182,10 +182,10 @@ function projects() {
                             <br /><br />
                             Visit: 
                             <a href='https://github.com/anish-kristipati/PackHacks' target='_blank'>
-                                <img src='./github.png' className='projectLink' title="Github"></img>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                             <a href='https://devpost.com/software/student-connect-bgh6ie' target='_blank'>
-                                <img src='./devpost.png' className='projectLink' title="Devpost"></img>
+                                <img src={require('../static/devpost.png')} className='projectLink' title="Devpost"></img>
                             </a>
                         </p>  
                     </SectionBody>

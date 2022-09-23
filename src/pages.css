@@ -111,7 +111,7 @@ a {
 
 .jumpItem:hover .jumpText {
     font-size: 4vw;
-    top: calc(50% - 2vw - 9px);
+    top: calc(50% - 2vw - 12px);
 }
 
 .jumpCircle {
@@ -279,6 +279,10 @@ a {
     color: white;
     font-size: 1.5vw;
     font-family: 'Roboto', sans-serif;
+}
+
+.tab {
+    padding-left: 4ch;
 }
 
 .toolImg {

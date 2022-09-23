@@ -12,6 +12,7 @@ import './global.css';
 const Education = lazy(() => import("./education.js"));
 const Skills = lazy(() => import("./skills.js"));
 const Experience = lazy(() => import("./experience.js"));
+// const Activities = lazy(() => import("./activities.js"));
 const Projects = lazy(() => import("./projects.js"));
 
 ReactDOM.render(
@@ -27,6 +28,7 @@ ReactDOM.render(
                             <Route path='/education' exact component={() => <Education />} />
                             <Route path='/skills' exact component={() => <Skills />} />
                             <Route path='/experience' exact component={() => <Experience />} />
+                            {/* <Route path='/activities' exact component={() => <Activities />} /> */}
                             <Route path='/projects' exact component={() => <Projects />} />
                         </Switch>
                     </Suspense>

@@ -13,7 +13,7 @@ function Header(props) {
         <div>
             <nav className="navbar">
                 <span className="navbar-toggle" onClick={toggle} id="js-navbar-toggle">
-                    <img src='./menu-icon.png' className='menu-bars'></img>
+                    <img src={require('../static/menu-icon.png')} className='menu-bars'></img>
                 </span>
                 <Link to="/" className="logo"><b>Varun Unnithan</b></Link>
                 <ul className="main-nav" id="js-menu">
@@ -37,6 +37,11 @@ function Header(props) {
                             Experience
                         </Link>
                     </li>
+                    {/* <li>
+                        <Link to="/activities" className={`nav-links  ${props.location.pathname === "/activities" ? "current" : ""}`} onClick={toggle}>
+                            Activities
+                        </Link>
+                    </li> */}
                     <li>
                         <Link to="/projects" className={`nav-links  ${props.location.pathname === "/projects" ? "current" : ""}`} onClick={toggle}>
                             Projects
@@ -55,16 +60,16 @@ function Footer(props) {
         <div>
             <div className='imgContainer'>
                 <a href='https://github.com/varun-un' target='_blank'>
-                    <img src='./github.png' className='linkIcon' alt='Github: varun-un'></img>
+                    <img src={require('../static/github.png')} className='linkIcon' alt='Github: varun-un'></img>
                 </a>
                 <a href='https://www.linkedin.com/in/varun-unnithan' target='_blank'>
-                    <img src='./linkedin.png' className='linkIcon' alt='LinkedIn: varun-unnithan'></img>
+                    <img src={require('../static/linkedin.png')} className='linkIcon' alt='LinkedIn: varun-unnithan'></img>
                 </a>
                 <a href='https://devpost.com/varun-unnithan33' target='_blank'>
-                    <img src='./devpost.png' className='linkIcon' alt='Devpost: varun-unnithan33'></img>
+                    <img src={require('../static/devpost.png')} className='linkIcon' alt='Devpost: varun-unnithan33'></img>
                 </a>
             </div>
-            <p className='footerMessage'>Created by Varun Unnithan 2021 | varun.unnithan33@gmail.com</p>
+            <p className='footerMessage'>Created by Varun Unnithan 2022 | varun.unnithan33@gmail.com</p>
         </div>
     )
 

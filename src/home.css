@@ -301,6 +301,10 @@ section h2 {
     background-color: #845ad6;
 }
 
+.circle.green {
+    background-color: #4afb7f;
+}
+
 .circle.blue {
     background-color: #51a0fd;
 }

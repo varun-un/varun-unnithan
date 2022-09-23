@@ -130,11 +130,11 @@ function about() {
                     </div>
                 </div>
                 <div className='description flex-direction'>
-                    <img src='./headshot.png' className='picOrbit' alt='Headshot of Varun Unnithan' />
+                    <img src={require('../static/headshot.png')} className='picOrbit' alt='Headshot of Varun Unnithan' />
                     <p className='aboutDesc'>
-                        I'm a senior in high school from New Jersey, where I attend <i>The Academy for Mathematics,
-                        Science, and Engineering</i>. Beyond just being a student however, I look to expand my breadth of knowledge, as in 
-                        my eyes, that is something not only incredibly rewarding in and of itself, but also extremely powerful. And so, all 
+                        I'm a freshman at the <i>University of Maryland</i> in College Park, where I major in Aerospace Engineering and
+                        plan to add a second major in Computer Science, while expecting to graduate in May 2026. I've always enjoyed
+                        learning new things and expanding my knowledge something not only incredibly rewarding in and of itself, but also extremely powerful. And so, all 
                         throughout my life, I have always tried to learn of new topics and ideas which fascinate me, ranging from quantum 
                         mechanics to psychology, all with the goal of furthering my own knowledge and abilities. However, throughout my 
                         experiences, the concepts of <b className='red'>space</b> and <b className='red'>computer science</b> are ones which 
@@ -142,9 +142,11 @@ function about() {
                         amazing computer programs to do things that were previously unheard of, are ambitions which drive me forward. However, 
                         despite the two being different fields, I have the same goal for both: to further the human understanding and 
                         capabilities. 
-                        <br /><br />
-                        Applying the knowledge I have gained is what I see as the first step to reaching my end goal. And so, I have 
-                        started to utilize my abilities to create projects which both improve my own understanding, but also lead to the
+                        <br ></br>
+                        By taking part in projects and doing work that interests me in the fields of computer science and aerospace engineering,
+                        I'm able to both find things enjoyable to myself while also helping to work towards my goal. It's a big reason why I 
+                        do work with teams whose projects are large in scope and ambitious, as it'll allow me to utilize my abilities to create 
+                        projects which both improve my own understanding, but also lead to the
                         creation of products which I believe can have a positive impact. 
                         <br /><br />
                         I hope you'll join me on this journey to create something amazing.
