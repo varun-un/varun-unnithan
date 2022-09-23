@@ -142,7 +142,7 @@ function about() {
                         amazing computer programs to do things that were previously unheard of, are ambitions which drive me forward. However, 
                         despite the two being different fields, I have the same goal for both: to further the human understanding and 
                         capabilities. 
-                        <br ></br>
+                        <br /><br />
                         By taking part in projects and doing work that interests me in the fields of computer science and aerospace engineering,
                         I'm able to both find things enjoyable to myself while also helping to work towards my goal. It's a big reason why I 
                         do work with teams whose projects are large in scope and ambitious, as it'll allow me to utilize my abilities to create 
