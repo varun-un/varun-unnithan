@@ -61,10 +61,9 @@ function experience() {
                             The Terrapin Rocket Club is a club within the <i>University of Maryland</i>&nbsp; that works on developing a student-created
                             solid engine rocket capable of flight heights of 10,000 ft in order to compete at the Spaceport America Cup. As a club
                             member this year, I am a member of the avionics sub team, whose goal is to develop, from scratch, a flight computer for
-                            this rocket that is capable of controlling the rocket's stages and firing, as well as data logging and telemetry. To 
-                            accomplish this goal, I have performed research on microcontrollers and flight computers, including the Arduino, 
-                            Raspberry Pi, and Teensy, in order to judge which one would be the best for the needs of the project, as well as 
-                            conducted research regarding the methods of non-volatile data storage within the flight computer. I have also 
+                            this rocket that is capable of controlling the rocket's stages and firing, as well as data logging and telemetry. Towards this 
+                            goal, I've written code in C++ that takes in sensor data, records it, and performs sensor fusion if necessary, within the 
+                            Teensy 4.1 microcontroller. I have also helped look into the methods of data storage and retrieval within the comporter, and 
                             contributed to the designing and selection of parts for the flight computer. Through my work in this club, I have 
                             already learned a lot about the parts that goes into making a rocket, as well as how the different forms of electronics 
                             hardware and software is used to ensure the success of such a rocket. I have also learned a lot more about electronics 
