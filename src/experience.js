@@ -146,11 +146,14 @@ function experience() {
                             Additive manufacturing (3D printing) offers structural designers increasing freedom to tailor parts to very 
                             specific mechanical properties, and new filament materials offer the possibility to expand these properties 
                             even further. This research project, completed by a group of students of which I am a part of, under the 
-                            guidance of Dr. Norman Wereley, a professor within the <i>University of Maryland</i>'s Aerospace Engineering
+                            guidance of Dr. Young Tai Choi, a professor within the <i>University of Maryland</i>'s Aerospace Engineering
                             department, works to study the stresses and strains undergone by honeycomb structures when out-of-plane forces are
-                            applied to them, and apply such findings to develop additive manufacturing techniques. Through this project, I've
-                            learned more about how certain structures are able to withstand large forces while minimizing material weight,
-                            as well as the calculations involved with stresses and strains on an object.
+                            applied to them, and research the effects of buckling initiators on this. Through this project, I've
+                            learned more about how certain structures are able to withstand large forces while minimizing material weight 
+                            and crush acceleration, as well as the calculations involved with stresses and strains on an object. 
+                            <br /><br />
+                            <a href={require('../static/Additive Manufacturing of Cellular Materials for Out-of-Plane Energy Absorption Poster.pdf')}
+                            target='_blank'>Poster</a>
                         </p>  
                     </SectionBody>
                 </PageSection>
