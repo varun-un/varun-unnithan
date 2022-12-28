@@ -54,20 +54,21 @@ function experience() {
                             Terrapin Rocket Club
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
                         </h3><br />
-                        <h3><p className='red'>Avionics Team Member</p></h3> <br />
+                        <h3><p className='red'>Avionics Team Lead</p></h3> <br />
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
                             The Terrapin Rocket Club is a club within the <i>University of Maryland</i>&nbsp; that works on developing a student-created
-                            solid engine rocket capable of flight heights of 10,000 ft in order to compete at the Spaceport America Cup. As a club
-                            member this year, I am a member of the avionics sub team, whose goal is to develop, from scratch, a flight computer for
+                            solid engine rocket capable of flight heights of 10,000 ft in order to compete at the Spaceport America Cup. In the club
+                            I am the team lead for the avionics sub team, whose goal is to develop, from scratch, a flight computer for
                             this rocket that is capable of controlling the rocket's stages and firing, as well as data logging and telemetry. Towards this 
-                            goal, I've written code in C++ that takes in sensor data, records it, and performs sensor fusion if necessary, within the 
-                            Teensy 4.1 microcontroller. I have also helped look into the methods of data storage and retrieval within the comporter, and 
-                            contributed to the designing and selection of parts for the flight computer. Through my work in this club, I have 
-                            already learned a lot about the parts that goes into making a rocket, as well as how the different forms of electronics 
-                            hardware and software is used to ensure the success of such a rocket. I have also learned a lot more about electronics 
-                            in general.
+                            goal, I've written code in C++ that takes in and works with sensor data, as well as record it, within the 
+                            Teensy 4.1 microcontroller. I've also needed to do some work involving circuit design and work with the PCBs (printed circuit 
+                            boards) for the computer.
+                            <br /><br />
+                            As a subteam lead, I also need to manage the work and tasks that the team members work on. This must be coordinated, as well as 
+                            synchronized with the needs of the other teams and subprojects that go into the rocket, so that all parts of the project fit in 
+                            together.
                         </p>  
                     </SectionBody>
                     <div id='seds'></div>
@@ -76,7 +77,7 @@ function experience() {
                             Students for the Exploration and Development of Space (SEDS)
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
                         </h3><br />
-                        <h3><p className='red'>SATFAB: Thermals and Structures Team Member</p></h3> <br />
+                        <h3><p className='red'>SATFAB: Thermals and Structures Team Lead</p></h3> <br />
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
@@ -88,13 +89,12 @@ function experience() {
                             satellite would would launch with the United States Naval Academy (USNA) and their 3U bus to take it into orbit,
                             where it would stay for 1-2 years. There, the satellite would perform research with OpenLST, as well as contribute
                             to a project with <i>Engineers without Borders</i> to help provide radio communications to a village in Uganda.
-                            <br />
-                            Within the SATFAB team, I am a member of the Thermals and Structures sub team, where I primarily work with the 
+                            <br /><br />
+                            Within the SATFAB team, I am the Thermals and Structures sub team lead, where I help direct work involving the 
                             thermals of the satellite. I've worked to research thermal control systems (TCS) for satellites, as well as methods
-                            for both active and passive thermal control. In this team, my job is to help design the TCS for the cube satellite, 
-                            as well as perform temperature testing and simulations to ensure that the payload and electronic 
-                            components within it are kept within its operational limits. In doing so, I have and will learn more about TCS, as 
-                            well as how to perform thermal simulations and calculations for an object in launch and orbit.
+                            for both active and passive thermal control. In this team, my job is to help direct the design and development of the TCS
+                            for cube satellites, with the current type we are looking to design being based off of phase-change materials (PCM). I 
+                            also help to manage team members and delineate tasks and deadlines for our projects.
                         </p>  
                     </SectionBody>
                     <div id='quantumclub'></div>
