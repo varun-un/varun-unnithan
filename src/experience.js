@@ -137,10 +137,33 @@ function experience() {
                 <PageSection section='Research'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            Additive Manufacturing of Cellular Materials for Out-of-Plane Energy Absorption
+                            Whisker-Inspired Flow Sensing
+                            <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                            <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>January 2023 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            Some marine animals, such as seals, have whiskers that are able to sense the flow of water around them.
+                            These whiskers detect the flow of the vortices shed by nearby objects by analyzing how they are deformed when
+                            in contact with the fluid flow. This research project, led by Dr. Cecilia Huertas Cerdeira, within the 
+                            <i>University of Maryland</i>'s Mechanical Engineering department, attempts to create a soft body that can
+                            replicate this behavior, for use in applications such as robotics. This research focuses on choosing an 
+                            appropriate material for the soft body, as well as designing the geometry of the body to minimize the 
+                            viscoelasticity and avoid large deformations, while still being flexible enough to deflect and detect the 
+                            flow. These varying whisker profiles and materials will then be subjected to a fluid flow, with the resulting
+                            data being produced and analyzed with code in Matlab. Once a suitable design is found, the next step would be 
+                            to insert a fiber optic into the whisker to detect deformations and develop code to analyze such to produce 
+                            meaningful conclusions about surrounding objects.
+                            <br /><br />
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Buckling Initiators on 3D-Printed Honeycomb Cell Structures for Out-of-Plane Energy Absorption
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>August 2022 - Present</i></p>
+                        <p className='sectionDuration'><i>September 2022 - December 2022</i></p>
                         <br />
                         <p className='sectionBody'>
                             Additive manufacturing (3D printing) offers structural designers increasing freedom to tailor parts to very 
