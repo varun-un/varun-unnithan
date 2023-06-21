@@ -17,19 +17,20 @@ function education() {
                 <PageSection section='School'>
                 <SectionBody>
                         <h3 className='subsectionTitle'>University of Maryland, College Park</h3><br />
-                        <p className='sectionBody'><b className='red'>Bachelor of Science in Aerospace Engineering</b></p><br />
-                        <p className='sectionDuration'><i>August 2022 - Present<br/>Expected Graduation: May 2026</i></p>
+                        <p className='sectionBody'><b className='red'>Bachelor of Science in Aerospace Engineering and Computer Science</b></p><br />
+                        <p className='sectionDuration'><i>August 2022 - Present<br/>Expected Graduation: May 2026<br/>GPA: 3.94</i></p>
                         <br />
                         <p className='sectionBody'>
                             The University of Maryland (UMD) at College Park is the primary institution of higher education in the public 
-                            University System of Maryland. At UMD, I am a freshman and part of the Honors College, within which I am a member of the 
+                            University System of Maryland. At UMD, I am a sophomore and part of the Honors College, within which I am a member of the 
                             Gemstone Program —  a multidisciplinary four-year research program for undergraduates in the Honors
                             College. At UMD, I am also a a President's Scholarship Recipient for all four years, as well as a recipient of
                             the National Merit Scholarship Finalist Scholarship. At UMD I plan to pursue a B.S. in Aerospace Engineering
                             within UMD's A. James Clark School of Engineering's <a target="_blank" 
                             href='https://aero.umd.edu/news/story/maryland-engineering-ranked-12-public-undergraduate-program-in-the-country'>
-                            top 12 ranked</a> Aerospace Engineering program. I also plan to declare a double major in Computer Science as 
-                            well, and to graduate with both these majors.
+                            top 12 ranked</a> Aerospace Engineering program. I also plan to double major in Computer Science in UMD's <a target='_blank' 
+                            href='https://www.cs.umd.edu/article/2022/09/umd%E2%80%99s-computer-science-undergraduate-program-climbs-two-spots-no-16-us-news-rankings'>
+                            top 16 ranked</a> Computer Science program as well, and to graduate with a dual-degree for both of these concentrations.
                         </p> 
                         <br /><br />
                         <p className='sectionBody'>
@@ -37,7 +38,9 @@ function education() {
                         </p> 
                         <ul className='sectionBody'>
                             <li>MATH 246H: Differential Equations</li>
+                            <li>PHYS 250: Discrete Structures</li>
                             <li>CMSC 132: Object-Oriented Programming II</li>
+                            <li>CMSC 216: Introduction to Computer Systems</li>
                             <li>ENES 100: Engineering Design</li>
                         </ul>
                     </SectionBody>

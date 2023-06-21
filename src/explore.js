@@ -107,8 +107,8 @@ function explore() {
         gsap.to(bg3DText, {
             scrollTrigger: {
                 trigger: '.exploreText',
-                start: 'bottom bottom',
-                end: 'bottom center',
+                start: 'top center',
+                end: 'top top',
                 scrub: 1,
             },
             ease: Power1.easeOut,

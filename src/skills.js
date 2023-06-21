@@ -16,6 +16,24 @@ function skills() {
                 <PageSection section='Coding'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
+                            C / C++
+                            <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
+                            <img src={require('../static/c.png')} className='toolImg' title="C"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Great</p><br />
+                        <p className='sectionBody'>
+                            C is a structural programming language that is used for system applications and low-level programming applications,
+                            with C++ being an object-oriented programming language that is built on top of C. Between taking courses covering C 
+                            and low-level programming, as well as my over one year of experience with C++, a superset of C, I have a good understanding of the
+                            language and its syntax. In both C and C++, I am able to create programs that utilize pointers, structs, classes,
+                            memory allocation, and other features of the languages. I am able to use C-based programs to create low-level applications 
+                            that interact directly with the OS and hardware, as well as use C++ to create higher-level applications. I've also used C++ in 
+                            projects that involve microcontrollers and embedded systems, enabling me to create systems that interact with hardware and 
+                            perform specialized tasks.
+                        </p> 
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
                             Java
                             <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
                         </h3><br />
@@ -23,8 +41,9 @@ function skills() {
                         <p className='sectionBody'>
                             Java is an object-oriented programming language, used often to create applications or build back-end
                             modules for the internet. I have known Java for nearly two years now, starting with the AP Computer Science A
-                            class I took in my high school. In this class I excelled, scoring a 5 on the AP Computer Science A test,
-                            and since then I have self-taught myself much more about the language, in order to improve my ability to utilize
+                            class I took in my high school, to my experience within object-oriented programming courses at college. In these classes
+                            I excelled, scoring a 5 on the AP Computer Science A test, and a 4.0 in these courses,
+                            alongside experience and knowledge that I have self-taught myself about the language, in order to improve my ability to utilize
                             Java and its features. <br /><br />
                             Beyond just a functional knowledge of Java and its syntax, I am also familiar with the Java Swing library, which
                             is a library built into Java for the purpose of creating component-based GUIs.
@@ -45,7 +64,7 @@ function skills() {
                             Outside of vanilla Javascript, I also have experience with the <a href="#babylon">Babylon.js</a>
                             &nbsp;library for creating 3D objects with Javascript, as well as with the <a href="#react">React</a>
                             &nbsp;library. I have worked with React Native to develop mobile applications, as well as used 
-                            <a href="#nodejs">Node.js</a>&nbsp;to utilize Javascript for backend applications. I also have 
+                            <a href="#nodejs"> Node.js</a>&nbsp;to utilize Javascript for backend applications. I also have 
                             limited experience with the GSAP library, which is used to create animations in Javascript for HTML elements.
                         </p> 
                     </SectionBody>
@@ -105,9 +124,11 @@ function skills() {
                         <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
                             Python is a general-purpose language popularly used for functions within data science and machine learning. I am currently in
-                            the process of learning to write code in Python, as well as how to use libraries within it, such as NumPy and TensorFlow, to
+                            the process of learning to write code in Python, as well as understanding many of its paradigms, 
+                            as well as how to use libraries within it, such as NumPy and TensorFlow, to
                             write programs for the purpose of data processing and machine learning. Along with learning a practical application of this,
-                            I also have a conceptual understanding of how machine learning works to aid in the learning process.
+                            I also have a conceptual understanding of how machine learning works to aid in the learning process. I've used Python and libraries 
+                            within it for graph-based data processing and analysis within my <a href='/experience#risc'>RISC Internship</a> as well.  
                         </p> 
                     </SectionBody>
                     <div id='qiskit'></div>
@@ -159,6 +180,22 @@ function skills() {
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
+                            PCB Design
+                            <img src={require('../static/pcb.png')} className='toolImg' title="PCB"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Good</p><br />
+                        <p className='sectionBody'>
+                            PCB, or printed circuit board, design is the process of designing a circuit board for a given purpose, integrating microcontrollers,
+                            sensors, and other components into a single board. I have experience with this process, from designing the schematic and working with 
+                            microcontroller inputs and outputs, to actually designing the board and routing the traces. I have used Autodesk's Fusion 360 software 
+                            to design these PCBs, and have experience with reading datasheets and understanding the electrical components that go into these boards, 
+                            before then ordering these boards from a manufacturer and soldering components onto them. Through this process, I've gained a better 
+                            understanding of low-level systems architecture and how to design a system from the ground up, alongside a better understanding of 
+                            electronics and computer engineering principles.
+                        </p> 
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
                             Blender
                             <img src={require('../static/blender.png')} className='toolImg' title="Blender"></img>
                         </h3><br />
@@ -201,7 +238,26 @@ function skills() {
                         </p> 
                     </SectionBody>
                     <SectionBody>
-                        <h3 className='subsectionTitle'>Physics</h3><br />
+                        <h3 className='subsectionTitle'>
+                            Thermal Desktop
+                            <img src={require('../static/td.png')} className='toolImg' title="Thermal Desktop"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Learning</p><br />
+                        <p className='sectionBody'>
+                            Thermal Desktop is a software application developed by C&R Technologies that is used for the thermal analysis
+                            and simulation of heat transfer systems, predominantly in the aerospace industry. With the underlying SINDA/FLUINT
+                            application being what many NASA missions use for thermohydraulic analysis, Thermal Desktop is a powerful tool. I 
+                            have experience with this software, having used it within <a href='/experience#seds'>SEDS</a> to model and simulate
+                            our cube satellite for both high altitude balloon launches and low earth orbits. I have a good understanding of the
+                            basic principles of the software, as well as for the underlying properties of heat transfer that drive it, and I look
+                            to continue to expand my knowledge and experience with it.
+                        </p> 
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Physics
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
+                        </h3><br />
                         <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
                             I have a good understanding of basic physics principles, having taken courses such as AP Physics C and AP Physics 

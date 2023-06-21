@@ -132,8 +132,8 @@ function about() {
                 <div className='description flex-direction'>
                     <img src={require('../static/headshot.png')} className='picOrbit' alt='Headshot of Varun Unnithan' />
                     <p className='aboutDesc'>
-                        I'm a freshman at the <i>University of Maryland</i> in College Park, where I major in Aerospace Engineering and
-                        plan to add a second major in Computer Science, while expecting to graduate in May 2026. I've always enjoyed
+                        I'm a sophomore at the <i>University of Maryland</i> in College Park, where I am a double major in Aerospace Engineering and
+                        Computer Science, while expecting to graduate in May 2026. I've always enjoyed
                         learning new things and expanding my knowledge something not only incredibly rewarding in and of itself, but also extremely powerful. And so, all 
                         throughout my life, I have always tried to learn of new topics and ideas which fascinate me, ranging from quantum 
                         mechanics to psychology, all with the goal of furthering my own knowledge and abilities. However, throughout my 

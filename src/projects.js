@@ -12,6 +12,37 @@ function projects() {
                 <PageTitle title='Projects' sections={['Major Projects', 'Side Projects']} links={['#major', '#side']} starOffset='2' />
                 <div id='major'></div>
                 <PageSection section='Major Projects'>
+                <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            High-Powered Rocketry
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
+                            <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>September 2022 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            High-powered rocketry is the term for model rocketry with motors that exceed the 160 Newton-second impulse 
+                            level, which is at the H motor class. I have gained experience in high-powered rocketry through my work with
+                            my own personal rockets, as well as through the <a href='/experience#terprockets'>Terrapin Rocket Team</a> at UMD. 
+                            <br /><br />
+                            My personal experience with high-powered rocketry began with my first L1 certification rocket, which was a 3" diameter
+                            LOC Iris rocket which I built, simulated, and flew on an H125 motor in February 2023 to around 2200 feet, 
+                            receiving my L1 high-powered rocketry certification from the Tripoli Rocketry Association. Since then, I have designed and 
+                            built my own 3" diameter dual-deploy rocket, which will use internal electronics, through an EasyMini altimeter, to fire 
+                            charges for a drogue parachute at apogee, and a main parachute at 750 feet. I look to launch this rocket, and continue to
+                            gain experience in high-powered rocketry, as I look to gain my L2 certification and learn more about the subject.
+                            <br /><br />
+                            I also have high-powered rocketry experience through the Terrapin Rocket Team, as the main competition rocket which we 
+                            design and construct is essentially a large-scale L3 rocket. I specifically have gained a lot of experience with the 
+                            rocket's internal electronics through my experience as the Avionics Subteam Lead, however, by working with other team
+                            leads and club members, I have also gained experience with the rocket's airframe, propulsion, and airbrake systems.
+                            Through this, I have been able to gain a strong fundamental understanding of how these rocket systems work and how they 
+                            are designed.
+                            <br /><br />
+                            <a href={require('../static/tripoli_card.pdf')}
+                            target='_blank'>Membership Card</a>
+                        </p>  
+                    </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Aether Connect
@@ -75,7 +106,30 @@ function projects() {
                 </PageSection>
                 <div id='side'></div>
                 <PageSection section='Side Projects'>
-                <SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Raymarcher
+                            <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>June 2021 - July 2021</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            Raymarcher is a real-time 3D rendering engine which I have made, based in Java. I have always been interested
+                            in how computers create 3D scenes, whether they be in games I have played or in animation and modelling 
+                            softwares, such as in Blender or Solidworks, and so this project was a learning experience for me. I decided
+                            to try and build everything from scratch for this rendering engine, not using external libraries to abstract
+                            away certain aspects of the process, so that I could gain a better understanding of how these programs worked.
+                            Raymarcher specifically uses the raymarching technique and can render 3D scenes with meshes and geometry 
+                            which the user may define. Beyond just the computer programming side of it, this project also taught me a lot
+                            about the mathematics behind these 3D engines, and helped me gain a better understanding of linear algebra.
+                            <br /><br />
+                            Visit: 
+                            <a href='https://github.com/varun-un/Raymarcher' target='_blank'>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
+                            </a>
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
                         <h3 className='subsectionTitle'>
                             Raymarcher
                             <img src={require('../static/java.png')} className='toolImg' title="Java"></img>

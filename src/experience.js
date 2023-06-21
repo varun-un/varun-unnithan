@@ -13,9 +13,29 @@ function experience() {
                 <PageTitle title='Experience' sections={['Internships', 'Clubs', 'Research']} links={['#internships', '#clubs', '#research']} starOffset='2' />
                 <div id='internships'></div>
                 <PageSection section='Internships'>
+                    <div id='risc'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            Software Engineer
+                            Research for Intelligence & Security Challenges (RISC)
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>UMD ARLIS</i></p>
+                        <p className='sectionDuration'><i>May 2023 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            I work as an intern with the University of Maryland's Applied Laboratory for Intelligence and Security (ARLIS)
+                            as part of their Research for Intelligence & Security Challenges (RISC) internship program. In this internship,
+                            I work with a team of two other interns, alongside employees, mentors and government sponsors on a project to 
+                            assess and formally verify changes in operational workflows due to the integration of AI and other new technologies.
+                            This is done by first analyzing graph-based workflows used in government processes to develop logical rules to 
+                            represent their operations. Then, using first-order logic libraries in Python, the effects of these rules and 
+                            technologies can be assessed. Through this internship, I've gained experience with communicating with and presenting
+                            to a team and clients, as well as how the development process works in a professional setting.
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Software Engineering Intern
                             <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
                             <img src={require('../static/react.png')} className='toolImg' title="React Native"></img>
                             <img src={require('../static/nodejs.png')} className='toolImg' title="Node.JS"></img>
@@ -53,6 +73,8 @@ function experience() {
                         <h3 className='subsectionTitle'>
                             Terrapin Rocket Club
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                            <img src={require('../static/pcb.png')} className='toolImg' title="PCB"></img>
+                            <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
                         </h3><br />
                         <h3><p className='red'>Avionics Team Lead</p></h3> <br />
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
@@ -60,15 +82,18 @@ function experience() {
                         <p className='sectionBody'>
                             The Terrapin Rocket Club is a club within the <i>University of Maryland</i>&nbsp; that works on developing a student-created
                             solid engine rocket capable of flight heights of 10,000 ft in order to compete at the Spaceport America Cup. In the club
-                            I am the team lead for the avionics sub team, whose goal is to develop, from scratch, a flight computer for
-                            this rocket that is capable of controlling the rocket's stages and firing, as well as data logging and telemetry. Towards this 
-                            goal, I've written code in C++ that takes in and works with sensor data, as well as record it, within the 
-                            Teensy 4.1 microcontroller. I've also needed to do some work involving circuit design and work with the PCBs (printed circuit 
-                            boards) for the computer.
+                            I am the team lead for the avionics subteam, whose goal is to develop, from scratch, a flight computer for
+                            this rocket that is capable of controlling the rocket's stages and firing charges, as well as data logging and telemetry. Towards this 
+                            goal, I've written code in C++ that takes in and processes sensor data, within a Teensy 4.1 microcontroller. I've also helped develop code
+                            to store this sensor data in an SD card, as well as code to transmit this data to a ground station via the LoRa radio protocol through Astrophysics
+                            packets. In addition, I've helped design and build the PCBs (printed circuit boards) for the computer, taking into consideration the electrical
+                            engineering aspects of the components and flight computer.
                             <br /><br />
                             As a subteam lead, I also need to manage the work and tasks that the team members work on. This must be coordinated, as well as 
                             synchronized with the needs of the other teams and subprojects that go into the rocket, so that all parts of the project fit in 
-                            together.
+                            together. I've also made efforts to help lead the learning efforts of the team, helping to teach new members about the tools and
+                            skills needed to work on the project, getting them onboarded quickly. I've also helped lead the testing efforts for our avionics,
+                            working to test the code and hardware to ensure that it works as intended in a flight environment. 
                         </p>  
                     </SectionBody>
                     <div id='seds'></div>
@@ -76,8 +101,11 @@ function experience() {
                         <h3 className='subsectionTitle'>
                             Students for the Exploration and Development of Space (SEDS)
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                            <img src={require('../static/td.png')} className='toolImg' title="Thermal Desktop"></img>
+                            <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
-                        <h3><p className='red'>SATFAB: Thermals and Structures Team Lead</p></h3> <br />
+                        <h3><p className='red'>SATFAB: Thermals Team Lead</p></h3> <br />
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
@@ -86,14 +114,16 @@ function experience() {
                             a member of the Satellite Fabrication (SATFAB) team. As a member of the SATFAB team, I am part of the efforts
                             to create a 1U (10cm x 10cm x 10cm) cube satellite that is able to carry a payload of a radio antennae and 
                             processor into orbit to perform tests with radio communications and OpenLST, a radio design paradigm. This 
-                            satellite would would launch with the United States Naval Academy (USNA) and their 3U bus to take it into orbit,
-                            where it would stay for 1-2 years. There, the satellite would perform research with OpenLST, as well as contribute
-                            to a project with <i>Engineers without Borders</i> to help provide radio communications to a village in Uganda.
+                            satellite has launched on high-altitude balloon launchs, and would launch with the United States Naval Academy 
+                            (USNA) and their 3U bus to take it into orbit, where it would provide radio communications.
                             <br /><br />
-                            Within the SATFAB team, I am the Thermals and Structures sub team lead, where I help direct work involving the 
-                            thermals of the satellite. I've worked to research thermal control systems (TCS) for satellites, as well as methods
-                            for both active and passive thermal control. In this team, my job is to help direct the design and development of the TCS
-                            for cube satellites, with the current type we are looking to design being based off of phase-change materials (PCM). I 
+                            Within the SATFAB team, I am the Thermals subteam lead, where I help direct work involving the 
+                            thermals of the satellite. One of our team's predominant jobs is to perform thermal analysis on the cubesats which we send 
+                            up, which we mainly use Thermal Desktop for. Through thermal desktop, and other forms of thermal analysis we've performed, including
+                            using Matlab to solve differential systems, I've gained a strong understanding of heat flow within satellite systems. In addition, 
+                            I've worked to research thermal control systems (TCS) for satellites, as well as methods
+                            for both active and passive thermal control. I help to direct the design and development of TCS
+                            for cube satellites, with the current type we are looking to design and research being based off of phase-change materials (PCM). 
                             also help to manage team members and delineate tasks and deadlines for our projects.
                         </p>  
                     </SectionBody>
@@ -103,6 +133,7 @@ function experience() {
                             UMD Undergraduate Quantum Association
                             <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
                             <img src={require('../static/qiskit.png')} className='toolImg' title="QISKit"></img>
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
                         <h3><p className='red'>Member</p></h3> <br />
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
@@ -116,7 +147,7 @@ function experience() {
                         </p>  
                     </SectionBody>
                     <div id='bigthinkai'></div>
-                    <SectionBody>
+                    {/* <SectionBody>
                         <h3 className='subsectionTitle'>
                             BigTh!nk AI
                             <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
@@ -131,15 +162,38 @@ function experience() {
                             end. In my time in this club, I've learned the basics of writing code in Python, as well as the fundamentals of how
                             machine learning algorithms work, as well as how to code them.
                         </p>  
-                    </SectionBody>
+                    </SectionBody> */}
                 </PageSection>
                 <div id='research'></div>
                 <PageSection section='Research'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
+                            Toroidal Propellers for Maritime Applications
+                            <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                            <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
+                            <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>March 2023 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            Maritime shipping is a major driver of the global economy, yet it also contributes to a significant amount of
+                            pollution. This research project looks at examining a new type of propeller technology, called a toroidal propeller,
+                            and assess its applicability to maritime shipping. This research project is one associated with the Gemstone Honors 
+                            College, where I'll work on a team with about a dozen other students to research this topic. Our goal is to develop
+                            a toroidal-shaped propeller that is able to be used in maritime shipping, and to assess its viability as a replacement
+                            for currently used propellers based on factors such as fuel efficiency, cost, and noise. To do this, we plan to mathematically
+                            model a toroidal propeller, and then use computational fluid dynamics (CFD) to simulate its performance in a variety of
+                            conditions. We will then vary the parameters of this model, generating various geometries, to see if we can produce a 
+                            potentially viable propeller design.
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
                             Whisker-Inspired Flow Sensing
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
                             <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>January 2023 - Present</i></p>
                         <br />
@@ -147,7 +201,7 @@ function experience() {
                             Some marine animals, such as seals, have whiskers that are able to sense the flow of water around them.
                             These whiskers detect the flow of the vortices shed by nearby objects by analyzing how they are deformed when
                             in contact with the fluid flow. This research project, led by Dr. Cecilia Huertas Cerdeira, within the 
-                            <i>University of Maryland</i>'s Mechanical Engineering department, attempts to create a soft body that can
+                            <i> University of Maryland</i>'s Mechanical Engineering department, attempts to create a soft body that can
                             replicate this behavior, for use in applications such as robotics. This research focuses on choosing an 
                             appropriate material for the soft body, as well as designing the geometry of the body to minimize the 
                             viscoelasticity and avoid large deformations, while still being flexible enough to deflect and detect the 
@@ -155,13 +209,13 @@ function experience() {
                             data being produced and analyzed with code in Matlab. Once a suitable design is found, the next step would be 
                             to insert a fiber optic into the whisker to detect deformations and develop code to analyze such to produce 
                             meaningful conclusions about surrounding objects.
-                            <br /><br />
                         </p>  
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            Buckling Initiators on 3D-Printed Honeycomb Cell Structures for Out-of-Plane Energy Absorption
+                            Buckling Initiators on Honeycomb Cells for Out-of-Plane Energy Absorption
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
                         <p className='sectionDuration'><i>September 2022 - December 2022</i></p>
                         <br />

@@ -69,7 +69,7 @@ function Footer(props) {
                     <img src={require('../static/devpost.png')} className='linkIcon' alt='Devpost: varun-unnithan33'></img>
                 </a>
             </div>
-            <p className='footerMessage'>Created by Varun Unnithan 2022 | varun.unnithan33@gmail.com</p>
+            <p className='footerMessage'>Created by Varun Unnithan 2023 | varun.unnithan33@gmail.com</p>
         </div>
     )
 
