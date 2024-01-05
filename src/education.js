@@ -18,7 +18,7 @@ function education() {
                 <SectionBody>
                         <h3 className='subsectionTitle'>University of Maryland, College Park</h3><br />
                         <p className='sectionBody'><b className='red'>Bachelor of Science in Aerospace Engineering and Computer Science</b></p><br />
-                        <p className='sectionDuration'><i>August 2022 - Present<br/>Expected Graduation: May 2026<br/>GPA: 3.94</i></p>
+                        <p className='sectionDuration'><i>August 2022 - Present<br/>Expected Graduation: May 2026<br/>GPA: 3.96</i></p>
                         <br />
                         <p className='sectionBody'>
                             The University of Maryland (UMD) at College Park is the primary institution of higher education in the public 
@@ -38,10 +38,11 @@ function education() {
                         </p> 
                         <ul className='sectionBody'>
                             <li>MATH 246H: Differential Equations</li>
-                            <li>PHYS 250: Discrete Structures</li>
-                            <li>CMSC 132: Object-Oriented Programming II</li>
-                            <li>CMSC 216: Introduction to Computer Systems</li>
-                            <li>ENES 100: Engineering Design</li>
+                            <li>ENAE 283: Introduction to Aerospace Systems</li>
+                            <li>CMSC 351: Algorithms</li>
+                            <li>CMSC 330: Organization of Programming Languages</li>
+                            <li>CMSC 250: Discrete Structures</li>
+                            <li>ENES 220: Mechanics II</li>
                         </ul>
                     </SectionBody>
                     <SectionBody>

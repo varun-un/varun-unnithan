@@ -23,14 +23,18 @@ function experience() {
                         <p className='sectionDuration'><i>May 2023 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
-                            I work as an intern with the University of Maryland's Applied Laboratory for Intelligence and Security (ARLIS)
-                            as part of their Research for Intelligence & Security Challenges (RISC) internship program. In this internship,
-                            I work with a team of two other interns, alongside employees, mentors and government sponsors on a project to 
-                            assess and formally verify changes in operational workflows due to the integration of AI and other new technologies.
-                            This is done by first analyzing graph-based workflows used in government processes to develop logical rules to 
-                            represent their operations. Then, using first-order logic libraries in Python, the effects of these rules and 
-                            technologies can be assessed. Through this internship, I've gained experience with communicating with and presenting
-                            to a team and clients, as well as how the development process works in a professional setting.
+                            I work as a part-time researcher and developer with the University of Maryland's Applied Laboratory for Intelligence 
+                            and Security (ARLIS), where I work on a project to develop a tool to assess and formally verify changes in operational
+                            workflows. Formerly a part of the Research for Intelligence & Security Challenges (RISC) internship program, I was 
+                            brought on as a part-time researcher to continue my work on a similar project to the one I worked on as an intern.
+                            Contracted by government sponsors, I work with a team to develop software, parsers, and generators to analyze and
+                            simulate different workflows and processes within a graph-based framework. To do so, I've written code in Python to
+                            parse and understand graphs, and then used first-order logic libraries and rules to simulate the effects of changes
+                            in these graphs. The developed software was able to analyze processes for changes due to automation and AI, and
+                            found the influences of these systems on upwards of 50% of the workflows. <br /><br />
+
+                            Through this internship, I've gained experience with communicating with and presenting to a team and clients, as 
+                            well as how the development process works in a professional setting.
                         </p>  
                     </SectionBody>
                     <SectionBody>
@@ -74,6 +78,7 @@ function experience() {
                             Terrapin Rocket Club
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
                             <img src={require('../static/pcb.png')} className='toolImg' title="PCB"></img>
+                            <img src={require('../static/kicad.png')} className='toolImg' title="KiCad"></img>
                             <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
                         </h3><br />
                         <h3><p className='red'>Avionics Team Lead</p></h3> <br />
@@ -83,9 +88,13 @@ function experience() {
                             The Terrapin Rocket Club is a club within the <i>University of Maryland</i>&nbsp; that works on developing a student-created
                             solid engine rocket capable of flight heights of 10,000 ft in order to compete at the Spaceport America Cup. In the club
                             I am the team lead for the avionics subteam, whose goal is to develop, from scratch, a flight computer for
-                            this rocket that is capable of controlling the rocket's stages and firing charges, as well as data logging and telemetry. Towards this 
-                            goal, I've written code in C++ that takes in and processes sensor data, within a Teensy 4.1 microcontroller. I've also helped develop code
-                            to store this sensor data in an SD card, as well as code to transmit this data to a ground station via the LoRa radio protocol through Astrophysics
+                            this rocket that is capable of controlling the rocket's stages and firing charges, as well as data logging and telemetry. In this role 
+                            I've written code in C++ that takes in and processes sensor data, within an embedded systems context. I've also helped lead and develop
+                            data fusion algorithms and Kalman Filters to combine data from multiple sensors, such as an accelerometer, gyroscope, and GPS to produce
+                            more accurate state estimation. This code was written using low-level C++ code, meant to run on IC chips such as the STM32 and microcontrollers
+                            like the Teensy 4.1. This project also involved designing and developing the PCBs (printed circuit boards) for the computer, taking into consideration the electrical
+                            engineering aspects of the components and flight computer. I've also helped develop code
+                            to store this sensor data in an SD card, as well as code to transmit this data to a ground station via the LoRa radio protocol through 
                             packets. In addition, I've helped design and build the PCBs (printed circuit boards) for the computer, taking into consideration the electrical
                             engineering aspects of the components and flight computer.
                             <br /><br />
@@ -168,7 +177,7 @@ function experience() {
                 <PageSection section='Research'>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            Toroidal Propellers for Maritime Applications
+                            Optimizing Toroidal Propellers for Maritime Applications
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
                             <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
                             <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>

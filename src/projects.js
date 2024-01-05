@@ -106,6 +106,7 @@ function projects() {
                 </PageSection>
                 <div id='side'></div>
                 <PageSection section='Side Projects'>
+                    <div id='raymarcher'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Raymarcher

@@ -32,6 +32,25 @@ function skills() {
                             perform specialized tasks.
                         </p> 
                     </SectionBody>
+                    <div id='python'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Python
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Great</p><br />
+                        <p className='sectionBody'>
+                            Python is a general-purpose language popularly used for functions within data science and machine learning. I have a good
+                            understanding of Python and its syntax, having used it in academic courses and other projects. I am able to use Python to create
+                            programs that utilize object-oriented programming, as well as create programs that interact with files and databases. I've used 
+                            Python and libraries within it for graph-based data processing and analysis within my <a href='/experience#risc'>RISC Internship</a>,
+                            through which I've learned how to use Python to manage repositories of data and information. <br /><br />
+
+                            I am also learning how to use Python for machine learning and data science, having taken courses on the subject and began working 
+                            with developing statistical and machine learning models. I have experience with libraries such as NumPy, Pandas, and Matplotlib to
+                            handle data.
+                        </p> 
+                    </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Java
@@ -40,13 +59,14 @@ function skills() {
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             Java is an object-oriented programming language, used often to create applications or build back-end
-                            modules for the internet. I have known Java for nearly two years now, starting with the AP Computer Science A
-                            class I took in my high school, to my experience within object-oriented programming courses at college. In these classes
-                            I excelled, scoring a 5 on the AP Computer Science A test, and a 4.0 in these courses,
-                            alongside experience and knowledge that I have self-taught myself about the language, in order to improve my ability to utilize
-                            Java and its features. <br /><br />
+                            modules for the internet. Beginning with the AP Computer Science classes I took in high school, to my
+                            experience with object-oriented programming courses at college, I have a good understanding of Java and 
+                            its core concepts. With this comes my understanding of object-oriented programming, and how to use Java
+                            to leverage polymorphism, inheritance, and other object-oriented concepts. <br /><br />
                             Beyond just a functional knowledge of Java and its syntax, I am also familiar with the Java Swing library, which
-                            is a library built into Java for the purpose of creating component-based GUIs.
+                            is a library built into Java for the purpose of creating component-based GUIs. I have a strong experience
+                            with using Java in projects as well, having used it in hackathons and personal projects to create applications
+                            such as a custom <a href='/projects#raymarcher'>3D game engine</a> in vanilla Java.
                         </p> 
                     </SectionBody>
                     <SectionBody>
@@ -107,7 +127,7 @@ function skills() {
                             SQL & MySQL
                             <img src={require('../static/sql.png')} className='toolImg' title="SQL"></img>
                         </h3><br />
-                        <p className='sectionDuration'>Skill Level: Good</p><br />
+                        <p className='sectionDuration'>Skill Level: Learning</p><br />
                         <p className='sectionBody'>
                             SQL is the language through which relational databases can be interacted with. I have experience, both in the conceptual
                             and the practical application of this, with an understanding of how to perform basic create, read, update, and delete (CRUD) 
@@ -115,23 +135,7 @@ function skills() {
                             (AWS) and their Relational Database Service (RDS), to store and manage such databases.
                         </p> 
                     </SectionBody>
-                    <div id='python'></div>
-                    <SectionBody>
-                        <h3 className='subsectionTitle'>
-                            Python
-                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
-                        </h3><br />
-                        <p className='sectionDuration'>Skill Level: Learning</p><br />
-                        <p className='sectionBody'>
-                            Python is a general-purpose language popularly used for functions within data science and machine learning. I am currently in
-                            the process of learning to write code in Python, as well as understanding many of its paradigms, 
-                            as well as how to use libraries within it, such as NumPy and TensorFlow, to
-                            write programs for the purpose of data processing and machine learning. Along with learning a practical application of this,
-                            I also have a conceptual understanding of how machine learning works to aid in the learning process. I've used Python and libraries 
-                            within it for graph-based data processing and analysis within my <a href='/experience#risc'>RISC Internship</a> as well.  
-                        </p> 
-                    </SectionBody>
-                    <div id='qiskit'></div>
+                    {/* <div id='qiskit'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             QISKit
@@ -147,7 +151,7 @@ function skills() {
                             QISKit is a a way to write code for these quantum machines on a classical computer, and it uses a syntax based off of Python
                             in an environment similar to that of Jupyter Notebook in order to create these programs for the machines of the future.
                         </p> 
-                    </SectionBody>
+                    </SectionBody> */}
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             HTML and CSS
@@ -180,18 +184,22 @@ function skills() {
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            PCB Design
+                            PCB Design & KiCad
                             <img src={require('../static/pcb.png')} className='toolImg' title="PCB"></img>
+                            <img src={require('../static/kicad.png')} className='toolImg' title="KiCad"></img>
                         </h3><br />
-                        <p className='sectionDuration'>Skill Level: Good</p><br />
+                        <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             PCB, or printed circuit board, design is the process of designing a circuit board for a given purpose, integrating microcontrollers,
                             sensors, and other components into a single board. I have experience with this process, from designing the schematic and working with 
-                            microcontroller inputs and outputs, to actually designing the board and routing the traces. I have used Autodesk's Fusion 360 software 
-                            to design these PCBs, and have experience with reading datasheets and understanding the electrical components that go into these boards, 
-                            before then ordering these boards from a manufacturer and soldering components onto them. Through this process, I've gained a better 
-                            understanding of low-level systems architecture and how to design a system from the ground up, alongside a better understanding of 
-                            electronics and computer engineering principles.
+                            microcontroller inputs and outputs, to actually designing the board and routing the traces. Throughout this process, I am capable of 
+                            using electrical engineering principles to design a board that will function as intended, with minimal noise and interference and can 
+                            use communication protocols such as I2C and SPI. <br /><br />
+                            I have experience with this process from my work with the <a href='/experience#seds'>Terrapin Rocket Team</a>, where I have designed 
+                            and created PCBs for our custom flight computer. I have experience using both KiCad and Autodesk Fusion 360 for this process, and have
+                            experience with reading datasheets and understanding the electrical components that go into these boards, alongside skills for soldering
+                            and PCB assembly. I've used a variety of components in these boards, from microcontrollers such as the Teensy 4.1 and STM32, to SMD sensors
+                            such as the BMP390 and the MAX-M10S GPS module.
                         </p> 
                     </SectionBody>
                     <SectionBody>
@@ -264,8 +272,10 @@ function skills() {
                             1. I have an understanding of mechanical properties, including kinematics, energy, an rotational motion. I also 
                             have a good understanding of electrostatics and magnetism, which aids in my understanding of electronic components, 
                             having also taken a course on electrical components. <br /><br />
-                            I also have a working knowledge of cosmology and astrophysics, as I understand some aspects of the universe 
-                            such as planetary motion, the geometry of the universe, and techniques used to measure these things. 
+                            Through coursework and experiences, I have a good understanding of the physics behind spaceflight and orbital mechanics, 
+                            and I am able to use this knowledge to design and create systems that can be used in space. I also have a working 
+                            knowledge of cosmology and astrodynamics, as I understand aspects of the universe such as planetary motion, the geometry 
+                            of the universe, and techniques used to measure these things. 
                         </p> 
                     </SectionBody>
                 </PageSection>
