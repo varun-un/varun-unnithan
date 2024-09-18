@@ -130,26 +130,25 @@ function about() {
                     </div>
                 </div>
                 <div className='description flex-direction'>
-                    <img src={require('../static/headshot.png')} className='picOrbit' alt='Headshot of Varun Unnithan' />
+                    <img src={require('../static/collage.png')} className='picOrbit' alt='Pictures of Varun Unnithan' />
                     <p className='aboutDesc'>
-                        I'm a sophomore at the <i>University of Maryland</i> in College Park, where I am a double major in Aerospace Engineering and
-                        Computer Science, while expecting to graduate in May 2026. I've always enjoyed
-                        learning new things and expanding my knowledge something not only incredibly rewarding in and of itself, but also extremely powerful. And so, all 
-                        throughout my life, I have always tried to learn of new topics and ideas which fascinate me, ranging from quantum 
-                        mechanics to psychology, all with the goal of furthering my own knowledge and abilities. However, throughout my 
-                        experiences, the concepts of <b className='red'>space</b> and <b className='red'>computer science</b> are ones which 
-                        have especially intrigued me. Learning the secrets of our fascinating universe, along with being able to create 
-                        amazing computer programs to do things that were previously unheard of, are ambitions which drive me forward. However, 
-                        despite the two being different fields, I have the same goal for both: to further the human understanding and 
-                        capabilities. 
+                        I'm a junior at the <i>University of Maryland</i> in College Park, where I am a double major in Aerospace Engineering and
+                        Computer Science, while expecting to graduate in May 2026. One common theme throughout my life is that I love to learn 
+                        new things and expanding my knowledge. Whether it be learning the latest news about business and the corporate world, or just watching
+                        YouTube videos about ancient civilizations, I've had a curiosity that has yet to be quenched. 
                         <br /><br />
-                        By taking part in projects and doing work that interests me in the fields of computer science and aerospace engineering,
-                        I'm able to both find things enjoyable to myself while also helping to work towards my goal. It's a big reason why I 
-                        do work with teams whose projects are large in scope and ambitious, as it'll allow me to utilize my abilities to create 
-                        projects which both improve my own understanding, but also lead to the
-                        creation of products which I believe can have a positive impact. 
+                        From the beginning however, two topics have always stood out to me: <b className='red'>space</b> and <b className='red'>technology</b>.
+                        To 7-year-old me, the idea of the cosmos and outer space was as intriguing as any fantasy story, and I would spend hours reading books 
+                        and watching documentaries about the universe. As I grew up, I learned more about new technologies and the softwares that drive our world,
+                        and its accessibility drew me to start coding and creating my own projects, quickly falling in love with the process and the potential they 
+                        held.
                         <br /><br />
-                        I hope you'll join me on this journey to create something amazing.
+                        Since then, I've had one main goal in mind: to further the human understanding and capabilities in both of these fields. It's driven me to
+                        take part in projects and work that interests me in the fields of computer science and aerospace engineering. I've experienced so many new 
+                        cultures, technologies, and ideas, and I've loved every second of it. I truly believe in the saying that if you love what you do, you'll never
+                        work a day in your life — so by pursuing my passions in my career, I hope to experience that.
+                        <br /><br />
+                        I've done a lot, but in my eyes I'm just getting started. I hope you'll join me on this journey to create something amazing.
                     </p>
                 </div>
             </div>

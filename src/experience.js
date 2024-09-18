@@ -13,25 +13,57 @@ function experience() {
                 <PageTitle title='Experience' sections={['Internships', 'Clubs', 'Research']} links={['#internships', '#clubs', '#research']} starOffset='2' />
                 <div id='internships'></div>
                 <PageSection section='Internships'>
+                    <div id='mitll'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Space Systems Analysis & Test Intern
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
+                            <img src={require('../static/matlab.png')} className='toolImg' title="MATLAB"></img>
+                        </h3><br />
+                        <h3 className='red'>MIT Lincoln Lab</h3><br />
+                        <p className='sectionDuration'><i>May 2024 - August 2024</i></p>
+                        <br />
+                        <p className='sectionBody'>
+
+                            MIT Lincoln Laboratory is a premier research and development center that provides advanced technology to meet critical national security needs.
+                            For the summer of 2024, I worked in Boston as a Space Systems Analysis & Test Intern with Group 95, where I worked to design and optimize 
+                            image processing algorithms. Working on a DAF Red Team project, I worked with novel hardware for optical systems in both the visual and 
+                            long wave infrared (LWIR) spectrums, trying to use image processing techniques to extract signals and targets for satellites. I took existing 
+                            post-processing software in MATLAB and reworked it, enabling the processing of LWIR images and customizing algorithms and statistical analyses 
+                            to identify satellites in these images with up to 90% confidence. I created a robust object-oriented infrastructure to help improve the software's
+                            extensibility and maintainability, while also integrating parallel processing to speed up the software's runtime.
+                            <br /><br />
+                            I also contributed to the software used in the optical systems' operations, as I improved existing star matching algorithms to increase runtime by 
+                            up to 95%, helping to allow these systems to run in real-time. The outputs of these systems were configured to enable error identification and bias 
+                            correction for the tracking features of these systems. By integrating star matching algorithms from published research and rewriting their database 
+                            systems to use more efficient and deeper star catalogs to cross-reference, I was able to improve the search depth for stars the software could match 
+                            by up to 70 times.
+                            <br /><br />
+                            Working within the system analysis team, I grew a lot in my system analysis and engineering skills, giving biweekly briefs to the team, group supervisors,
+                            and sponsors on my progress as well as the implications of the development being done.
+                        </p>  
+                    </SectionBody>
                     <div id='risc'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Research for Intelligence & Security Challenges (RISC)
                             <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>UMD ARLIS</i></p>
-                        <p className='sectionDuration'><i>May 2023 - Present</i></p>
+                        <h3 className='red'>UMD ARLIS</h3><br />
+                        <p className='sectionDuration'><i>May 2023 - January 2024</i></p>
                         <br />
                         <p className='sectionBody'>
-                            I work as a part-time researcher and developer with the University of Maryland's Applied Laboratory for Intelligence 
-                            and Security (ARLIS), where I work on a project to develop a tool to assess and formally verify changes in operational
-                            workflows. Formerly a part of the Research for Intelligence & Security Challenges (RISC) internship program, I was 
-                            brought on as a part-time researcher to continue my work on a similar project to the one I worked on as an intern.
-                            Contracted by government sponsors, I work with a team to develop software, parsers, and generators to analyze and
-                            simulate different workflows and processes within a graph-based framework. To do so, I've written code in Python to
-                            parse and understand graphs, and then used first-order logic libraries and rules to simulate the effects of changes
-                            in these graphs. The developed software was able to analyze processes for changes due to automation and AI, and
-                            found the influences of these systems on upwards of 50% of the workflows. <br /><br />
+
+                            With the University of Maryland's Applied Laboratory for Intelligence and Security (ARLIS), originally as an intern 
+                            in the Research for Intelligence & Security Challenges (RISC) program, and then as a part-time flex researcher, 
+                            I worked on a project to develop a tool to assess and formally verify changes in operational workflows. Contracted 
+                            by government sponsors, I worked with a team to develop software, parsers, and generators to analyze and simulate
+                            different workflows and processes within a graph-based framework. To do so, I've written code in Python to automate 
+                            and parse graphs, and then used first-order logic libraries and rules to simulate the effects of changes in these
+                            graphs. The developed software was able to analyze processes for changes due to automation and AI, and found the
+                            influences of these systems on upwards of 50% of the workflows. The automation tools I spearheaded and implemented 
+                            saves approximately one week's worth of work that was previously needed to implement new models and workflows. <br /><br />
 
                             Through this internship, I've gained experience with communicating with and presenting to a team and clients, as 
                             well as how the development process works in a professional setting.
@@ -46,7 +78,7 @@ function experience() {
                             <img src={require('../static/sql.png')} className='toolImg' title="SQL"></img>
                             <img src={require('../static/aws.png')} className='toolImg' title="AWS"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>Resilience Inc.</i></p>
+                        <h3 className='red'>Resilience Inc</h3><br />
                         <p className='sectionDuration'><i>August 2021 - April 2022</i></p>
                         <br />
                         <p className='sectionBody'>
@@ -72,11 +104,13 @@ function experience() {
                 </PageSection>
                 <div id='clubs'></div>
                 <PageSection section='Clubs'>
+                    
                     <div id='terprockets'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            Terrapin Rocket Club
+                            Terrapin Rocket Team
                             <img src={require('../static/solidworks.png')} className='toolImg' title="Solidworks"></img>
+                            <img src={require('../static/matlab.png')} className='toolImg' title="MATLAB"></img>
                             <img src={require('../static/pcb.png')} className='toolImg' title="PCB"></img>
                             <img src={require('../static/kicad.png')} className='toolImg' title="KiCad"></img>
                             <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
@@ -85,24 +119,66 @@ function experience() {
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
-                            The Terrapin Rocket Club is a club within the <i>University of Maryland</i>&nbsp; that works on developing a student-created
-                            solid engine rocket capable of flight heights of 10,000 ft in order to compete at the Spaceport America Cup. In the club
-                            I am the team lead for the avionics subteam, whose goal is to develop, from scratch, a flight computer for
-                            this rocket that is capable of controlling the rocket's stages and firing charges, as well as data logging and telemetry. In this role 
-                            I've written code in C++ that takes in and processes sensor data, within an embedded systems context. I've also helped lead and develop
-                            data fusion algorithms and Kalman Filters to combine data from multiple sensors, such as an accelerometer, gyroscope, and GPS to produce
-                            more accurate state estimation. This code was written using low-level C++ code, meant to run on IC chips such as the STM32 and microcontrollers
-                            like the Teensy 4.1. This project also involved designing and developing the PCBs (printed circuit boards) for the computer, taking into consideration the electrical
-                            engineering aspects of the components and flight computer. I've also helped develop code
-                            to store this sensor data in an SD card, as well as code to transmit this data to a ground station via the LoRa radio protocol through 
-                            packets. In addition, I've helped design and build the PCBs (printed circuit boards) for the computer, taking into consideration the electrical
-                            engineering aspects of the components and flight computer.
+                            The Terrapin Rocket Club is a club within the <i>University of Maryland</i>&nbsp; that works on developing a student researched and developed (SRAD)
+                            solid-fuel rocket capable of flights to 30,000 ft in order to compete at the Spaceport America Cup. The Spaceport America Cup is the world's 
+                            largest intercollegiate rocket engineering competition, where teams from around the world compete to see who can build and launch the best
+                            rocket, judged for their design, technical report, and flight performance, among other categories. In June 2024, the &nbsp;
+                            <a href='https://www.space.com/spaceport-america-rocketry-collegiate-competition-2024'>Terrapin Rocket Team placed first at Spaceport</a>, 
+                            beating out 120+ other teams from around the world while competing in the 10k ft SRAD category.
+                            
                             <br /><br />
-                            As a subteam lead, I also need to manage the work and tasks that the team members work on. This must be coordinated, as well as 
-                            synchronized with the needs of the other teams and subprojects that go into the rocket, so that all parts of the project fit in 
-                            together. I've also made efforts to help lead the learning efforts of the team, helping to teach new members about the tools and
-                            skills needed to work on the project, getting them onboarded quickly. I've also helped lead the testing efforts for our avionics,
-                            working to test the code and hardware to ensure that it works as intended in a flight environment. 
+                            I am the team lead for the avionics subteam, who is responsible for the custom development of a flight computer for
+                            model rockets that is capable of accurate data acquisition to perform data logging and telemetry. The subteam owns the entire embedded systems 
+                            development lifecycle, from designing the PCBs and electrical circuitry to writing the code that runs on the flight computer. The systems we 
+                            develop are used by many parts of the rocket, from the airbrake active control system to the scientific payload we deploy, and works to provide 
+                            accurate sensor and state data to all of these systems.
+                            <br /><br />
+                            I am responsible for many of the technical aspects of the subteam's efforts, from using circuit analysis and PCB design tools like 
+                            KiCad, to writing modular and robust code in C++ to run the flight computer and process sensor data. I've also worked to develop data fusion
+                            algorithms and Kalman Filters (KFs) to combine data from multiple sensors, such as an accelerometer, gyroscope, and GPS to produce more accurate state
+                            estimation, and am currently working to help research and develop non-linear KFs and Adaptive Learning KFs for improved state estimation. We also perform 
+                            live telemetry of both sensor data and video from the rocket, which requires the development of long-range high bandwidth systems. I help lead the subteam's 
+                            efforts to pioneer the development of these systems, as this has rarely been done before on amateur bands at the scale we are working at. To receive, 
+                            process, and visualize this data, I've helped develop a modular ground station application.
+                            
+                            <br /><br />
+                            As a subteam lead, I manage the work and tasks that the team members work on, which is coordinated with the needs of the other teams 
+                            and projects that go into the rocket and rely on our systems. I've also made efforts to help lead the learning efforts of the team, 
+                            teaching new members about the tools and skills needed to work on the project, getting them onboarded quickly. The icons below show our last year 
+                            technical report, as well as some of the code bases which I manage. <br /><br />
+                            <a href='https://drive.google.com/file/d/1F8N_BerN4R7mYLDTSdzqzHZwQahWmuae/view?usp=drive_link' target='_blank'>
+                                <img src={require('../static/paper.png')} className='projectLink' title="Technical Report"></img>
+                            </a> 
+                            <a href='https://github.com/Terrapin-Rocket-Team' target='_blank'>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
+                            </a>
+                        </p>  
+                    </SectionBody>
+                    <div id='amazon-kuiper'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Amazon Project Kuiper
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
+                            <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                        </h3><br />
+                        <h3><p className='red'>Student Software Engineer</p></h3> <br />
+                        <p className='sectionDuration'><i>January 2024 - June 2024</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            UMD's App Development Club is an organization that works as a student contracting group, supporting projects from a variety 
+                            of Fortune 500 companies. I was a part of the Spring 2024 cohort, where over 600 applications were received, and was selected as 
+                            one of 12 students to work on a project with Amazon's Project Kuiper. Project Kuiper is a satellite internet constellation project 
+                            that aims to provide high-speed internet around the world.
+                            <br /><br />
+                            I worked as a student software engineer on the project, where I helped develop the tech stack for an application that allowed 
+                            different spacecraft and constellation operators to automatically upload conjunction data messages (CDMs) and coordinate 
+                            maneuvers with other operators. The application operated on a Hyperledger Fabric blockchain to keep CDMs secure and immutable,
+                            as well as decentralize the system to incentivize cooperation between foreign operators. I wrote much of the backend code to 
+                            handle transactions and CDM data processing, as well as internal simulation tools to model orbital maneuvers and operator 
+                            choices. I also spearheaded the development of novel economic analysis on operator choices, using game theory to model the 
+                            decisions involving information sharing and orbital simulations to calculate the economic impact of these decisions. As one of 
+                            the main developers on this project, I also worked to interface with and brief Amazon engineers of our results. 
                         </p>  
                     </SectionBody>
                     <div id='seds'></div>
@@ -114,26 +190,21 @@ function experience() {
                             <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
                             <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
-                        <h3><p className='red'>SATFAB: Thermals Team Lead</p></h3> <br />
+                        <h3><p className='red'>SATFAB: Thermals Team Lead & Power Team Member</p></h3> <br />
                         <p className='sectionDuration'><i>August 2022 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
                             Students for the Exploration and Development of Space (SEDS) is an international student organization whose 
                             purpose is to promote space exploration and development. I am a member of the UMD chapter, where I am also
-                            a member of the Satellite Fabrication (SATFAB) team. As a member of the SATFAB team, I am part of the efforts
-                            to create a 1U (10cm x 10cm x 10cm) cube satellite that is able to carry a payload of a radio antennae and 
-                            processor into orbit to perform tests with radio communications and OpenLST, a radio design paradigm. This 
-                            satellite has launched on high-altitude balloon launchs, and would launch with the United States Naval Academy 
-                            (USNA) and their 3U bus to take it into orbit, where it would provide radio communications.
+                            a member of the Satellite Fabrication (SATFAB) team. The SATFAB team worked
+                            to create a cube satellite payload that is to be launched to space to test communications. The team also works 
+                            to design and prototype a cube satellite system for NASA's CubeSat Launch Initiative (CSLI) program.
                             <br /><br />
-                            Within the SATFAB team, I am the Thermals subteam lead, where I help direct work involving the 
-                            thermals of the satellite. One of our team's predominant jobs is to perform thermal analysis on the cubesats which we send 
-                            up, which we mainly use Thermal Desktop for. Through thermal desktop, and other forms of thermal analysis we've performed, including
-                            using Matlab to solve differential systems, I've gained a strong understanding of heat flow within satellite systems. In addition, 
-                            I've worked to research thermal control systems (TCS) for satellites, as well as methods
-                            for both active and passive thermal control. I help to direct the design and development of TCS
-                            for cube satellites, with the current type we are looking to design and research being based off of phase-change materials (PCM). 
-                            also help to manage team members and delineate tasks and deadlines for our projects.
+                            Within the SATFAB team, I was the Thermals subteam lead, where I helped direct work involving the 
+                            thermals of the satellite, and am now a member of the Power subteam. One of the team's predominant jobs is to perform 
+                            thermal analysis on the cubesats which we prototype. For this analysis, we use Thermal Desktop, a software that
+                            models heat flow within systems. I am also one of the main researchers for our project with thermal control systems (TCS), 
+                            where we are testing a phase-change material system for cubesats, as well as trying to simulate this with CFD software.
                         </p>  
                     </SectionBody>
                     <div id='quantumclub'></div>
@@ -145,12 +216,12 @@ function experience() {
                             <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
                         <h3><p className='red'>Member</p></h3> <br />
-                        <p className='sectionDuration'><i>August 2022 - Present</i></p>
+                        <p className='sectionDuration'><i>August 2022 - May 2023</i></p>
                         <br />
                         <p className='sectionBody'>
                             The UMD Undergraduate Quantum Association is a club which aims to teach undergraduates the basics of quantum
                             mechanics and quantum computing, so as to prepare them to develop quantum algorithms that can process data
-                            exponentially faster than its classical counterparts. In this club, I've attended workshops and seminars which
+                            exponentially faster than its classical counterparts. In this club, I attended workshops and seminars which
                             have taught me the basics of quantum mechanics and working with qubits, as well as how to leverage IBM's quantum
                             computing systems through QISKit, a language rooted in Python used to write quantum computing programs.
                         </p>  
@@ -175,6 +246,25 @@ function experience() {
                 </PageSection>
                 <div id='research'></div>
                 <PageSection section='Research'>
+                    <div id='mlds'></div>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Satellite Fault Detection using Deep Learning
+                            <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>August 2024 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            As a part of the Aerospace Engineering Honors track at UMD, I am a part of a research project with the 
+                            <a href='https://martinastro.github.io/' target='_blank'> Machine Learning for Dynamical Systems</a> (MLDS) 
+                            Lab to automate the fault detection process for satellites using deep learning. I'm currently working to research
+                            data manipulation tools and anomaly detection algorithms for satellite fault detection through their telemetry data. 
+                            To do this, I'm also developing tools to simulate these telemetry streams using the Basilisk spaceflight simulation 
+                            software suite.
+                        </p>  
+                    </SectionBody>
+                    <div id='torus'></div>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
                             Optimizing Toroidal Propellers for Maritime Applications
@@ -183,18 +273,16 @@ function experience() {
                             <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
                             <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>March 2023 - Present</i></p>
+                        <p className='sectionDuration'><i>August 2023 - Present</i></p>
                         <br />
                         <p className='sectionBody'>
                             Maritime shipping is a major driver of the global economy, yet it also contributes to a significant amount of
-                            pollution. This research project looks at examining a new type of propeller technology, called a toroidal propeller,
-                            and assess its applicability to maritime shipping. This research project is one associated with the Gemstone Honors 
-                            College, where I'll work on a team with about a dozen other students to research this topic. Our goal is to develop
-                            a toroidal-shaped propeller that is able to be used in maritime shipping, and to assess its viability as a replacement
-                            for currently used propellers based on factors such as fuel efficiency, cost, and noise. To do this, we plan to mathematically
-                            model a toroidal propeller, and then use computational fluid dynamics (CFD) to simulate its performance in a variety of
-                            conditions. We will then vary the parameters of this model, generating various geometries, to see if we can produce a 
-                            potentially viable propeller design.
+                            pollution. This research project, associated with the Gemstone Honors College, looks at performing shape optimization 
+                            on a toroidal propeller, and assess its applicability to maritime shipping. As a part of 
+                            this research, I've worked to develop and implement genetic algorithms and automated pipelines for computational
+                            fluid dynamics (CFD) simulations to optimize the design of an airfoil and in the future, a toroidal propeller. I've 
+                            also constructed a mathematical model of a toroidal propeller, and performed analyses on it to model the potential 
+                            search and solution space of the problem.
                         </p>  
                     </SectionBody>
                     <SectionBody>
@@ -204,20 +292,19 @@ function experience() {
                             <img src={require('../static/matlab.png')} className='toolImg' title="Matlab"></img>
                             <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>January 2023 - Present</i></p>
+                        <p className='sectionDuration'><i>January 2023 - May 2023</i></p>
                         <br />
                         <p className='sectionBody'>
                             Some marine animals, such as seals, have whiskers that are able to sense the flow of water around them.
                             These whiskers detect the flow of the vortices shed by nearby objects by analyzing how they are deformed when
                             in contact with the fluid flow. This research project, led by Dr. Cecilia Huertas Cerdeira, within the 
                             <i> University of Maryland</i>'s Mechanical Engineering department, attempts to create a soft body that can
-                            replicate this behavior, for use in applications such as robotics. This research focuses on choosing an 
+                            replicate this behavior, for use in applications such as robotics. This research focused on choosing an 
                             appropriate material for the soft body, as well as designing the geometry of the body to minimize the 
                             viscoelasticity and avoid large deformations, while still being flexible enough to deflect and detect the 
-                            flow. These varying whisker profiles and materials will then be subjected to a fluid flow, with the resulting
-                            data being produced and analyzed with code in Matlab. Once a suitable design is found, the next step would be 
-                            to insert a fiber optic into the whisker to detect deformations and develop code to analyze such to produce 
-                            meaningful conclusions about surrounding objects.
+                            flow. I also worked with physical testing apparatuses by conducting experiments in a water tunnel under 
+                            varying flow conditions to characterize the whisker's performance, and then analyzed the data and imagery 
+                            in MATLAB.
                         </p>  
                     </SectionBody>
                     <SectionBody>

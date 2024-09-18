@@ -1,5 +1,5 @@
 # varun-unnithan
-The code for the portfolio website for myself, Varun Unnithan. The site can be found [here](https://www.varununnithan.me/ "varununnithan.me").
+The code for the portfolio website for myself, Varun Unnithan. The site can be found [here](https://www.varununnithan.com/ "varununnithan.com").
 
 The goal of this site is to showcase not only my skills as a web developer, but also write about my abilities and the work I have done. The website is meant to serve as a centralized location for all information pertaining to me, that someone may want. 
 

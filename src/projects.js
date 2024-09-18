@@ -132,30 +132,26 @@ function projects() {
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            Raymarcher
-                            <img src={require('../static/java.png')} className='toolImg' title="Java"></img>
+                            Monitor Backlight
+                            <img src={require('../static/cpp.png')} className='toolImg' title="C++"></img>
                         </h3><br />
-                        <p className='sectionDuration'><i>June 2021 - July 2021</i></p>
+                        <p className='sectionDuration'><i>May 2023</i></p>
                         <br />
                         <p className='sectionBody'>
-                            Raymarcher is a real-time 3D rendering engine which I have made, based in Java. I have always been interested
-                            in how computers create 3D scenes, whether they be in games I have played or in animation and modelling 
-                            softwares, such as in Blender or Solidworks, and so this project was a learning experience for me. I decided
-                            to try and build everything from scratch for this rendering engine, not using external libraries to abstract
-                            away certain aspects of the process, so that I could gain a better understanding of how these programs worked.
-                            Raymarcher specifically uses the raymarching technique and can render 3D scenes with meshes and geometry 
-                            which the user may define. Beyond just the computer programming side of it, this project also taught me a lot
-                            about the mathematics behind these 3D engines, and helped me gain a better understanding of linear algebra.
+                            This was a simple project I created that blended together Arduino and Windows C++ programming. The goal of this 
+                            project was to create a program that would "extend" the display of a monitor by using an Arduino to control an LED
+                            array that would be placed behind the monitor. The program works to efficiently scrape screen data to individually address 
+                            each LED in the array, creating a backlight effect that would change based on the colors of the screen. 
                             <br /><br />
                             Visit: 
-                            <a href='https://github.com/varun-un/Raymarcher' target='_blank'>
+                            <a href='https://github.com/varun-un/Monitor-Backlight' target='_blank'>
                                 <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
                         </p>  
                     </SectionBody>
                     <SectionBody>
                         <h3 className='subsectionTitle'>
-                            varununnithan.me
+                            varununnithan.com
                             <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
                             <img src={require('../static/css.png')} className='toolImg' title="CSS3"></img>
                             <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>

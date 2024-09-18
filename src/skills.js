@@ -37,18 +37,35 @@ function skills() {
                         <h3 className='subsectionTitle'>
                             Python
                             <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                            <img src={require('../static/pytorch.png')} className='toolImg' title="PyTorch"></img>
                         </h3><br />
                         <p className='sectionDuration'>Skill Level: Great</p><br />
                         <p className='sectionBody'>
                             Python is a general-purpose language popularly used for functions within data science and machine learning. I have a good
                             understanding of Python and its syntax, having used it in academic courses and other projects. I am able to use Python to create
                             programs that utilize object-oriented programming, as well as create programs that interact with files and databases. I've used 
-                            Python and libraries within it for graph-based data processing and analysis within my <a href='/experience#risc'>RISC Internship</a>,
-                            through which I've learned how to use Python to manage repositories of data and information. <br /><br />
-
-                            I am also learning how to use Python for machine learning and data science, having taken courses on the subject and began working 
-                            with developing statistical and machine learning models. I have experience with libraries such as NumPy, Pandas, and Matplotlib to
-                            handle data.
+                            Python and libraries within it to do astrodynamics simulations and data analysis for my work with <a href='/experience#amazon-kuiper'>
+                            Amazon's Project Kuiper</a>, and for graph-based data processing and analysis within my <a href='/experience#risc'>RISC Internship</a>.
+                            <br /><br />
+                            I also have experience using Python libraries such as NumPy, SciPy, and PyTorch for data analysis and machine learning, for which I 
+                            have both taken courses for and used in projects. I understand the math concepts behind many of these frameworks, from Bayesian
+                            statistics to neural networks, and am able to use them to create models and analyze data. 
+                        </p> 
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Matlab
+                            <img src={require('../static/matlab.png')} className='toolImg' title="MATLAB"></img>
+                        </h3><br />
+                        <p className='sectionDuration'>Skill Level: Great</p><br />
+                        <p className='sectionBody'>
+                            MATLAB is a high-level programming language used for numerical computing and data analysis. I have a good understanding of 
+                            MATLAB and its syntax, having used it in academic courses and projects. I am able to use MATLAB to create scripts to numerically 
+                            solve problems such as differential equations, as well as analyze and visualize data. I have used MATLAB in my previous internship 
+                            at <a href='/experience#mitll'>MIT Lincoln lab</a> to create and optimize post-processing image algorithms, and thus can use 
+                            MATLAB for image processing as well as for parallel computing and within an object-oriented framework. I've also used MATLAB for 
+                            developing mathematically parameterized models for toroidal propeller geometries for my <a href='/experience#torus'>Gemstone research
+                            </a>.
                         </p> 
                     </SectionBody>
                     <SectionBody>
@@ -74,7 +91,7 @@ function skills() {
                             Javascript
                             <img src={require('../static/javascript.png')} className='toolImg' title="Javascript"></img>
                         </h3><br />
-                        <p className='sectionDuration'>Skill Level: Great</p><br />
+                        <p className='sectionDuration'>Skill Level: Good</p><br />
                         <p className='sectionBody'>
                             Javascript is a a scripting programming language used largely for creating interactive webpages, though it is 
                             also used for building applications outside of websites. I currently have a good mastery and handle on much of 

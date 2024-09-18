@@ -65,11 +65,8 @@ function Footer(props) {
                 <a href='https://www.linkedin.com/in/varun-unnithan' target='_blank'>
                     <img src={require('../static/linkedin.png')} className='linkIcon' alt='LinkedIn: varun-unnithan'></img>
                 </a>
-                <a href='https://devpost.com/varun-unnithan33' target='_blank'>
-                    <img src={require('../static/devpost.png')} className='linkIcon' alt='Devpost: varun-unnithan33'></img>
-                </a>
             </div>
-            <p className='footerMessage'>Created by Varun Unnithan 2023 | varun.unnithan33@gmail.com</p>
+            <p className='footerMessage'>Created by Varun Unnithan 2024 | varun.unnithan33@gmail.com</p>
         </div>
     )
 

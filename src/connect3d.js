@@ -19,7 +19,7 @@ import SceneComponent from "./SceneComponent";
     var k = 6000;
     var resizeOffset = 13.57;
 
-    var camera = new ArcRotateCamera("arcCamera", -.4, Math.PI / 2, k / window.innerWidth + resizeOffset, new Vector3(-1.89,3.1,-2.1), scene);   //(-2.29,3.1,-2.5)
+    var camera = new ArcRotateCamera("arcCamera", -.4, Math.PI / 2, k / window.innerWidth + resizeOffset, new Vector3(-1,3.1,-2.1), scene);   //(-2.29,3.1,-2.5)
     camera.upperBetaLimit = Math.PI/2 + .12;
     camera.target.z = -0.00358072917 * window.innerWidth + 3;
 
