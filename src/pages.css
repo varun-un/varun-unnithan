@@ -307,6 +307,57 @@ a {
     background-color: rgb(167, 167, 167);
 }
 
+/* Container for the toggle icon */
+.toggleContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Toggle Icon Styling */
+.toggleIcon {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.toggleIcon:hover {
+    transform: scale(1.25);
+}
+
+.additionalImages {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.additionalImage {
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.additionalImage:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .toggleIcon {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .additionalImage {
+        width: 30%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .pageSection {
         margin-top: 0px;

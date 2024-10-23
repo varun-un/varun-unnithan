@@ -22,7 +22,7 @@ function education() {
                         <br />
                         <p className='sectionBody'>
                             The University of Maryland (UMD) at College Park is the primary institution of higher education in the public 
-                            University System of Maryland. At UMD, I am a sophomore and part of the Honors College, within which I am a member of the 
+                            University System of Maryland. At UMD, I am a junior and part of the Honors College, within which I am a member of the 
                             Gemstone Program —  a multidisciplinary four-year research program for undergraduates in the Honors
                             College. 
                             <br /><br />

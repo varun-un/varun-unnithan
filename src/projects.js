@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, withRouter } from "react-router-dom";
 import PageTitle from './pageTitle.js';
 import PageSection from './pageSection.js';
@@ -212,7 +212,7 @@ function projects() {
                             </a>
                         </p>  
                     </SectionBody>
-                    <SectionBody>
+                    <SectionBody additionalImages={[require('../static/html.png'), require('../static/html.png')]}>
                         <h3 className='subsectionTitle'>
                             Student Connect
                             <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>
