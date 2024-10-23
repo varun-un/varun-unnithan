@@ -12,7 +12,7 @@ function projects() {
                 <PageTitle title='Projects' sections={['Major Projects', 'Side Projects']} links={['#major', '#side']} starOffset='2' />
                 <div id='major'></div>
                 <PageSection section='Major Projects'>
-                <SectionBody>
+                <SectionBody additionalImages={[require('../static/images/rockets1.jpeg'), require('../static/images/rockets3.jpeg'), require('../static/images/rockets2.jpeg')]}>
                         <h3 className='subsectionTitle'>
                             High-Powered Rocketry
                             <img src={require('../static/physics.png')} className='toolImg' title="Physics"></img>
@@ -28,9 +28,11 @@ function projects() {
                             My personal experience with high-powered rocketry began with my first L1 certification rocket, which was a 3" diameter
                             LOC Iris rocket which I built, simulated, and flew on an H125 motor in February 2023 to around 2200 feet, 
                             receiving my L1 high-powered rocketry certification from the Tripoli Rocketry Association. Since then, I have designed and 
-                            built my own 3" diameter dual-deploy rocket, which will use internal electronics, through an EasyMini altimeter, to fire 
-                            charges for a drogue parachute at apogee, and a main parachute at 750 feet. I look to launch this rocket, and continue to
-                            gain experience in high-powered rocketry, as I look to gain my L2 certification and learn more about the subject.
+                            built my own 3" diameter dual-deploy rocket, in which I used an EasyMini charge deployment system to deploy a drogue parachute at apogee
+                            and a main parachute at 750 feet. I am in the process of building and simulating a Minimum Diameter Rocket (MDR) which will reach 
+                            supersonic speeds of around Mach 1.4 and an altitude of around 8,000 feet flying on an I500 motor, which will 
+                            require me to optimize the rocket's design for high-speed flight and high altitudes. I plan to use this rocket as a testbed for
+                            how electronics and barometric altimeters behave in the supersonic regime.
                             <br /><br />
                             I also have high-powered rocketry experience through the Terrapin Rocket Team, as the main competition rocket which we 
                             design and construct is essentially a large-scale L3 rocket. I specifically have gained a lot of experience with the 
@@ -41,6 +43,28 @@ function projects() {
                             <br /><br />
                             <a href={require('../static/tripoli_card.pdf')}
                             target='_blank'>Membership Card</a>
+                        </p>  
+                    </SectionBody>
+                    <SectionBody>
+                        <h3 className='subsectionTitle'>
+                            Bayesian ARIMA Modeling for Stock Data 
+                            <img src={require('../static/python.png')} className='toolImg' title="Python"></img>
+                        </h3><br />
+                        <p className='sectionDuration'><i>September 2024 - Present</i></p>
+                        <br />
+                        <p className='sectionBody'>
+                            This is a project that I have started in order to get a better understanding of how to model time series data 
+                            and how Bayesian statistics can supplement these models. Though in its infancy, this project looks to gather historical
+                            price action data for a variety of stocks, and then apply a traditional autoregressive integrated moving average (ARIMA)
+                            model to the data to extract trends and patterns. The novelty of this project comes in the plan to apply Bayesian 
+                            statistics to the ARIMA model, which will allow for the model to be more flexible and robust to different types of data.
+                            Rather than having point estimates for the model's parameters, the Bayesian ARIMA model will have probability distributions
+                            which provide more data. By layering these models, grouping training data by ticker metadata like industry or market cap,
+                            I can develop a hierarchical model that can provide more accurate predictions for individual stocks.
+                            Visit: 
+                            <a href='https://github.com/varun-un/Ticker-Predictor' target='_blank'>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
+                            </a>
                         </p>  
                     </SectionBody>
                     <SectionBody>
@@ -212,7 +236,7 @@ function projects() {
                             </a>
                         </p>  
                     </SectionBody>
-                    <SectionBody additionalImages={[require('../static/html.png'), require('../static/html.png')]}>
+                    <SectionBody>
                         <h3 className='subsectionTitle'>
                             Student Connect
                             <img src={require('../static/html.png')} className='toolImg' title="HTML5"></img>

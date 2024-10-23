@@ -36,7 +36,6 @@ function SectionBody(props) {
                                 key={index} 
                                 src={img} 
                                 className='additionalImage' 
-                                alt={`Additional ${index + 1}`}
                             />
                         ))}
                     </div>

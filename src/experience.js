@@ -10,7 +10,7 @@ function experience() {
     return (
         <div className='pageAbs'>
             <div className='experience'>
-                <PageTitle title='Experience' sections={['Internships', 'Clubs', 'Research']} links={['#internships', '#clubs', '#research']} starOffset='2' />
+                <PageTitle title='Experience' sections={['Internships', 'Organizations', 'Research']} links={['#internships', '#orgs', '#research']} starOffset='2' />
                 <div id='internships'></div>
                 <PageSection section='Internships'>
                     <div id='mitll'></div>
@@ -102,8 +102,8 @@ function experience() {
                         </p>  
                     </SectionBody>
                 </PageSection>
-                <div id='clubs'></div>
-                <PageSection section='Clubs'>
+                <div id='orgs'></div>
+                <PageSection section='Organizations'>
                     
                     <div id='terprockets'></div>
                     <SectionBody>
@@ -145,13 +145,17 @@ function experience() {
                             As a subteam lead, I manage the work and tasks that the team members work on, which is coordinated with the needs of the other teams 
                             and projects that go into the rocket and rely on our systems. I've also made efforts to help lead the learning efforts of the team, 
                             teaching new members about the tools and skills needed to work on the project, getting them onboarded quickly. The icons below show our last year 
-                            technical report, as well as some of the code bases which I manage. <br /><br />
-                            <a href='https://drive.google.com/file/d/1F8N_BerN4R7mYLDTSdzqzHZwQahWmuae/view?usp=drive_link' target='_blank'>
-                                <img src={require('../static/paper.png')} className='projectLink' title="Technical Report"></img>
-                            </a> 
+                            technical report, our Preliminary Design Report (PDR) for this year, as well as some of the code bases which I manage. <br /><br />
+                            View More:
                             <a href='https://github.com/Terrapin-Rocket-Team' target='_blank'>
                                 <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
                             </a>
+                            <a href='https://drive.google.com/file/d/1F8N_BerN4R7mYLDTSdzqzHZwQahWmuae/view?usp=drive_link' target='_blank'>
+                                <img src={require('../static/paper.png')} className='projectLink' title="Technical Report"></img>
+                            </a> 
+                            <a href='https://docs.google.com/presentation/d/1gA0w6lyw2dPE8aCah9LZ3fPO63l9vu01Qdq47YWvYIg/edit?usp=sharing' target='_blank'>
+                                <img src={require('../static/paper.png')} className='projectLink' title="Technical Report"></img>
+                            </a> 
                         </p>  
                     </SectionBody>
                     <div id='amazon-kuiper'></div>
@@ -283,6 +287,14 @@ function experience() {
                             fluid dynamics (CFD) simulations to optimize the design of an airfoil and in the future, a toroidal propeller. I've 
                             also constructed a mathematical model of a toroidal propeller, and performed analyses on it to model the potential 
                             search and solution space of the problem.
+                            <br /><br />
+                            Visit:
+                            <a href='https://github.com/TeamTorus' target='_blank'>
+                                <img src={require('../static/github.png')} className='projectLink' title="Github"></img>
+                            </a>
+                            <a href='https://github.com/TeamTorus/Geometry/blob/main/README.pdf' target='_blank'>
+                                <img src={require('../static/paper.png')} className='projectLink' title="Report"></img>
+                            </a>
                         </p>  
                     </SectionBody>
                     <SectionBody>
